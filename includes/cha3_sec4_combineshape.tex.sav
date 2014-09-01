@@ -1,0 +1,7 @@
+\section{Grasping novel objects based on familiar parts}
+\label{cha3:sec4:combineshape}
+A method to compute grasps for novel objects is in need for domestic service robots. In this chapter we study the problem of generating grasps for un-trained objects in real time.
+
+Objects used in daily life have a variety of shapes. Very often they share similar shape parts, such as sphere, cylinder and box. These shapes repeatedly appear in our daily life, being the object shape or the part of the object shape. Hence we call them``shape primitives''.
+
+To work with un-trained objects, we take the grasping by shape primitives approach~\cite{miller2003automatic}. This approach makes the assumption that all object shapes can be decomposed into a set of primitive shapes where grasps can be planned easily. Based on this assumption, we firstly build a set of grasp GMMs $\left(\Omega_i, i=1,2,...N\right)$ for a set of $N$ chosen shape primitives. When a unseen object is presented, of which the shape can be approximated as a combination of known shape primitives, it's grasp GMM is built by combining the primitives' models. The combined model is then used to quickly generate new grasps. 

@@ -1,0 +1,12 @@
+\section{Imitation learning and modular approaches}
+\label{cha2:sec6}
+
+\subsection{Motion primitive}
+%\label{cha1:modular:motionprimitive}
+Recent brain research~\cite{bizzi2008combining} provide more evidences to support the hypothesis that the vertebrate motor system generate motions by combining a small number of motor primitives.
+
+To build a versatile robot that can work in a human dominating environment, high level of behavior planning is required. This is to say, the robot need to be equipped with the ability to plan a sequence of movements that fulfil the task requirements. This motion planning is normally done by an search in a high dimensional space caused by the numerous degree of freedom of the robot. The number of possible solutions to accomplish a task is nearly infinite.
+
+This redundancy is useful. In reality, various constraints, such as avoiding obstacles, may be added to the task. Due to the redundancy, we are able to find feasible solutions under constraints. However, this redundancy also makes planning difficult as the searching space is extremely large. One of the pervasive approach is to do optimization for the task with proper constraints. The shortcoming of an optimization approach is that it is usually difficult to define an proper cost function, as well as proper constrains of the task. Modular approach is used here as an alternative approach to reduce the searching without getting rid of good solutions. To this end, motion primitives are constructed and used to plan motion sequences. Motion primitives are elementary motions, each of which serves particular purpose. Usually they are extracted from human demonstrations of the tasks. Demonstrated motions are discretized to a sequence of motion primitives, which can be reused in other tasks as functional units. These motion primitives are usually encoded with statistical or analytical models, which can be modulated in some extend by varying the parameters according to the requirements of a certain task. This motion primitive approach has been extensively studied in literatures~\ref{}. How to exact motion primitives and how to model them remains a challenge problem.
+
+%TODO: Hierarchical clustering for motion primitives 

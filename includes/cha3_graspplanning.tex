@@ -1,0 +1,46 @@
+\chapter{Modular approach in grasp planning}
+\label{cha3}
+
+\section{Introduction}
+\label{cha3:sec1}
+%%%%%%%%% TODO: extend this to unfamilar object %%%%%%%%%
+
+
+Given an object and a multi-fingered robotic hand,
+generating a set of contacts on the object's surface which ensure grasp stability while being feasible for the hand kinematics is a common problem in grasp synthesis. Over the last few decades, robot grasping has been a popular topic and numerous approaches for grasp planning have been proposed~\cite{sahbani2011overview}. Most of these approaches adopt iterative methods, which are usually able to find a solution within a finite number of iterations and the average computation time is usually in the scale of a few to tens of seconds. However the number of iterations required grows quadratically with the size of the problem and this creates an uncertainty of the time for the robot to plan a grasp. The upper bound of the computation time is barely analyzed in the literature.
+
+%However, most of these approaches adopt iterative methods, which are usually computationally expensive due to the high-dimensionality of the configuration space and the non-linearity of the problem constraints. They are generally able to find a solution, sometimes within a finite number of iterations. Further, they generally try to solve the grasping problem in a static environment. Few of them consider a dynamic environment.
+
+Moving from the traditional engineering environment into a human dominated environment necessitates a fast grasp planning strategy to respond in real time. For example, when reaching out to grasp an object, a robust grasping strategy must be able to adapt rapidly to external perturbations that can modify the initial object position and orientation relative to the robot hand. In the case of catching a flying object~\cite{kim2012}, the robot has only a few milliseconds to plan a grasp before the object touches the floor.
+
+Another application is receiving objects handed over by humans with a robot hand~(Fig.~\ref{handover}). In many circumstance the object must be grabbed quickly: one such example is when the object is heavy or hot; other examples involve time-pressing situations, e.g. in surgery a robot assistant must react sufficiently quickly to doctors handing back implements to ensure smooth running of the surgery.
+
+Besides human-robot interaction, real time planning for the pick-and-place task in the industrial environment may also be necessary: spare parts could be randomly placed on the conveyer belt.
+The conveyer belt runs constantly at a high pace and leaves no time for the robot to stop its action and replan.
+The robot must therefore respond swiftly to avoid incurring delays in production. Given the limited computational power available on computers embedded in the robot, a computationally expensive algorithm would result in a prohibitively long decision time, leading to task failure in the above scenarios.
+
+Because of the complexity of the problem, real time grasp planning has not been extensively studied. To tackle this problem, we propose a closed-form solution which requires at most three steps to compute a new grasp, and hence guarantee a short computation time and the uncertainty is reduced to the largest extent. In this chapter, we first present a real time grasp planning strategy for familiar objects (Section~\ref{cha3:sec2},~\ref{cha3:sec3}). We then present an extension of this method to plan grasps for novel objects.
+
+
+%constantly running conveyer belt to deliver to the robot, which does not stop to let the robot plan the grasps. With the limited computational power of an embedded robot computer, a computationally expensive algorithm would result in a prohibitively long decision time, leading to task failure in the above scenarios.
+
+%In many real world scenarios, a rapid grasp planning strategy is required. For example, when reaching out to grasp an object, a robust grasping strategy should be able to adapt rapidly to external perturbations that can modify the initial object position and orientation. In catching a flying object~\cite{kim12}, the robot has to plan a grasp within a few milliseconds before the object touches the floor. Another major application is human handing over objects to robots ~(Figure~\ref{handover}). Human would normally expect their partners to grab the object quickly, especially when the object is heavy or hot. In fact, in many occasions tasks are time-pressing, e.g. in a surgery the doctors hand over tools to the robot assistant and the robot has to react sufficiently quickly to keep the surgery running smoothly. Besides human-robot interaction, real time planning for the pick-and-place task in the industrial environment is also necessary: spare parts could be randomly placed on the conveyer belt to deliver to the robot, which does not stop to let the robot plan the grasps. With limited computational power of an embedded robot computer, a computationally expensive algorithm will have a long decision time and could lead to task failure in the above scenarios.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=12cm]{./fig_cha3/handover.pdf}
+  \caption{A human hands a can to an iCub}
+  \label{handover}
+\end{figure}
+
+
+
+\input{includes/cha3_sec2_realtime}
+\input{includes/cha3_sec3_experiment-familiar}
+\input{includes/cha3_sec4_combineshape}
+\input{includes/cha3_sec5_experiment-nonfamiliar}
+\input{includes/cha3_sec6_discussion}
+
+
+
+

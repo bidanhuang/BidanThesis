@@ -1,0 +1,56 @@
+This is BibTeX, Version 0.99cThe top-level auxiliary file: myThesis_01.aux
+A level-1 auxiliary file: includes/cha5_sec2_method.aux
+A level-1 auxiliary file: includes/cha5_sec3_experiment.aux
+A level-1 auxiliary file: includes/cha5_sec4_discussion.aux
+The style file: apalike.bst
+Database file #1: myThesis.bib
+Repeated entry---line 257 of file myThesis.bib
+ : @incollection{calinon2008robot
+ :                               ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 312 of file myThesis.bib
+ : @inproceedings{chang2010planning
+ :                                 ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 475 of file myThesis.bib
+ : @inproceedings{detry2013generalizing
+ :                                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 717 of file myThesis.bib
+ : @inproceedings{gallardo2011detection
+ :                                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1378 of file myThesis.bib
+ : @inproceedings{michelman1994forming
+ :                                    ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2028 of file myThesis.bib
+ : @inproceedings{stulp2011learning
+ :                                 ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for ""
+Warning--I didn't find a database entry for "lourenco2006learning"
+Warning--I didn't find a database entry for "sahar2012"
+Warning--I didn't find a database entry for "Fischer98"
+Name 1 in "S. El Khoury, and M. Li, and Aude Billard." has a comma at the end for entry S.ElKhoury2012
+while executing---line 1020 of file apalike.bst
+Name 1 in "S. El Khoury, and M. Li, and Aude Billard." has a comma at the end for entry S.ElKhoury2012
+while executing---line 1020 of file apalike.bst
+Name 2 in "S. El Khoury, and M. Li, and Aude Billard." has a comma at the end for entry S.ElKhoury2012
+while executing---line 1020 of file apalike.bst
+Name 1 in "Stéphane Lallée, Julien Diard, and Stéphane Rousset." has a comma at the end for entry lallee2009
+while executing---line 1020 of file apalike.bst
+Name 1 in "Stéphane Lallée, Julien Diard, and Stéphane Rousset." has a comma at the end for entry lallee2009
+while executing---line 1020 of file apalike.bst
+Warning--can't use both volume and number fields in berndt1994using
+Warning--empty journal in kazemi2012robust
+Name 1 in "S. El Khoury, and M. Li, and Aude Billard." has a comma at the end for entry S.ElKhoury2012
+while executing---line 1095 of file apalike.bst
+Name 2 in "S. El Khoury, and M. Li, and Aude Billard." has a comma at the end for entry S.ElKhoury2012
+while executing---line 1095 of file apalike.bst
+Warning--empty journal in kroemer2010grasping
+Warning--there's a number but no series in li2014learning
+Warning--empty booktitle in Shukla2011CDS
+Name 1 in "Stéphane Lallée, Julien Diard, and Stéphane Rousset." has a comma at the end for entry lallee2009
+while executing---line 1095 of file apalike.bst
+(There were 14 error messages)

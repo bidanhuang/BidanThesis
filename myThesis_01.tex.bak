@@ -1,0 +1,63 @@
+\documentclass[11pt]{report}
+% packages
+\usepackage{baththesis}
+\usepackage{amssymb} %for Blackboard bold etc
+%\usepackage{graphicx} %for including eps graphics
+\usepackage{graphics} % for pdf, bitmapped graphics files
+\usepackage{caption}
+\usepackage{slashbox}
+\usepackage{epsfig} % for postscript graphics files
+\usepackage{epstopdf}
+\usepackage{subfig}
+\usepackage{mathptmx} % assumes new font selection scheme installed
+\usepackage{amsmath} % assumes amsmath package installed
+\usepackage{array}
+\usepackage{bm}
+\usepackage{multirow}
+\usepackage{color}
+\usepackage{pbox}
+\usepackage{hyperref}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{natbib}
+
+\usepackage{titlesec}
+\setcounter{secnumdepth}{3}
+%\titleformat{\paragraph}
+%{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+%\titlespacing*{\paragraph}
+%{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+
+
+%---------- front matter -----------
+%\title{Modular Approach of Learning\\Robot Grasp and Manipulation}
+%\author{Bidan Huang}
+%\degree{Doctor of Philosophy}
+%\department{Department of Computer Sciences}
+%\degreemonthyear{October 2014}
+%\norestrictions
+\begin{document}
+%\maketitle
+%\begin{abstract}
+%In this thesis numerous seminal results are proved which will
+%decisively shape the future development of the subject.
+%\end{abstract}
+%===================================
+
+\tableofcontents
+
+\input{includes/cha1_introduction}
+\input{includes/cha2_relatedwork}
+\input{includes/cha3_graspplanning}
+\input{includes/cha4_manipulation}
+\input{includes/cha5_mimesis}
+%\input{includes/C6_conclusion}
+
+
+\bibliographystyle{apalike}
+%\bibliographystyle{elsarticle-num}
+%\bibliographystyle{spbasic}
+\bibliography{myThesis}
+
+\end{document} 

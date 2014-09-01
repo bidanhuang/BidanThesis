@@ -1,0 +1,12 @@
+\chapter{Conclusion}
+\label{cha6}
+
+The modular approach is an effective way to simply the design of complex system. It is used both in natural intelligence and software engineering.
+
+The modularity we study is the ``task level'', which concentrate on the modularity appear in individual tasks. Its main idea is to simply the programming of robots and provide an end-user level interface to teach robot to do tasks. A future work is to study the ``super-task level'' modularity, i.e. to group the tasks can share same modules together and build modules for them. Eventually, a hierarchy structure of modules will be build. Learn a bank of modules.
+
+Offline learning -> online learning. Identify new task and increase number of modules.
+
+modularization can be done by language. 
+
+a framework to do all the modularization: extract, model, choose, sequence, spacial combination, co-activate (mix)
