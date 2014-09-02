@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2011.1.24)  1 SEP 2014 23:07
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2011.1.24)  2 SEP 2014 12:18
 entering extended mode
 **C:/GitHub/BidanThesis/myThesis_01.tex
 (C:/GitHub/BidanThesis/myThesis_01.tex
@@ -532,21 +532,21 @@ LaTeX Warning: Label `sub@fig:reachableSamplesPos' multiply defined.
 LaTeX Warning: Label `graspdemo2' multiply defined.
 
 ) (C:\GitHub\BidanThesis\includes/cha5_sec4_discussion.aux))
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 40.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 41.
 
 ("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
@@ -566,12 +566,12 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption3 Info: subfig package 1.2 or 1.3 is loaded.
-LaTeX Info: Redefining \subref on input line 40.
+LaTeX Info: Redefining \subref on input line 41.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box35
-Package hyperref Info: Link coloring OFF on input line 40.
+Package hyperref Info: Link coloring OFF on input line 41.
  ("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\hyperref\nameref.sty"
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
 
@@ -583,21 +583,21 @@ Package: gettitlestring 2009/12/18 v1.3 Cleanup title references (HO)
 )
 \c@section@level=\count137
 )
-LaTeX Info: Redefining \ref on input line 40.
-LaTeX Info: Redefining \pageref on input line 40.
-LaTeX Info: Redefining \nameref on input line 40.
+LaTeX Info: Redefining \ref on input line 41.
+LaTeX Info: Redefining \pageref on input line 41.
+LaTeX Info: Redefining \nameref on input line 41.
 
 (C:\GitHub\BidanThesis\myThesis_01.out) (C:\GitHub\BidanThesis\myThesis_01.out)
 \@outlinefile=\write3
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 42.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 43.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 42.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 43.
 [0
 
 {C:/ProgramData/MiKTeX/2.8/pdftex/config/pdftex.map}]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 42.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 43.
  [1]
 (C:\GitHub\BidanThesis\myThesis_01.toc
 LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 2.
@@ -637,10 +637,10 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 Chapter 1.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20.74> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
-[4
+[1
 
-] [5] [6] [7] [8]) (C:\GitHub\BidanThesis\includes/cha2_relatedwork.tex
-[9]
+] [2] [3] [4] [5]) (C:\GitHub\BidanThesis\includes/cha2_relatedwork.tex
+[6]
 Chapter 2.
 <./fig_cha2/litreview.pdf, id=413, 722.7pt x 614.295pt>
 File: ./fig_cha2/litreview.pdf Graphic file (type pdf)
@@ -649,26 +649,26 @@ File: ./fig_cha2/litreview.pdf Graphic file (type pdf)
 (C:\GitHub\BidanThesis\includes/cha2_sec1_grasping.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 12.
- [10
+ [7
 
-] [11 <C:/GitHub/BidanThesis/fig_cha2/litreview.pdf, page is rotated 90 degrees
->] [12])
-(C:\GitHub\BidanThesis\includes/cha2_sec2_learning.tex [13] [14] [15])
-(C:\GitHub\BidanThesis\includes/cha2_sec3_modular.tex [16]
+] [8 <C:/GitHub/BidanThesis/fig_cha2/litreview.pdf, page is rotated 90 degrees>
+] [9])
+(C:\GitHub\BidanThesis\includes/cha2_sec2_learning.tex [10] [11] [12])
+(C:\GitHub\BidanThesis\includes/cha2_sec3_modular.tex [13]
 
-Package natbib Warning: Citation `lourenco2006learning' on page 17 undefined on
+Package natbib Warning: Citation `lourenco2006learning' on page 14 undefined on
  input line 31.
 
-[17] [18] [19] [20] [21] [22]))
-(C:\GitHub\BidanThesis\includes/cha3_graspplanning.tex [23]
+[14] [15] [16] [17] [18] [19]))
+(C:\GitHub\BidanThesis\includes/cha3_graspplanning.tex [20]
 Chapter 3.
-[24
+[21
 
 ] <./fig_cha3/handover.pdf, id=864, 845.1575pt x 597.23125pt>
 File: ./fig_cha3/handover.pdf Graphic file (type pdf)
 
 <use ./fig_cha3/handover.pdf>
-(C:\GitHub\BidanThesis\includes/cha3_sec2_realtime.tex [25 <C:/GitHub/BidanThes
+(C:\GitHub\BidanThesis\includes/cha3_sec2_realtime.tex [22 <C:/GitHub/BidanThes
 is/fig_cha3/handover.pdf, page is rotated 90 degrees>]
 <./fig_cha3/icubhand.jpg, id=887, 337.26pt x 261.97874pt>
 File: ./fig_cha3/icubhand.jpg Graphic file (type jpg)
@@ -679,19 +679,19 @@ File: ./fig_cha3/barretthand.jpg Graphic file (type jpg)
 
 <use ./fig_cha3/barretthand.jpg>
 
-Package natbib Warning: Citation `sahar2012' on page 26 undefined on input line
+Package natbib Warning: Citation `sahar2012' on page 23 undefined on input line
  30.
 
-[26]
+[23]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10.95> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 39.
- [27 <C:/GitHub/BidanThesis/fig_cha3/icubhand.jpg> <C:/GitHub/BidanThesis/fig_c
-ha3/barretthand.jpg>] [28]
+ [24 <C:/GitHub/BidanThesis/fig_cha3/icubhand.jpg> <C:/GitHub/BidanThesis/fig_c
+ha3/barretthand.jpg>] [25]
 
 pdfTeX warning: pdflatex (file C:/GitHub/BidanThesis/fig_cha3/plane_x2_lattice1
 .pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.4> allowe
 d
-<./fig_cha3/plane_x2_lattice1.pdf, id=947, 501.11214pt x 381.25435pt>
+<./fig_cha3/plane_x2_lattice1.pdf, id=946, 501.11214pt x 381.25435pt>
 File: ./fig_cha3/plane_x2_lattice1.pdf Graphic file (type pdf)
 
 <use ./fig_cha3/plane_x2_lattice1.pdf>
@@ -699,7 +699,7 @@ File: ./fig_cha3/plane_x2_lattice1.pdf Graphic file (type pdf)
 pdfTeX warning: pdflatex (file C:/GitHub/BidanThesis/fig_cha3/plane_x2_lattice2
 .pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.4> allowe
 d
-<./fig_cha3/plane_x2_lattice2.pdf, id=948, 501.11214pt x 381.25435pt>
+<./fig_cha3/plane_x2_lattice2.pdf, id=947, 501.11214pt x 381.25435pt>
 File: ./fig_cha3/plane_x2_lattice2.pdf Graphic file (type pdf)
 
 <use ./fig_cha3/plane_x2_lattice2.pdf>
@@ -709,7 +709,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 109.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 109.
- [29 <C:/GitHub/BidanThesis/fig_cha3/plane_x2_lattice1.pdf> <C:/GitHub/BidanThe
+ [26 <C:/GitHub/BidanThesis/fig_cha3/plane_x2_lattice1.pdf> <C:/GitHub/BidanThe
 sis/fig_cha3/plane_x2_lattice2.pdf>]
 LaTeX Font Info:    Try loading font information for OMS+ptm on input line 124.
 
@@ -719,7 +719,7 @@ File: omsptm.fd
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 124.
- [30]
+ [27]
 Package epstopdf Info: Source file: <./fig_cha3/BIC.eps>
 (epstopdf)                    date: 2012-09-17 01:32:03
 (epstopdf)                    size: 12357 bytes
@@ -731,7 +731,7 @@ d-to.pdf ./fig_cha3/BIC.eps>
 (epstopdf)             \includegraphics on input line 161.
 Package epstopdf Info: Output file is already uptodate.
 
-<./fig_cha3/BIC-eps-converted-to.pdf, id=979, 583.17876pt x 432.61626pt>
+<./fig_cha3/BIC-eps-converted-to.pdf, id=977, 583.17876pt x 432.61626pt>
 File: ./fig_cha3/BIC-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./fig_cha3/BIC-eps-converted-to.pdf>
@@ -747,32 +747,32 @@ converted-to.pdf ./fig_cha3/xValidation.eps>
 (epstopdf)             \includegraphics on input line 162.
 Package epstopdf Info: Output file is already uptodate.
 
-<./fig_cha3/xValidation-eps-converted-to.pdf, id=980, 584.1825pt x 432.61626pt>
+<./fig_cha3/xValidation-eps-converted-to.pdf, id=978, 584.1825pt x 432.61626pt>
 File: ./fig_cha3/xValidation-eps-converted-to.pdf Graphic file (type pdf)
-<use ./fig_cha3/xValidation-eps-converted-to.pdf> [31 <C:/GitHub/BidanThesis/fi
+<use ./fig_cha3/xValidation-eps-converted-to.pdf> [28 <C:/GitHub/BidanThesis/fi
 g_cha3/BIC-eps-converted-to.pdf> <C:/GitHub/BidanThesis/fig_cha3/xValidation-ep
-s-converted-to.pdf>] [32] [33])
+s-converted-to.pdf>] [29] [30])
 (C:\GitHub\BidanThesis\includes/cha3_sec3_experiment-familiar.tex
-<./fig_cha3/1_ini.png, id=1034, 132.495pt x 119.69719pt>
+<./fig_cha3/1_ini.png, id=1032, 132.495pt x 119.69719pt>
 File: ./fig_cha3/1_ini.png Graphic file (type png)
 
 <use ./fig_cha3/1_ini.png>
-<./fig_cha3/2_iniss.png, id=1035, 132.495pt x 119.69719pt>
+<./fig_cha3/2_iniss.png, id=1033, 132.495pt x 119.69719pt>
 File: ./fig_cha3/2_iniss.png Graphic file (type png)
 
 <use ./fig_cha3/2_iniss.png>
-<./fig_cha3/aa.png, id=1036, 105.996pt x 95.75775pt>
+<./fig_cha3/aa.png, id=1034, 105.996pt x 95.75775pt>
 File: ./fig_cha3/aa.png Graphic file (type png)
  <use ./fig_cha3/aa.png>
-<./fig_cha3/1_finalss.png, id=1037, 132.495pt x 119.69719pt>
+<./fig_cha3/1_finalss.png, id=1035, 132.495pt x 119.69719pt>
 File: ./fig_cha3/1_finalss.png Graphic file (type png)
 
 <use ./fig_cha3/1_finalss.png>
-<./fig_cha3/2_finalss.png, id=1038, 132.495pt x 119.69719pt>
+<./fig_cha3/2_finalss.png, id=1036, 132.495pt x 119.69719pt>
 File: ./fig_cha3/2_finalss.png Graphic file (type png)
 
 <use ./fig_cha3/2_finalss.png>
-<./fig_cha3/3_final_2ss.png, id=1039, 132.495pt x 119.69719pt>
+<./fig_cha3/3_final_2ss.png, id=1037, 132.495pt x 119.69719pt>
 File: ./fig_cha3/3_final_2ss.png Graphic file (type png)
 
 <use ./fig_cha3/3_final_2ss.png>
@@ -788,7 +788,7 @@ df>
 (epstopdf)             \includegraphics on input line 19.
 Package epstopdf Info: Output file is already uptodate.
 
-<./fig_cha3/contour2-3_4-eps-converted-to.pdf, id=1040, 555.07375pt x 331.2375p
+<./fig_cha3/contour2-3_4-eps-converted-to.pdf, id=1038, 555.07375pt x 331.2375p
 t>
 File: ./fig_cha3/contour2-3_4-eps-converted-to.pdf Graphic file (type pdf)
  <use ./fig_cha3/contour2-3_4-eps-converted-to.pdf>
@@ -798,21 +798,21 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <8> not available
 
 pdfTeX warning: pdflatex (file C:/GitHub/BidanThesis/fig_cha3/cuboid_1_i.pdf): 
 PDF inclusion: found PDF version <1.6>, but at most version <1.4> allowed
-<./fig_cha3/cuboid_1_i.pdf, id=1041, 240.93011pt x 240.93011pt>
+<./fig_cha3/cuboid_1_i.pdf, id=1039, 240.93011pt x 240.93011pt>
 File: ./fig_cha3/cuboid_1_i.pdf Graphic file (type pdf)
 
 <use ./fig_cha3/cuboid_1_i.pdf>
 
 pdfTeX warning: pdflatex (file C:/GitHub/BidanThesis/fig_cha3/cuboid_2_i.pdf): 
 PDF inclusion: found PDF version <1.6>, but at most version <1.4> allowed
-<./fig_cha3/cuboid_2_i.pdf, id=1042, 192.74008pt x 192.74008pt>
+<./fig_cha3/cuboid_2_i.pdf, id=1040, 192.74008pt x 192.74008pt>
 File: ./fig_cha3/cuboid_2_i.pdf Graphic file (type pdf)
 
 <use ./fig_cha3/cuboid_2_i.pdf>
 
 pdfTeX warning: pdflatex (file C:/GitHub/BidanThesis/fig_cha3/cuboid_3_i.pdf): 
 PDF inclusion: found PDF version <1.6>, but at most version <1.4> allowed
-<./fig_cha3/cuboid_3_i.pdf, id=1043, 192.74008pt x 192.74008pt>
+<./fig_cha3/cuboid_3_i.pdf, id=1041, 192.74008pt x 192.74008pt>
 File: ./fig_cha3/cuboid_3_i.pdf Graphic file (type pdf)
 
 <use ./fig_cha3/cuboid_3_i.pdf>
@@ -824,21 +824,21 @@ Overfull \hbox (20.32755pt too wide) in paragraph at lines 31--34
 
 pdfTeX warning: pdflatex (file C:/GitHub/BidanThesis/fig_cha3/cuboid_1_f.pdf): 
 PDF inclusion: found PDF version <1.6>, but at most version <1.4> allowed
-<./fig_cha3/cuboid_1_f.pdf, id=1044, 240.93011pt x 240.93011pt>
+<./fig_cha3/cuboid_1_f.pdf, id=1042, 240.93011pt x 240.93011pt>
 File: ./fig_cha3/cuboid_1_f.pdf Graphic file (type pdf)
 
 <use ./fig_cha3/cuboid_1_f.pdf>
 
 pdfTeX warning: pdflatex (file C:/GitHub/BidanThesis/fig_cha3/cuboid_2_f.pdf): 
 PDF inclusion: found PDF version <1.6>, but at most version <1.4> allowed
-<./fig_cha3/cuboid_2_f.pdf, id=1045, 192.74008pt x 192.74008pt>
+<./fig_cha3/cuboid_2_f.pdf, id=1043, 192.74008pt x 192.74008pt>
 File: ./fig_cha3/cuboid_2_f.pdf Graphic file (type pdf)
 
 <use ./fig_cha3/cuboid_2_f.pdf>
 
 pdfTeX warning: pdflatex (file C:/GitHub/BidanThesis/fig_cha3/cuboid_3_f.pdf): 
 PDF inclusion: found PDF version <1.6>, but at most version <1.4> allowed
-<./fig_cha3/cuboid_3_f.pdf, id=1046, 192.74008pt x 192.74008pt>
+<./fig_cha3/cuboid_3_f.pdf, id=1044, 192.74008pt x 192.74008pt>
 File: ./fig_cha3/cuboid_3_f.pdf Graphic file (type pdf)
 
 <use ./fig_cha3/cuboid_3_f.pdf>
@@ -846,19 +846,19 @@ Overfull \hbox (17.59006pt too wide) in paragraph at lines 37--40
  [][][][][][] 
  []
 
-[34] [35 <C:/GitHub/BidanThesis/fig_cha3/1_ini.png (PNG copy)> <C:/GitHub/Bidan
+[31] [32 <C:/GitHub/BidanThesis/fig_cha3/1_ini.png (PNG copy)> <C:/GitHub/Bidan
 Thesis/fig_cha3/2_iniss.png (PNG copy)> <C:/GitHub/BidanThesis/fig_cha3/aa.png 
 (PNG copy)> <C:/GitHub/BidanThesis/fig_cha3/1_finalss.png (PNG copy)> <C:/GitHu
 b/BidanThesis/fig_cha3/2_finalss.png (PNG copy)> <C:/GitHub/BidanThesis/fig_cha
 3/3_final_2ss.png (PNG copy)> <C:/GitHub/BidanThesis/fig_cha3/contour2-3_4-eps-
-converted-to.pdf>] [36 <C:/GitHub/BidanThesis/fig_cha3/cuboid_1_i.pdf> <C:/GitH
+converted-to.pdf>] [33 <C:/GitHub/BidanThesis/fig_cha3/cuboid_1_i.pdf> <C:/GitH
 ub/BidanThesis/fig_cha3/cuboid_2_i.pdf> <C:/GitHub/BidanThesis/fig_cha3/cuboid_
 3_i.pdf> <C:/GitHub/BidanThesis/fig_cha3/cuboid_1_f.pdf> <C:/GitHub/BidanThesis
 /fig_cha3/cuboid_2_f.pdf> <C:/GitHub/BidanThesis/fig_cha3/cuboid_3_f.pdf>]
 
 pdfTeX warning: pdflatex (file C:/GitHub/BidanThesis/fig_cha3/ash_near1.pdf): P
 DF inclusion: found PDF version <1.6>, but at most version <1.4> allowed
-<./fig_cha3/ash_near1.pdf, id=1102, 350.10799pt x 347.09674pt>
+<./fig_cha3/ash_near1.pdf, id=1100, 350.10799pt x 347.09674pt>
 File: ./fig_cha3/ash_near1.pdf Graphic file (type pdf)
 
 <use ./fig_cha3/ash_near1.pdf>
@@ -870,7 +870,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 62--62
 
 pdfTeX warning: pdflatex (file C:/GitHub/BidanThesis/fig_cha3/joy_near1.pdf): P
 DF inclusion: found PDF version <1.6>, but at most version <1.4> allowed
-<./fig_cha3/joy_near1.pdf, id=1103, 347.09674pt x 327.5236pt>
+<./fig_cha3/joy_near1.pdf, id=1101, 347.09674pt x 327.5236pt>
 File: ./fig_cha3/joy_near1.pdf Graphic file (type pdf)
 
 <use ./fig_cha3/joy_near1.pdf>
@@ -882,14 +882,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 63--63
 
 pdfTeX warning: pdflatex (file C:/GitHub/BidanThesis/fig_cha3/ash_near2.pdf): P
 DF inclusion: found PDF version <1.6>, but at most version <1.4> allowed
-<./fig_cha3/ash_near2.pdf, id=1104, 350.10799pt x 347.09674pt>
+<./fig_cha3/ash_near2.pdf, id=1102, 350.10799pt x 347.09674pt>
 File: ./fig_cha3/ash_near2.pdf Graphic file (type pdf)
 
 <use ./fig_cha3/ash_near2.pdf>
 
 pdfTeX warning: pdflatex (file C:/GitHub/BidanThesis/fig_cha3/joy_near2.pdf): P
 DF inclusion: found PDF version <1.6>, but at most version <1.4> allowed
-<./fig_cha3/joy_near2.pdf, id=1105, 347.09674pt x 327.5236pt>
+<./fig_cha3/joy_near2.pdf, id=1103, 347.09674pt x 327.5236pt>
 File: ./fig_cha3/joy_near2.pdf Graphic file (type pdf)
 
 <use ./fig_cha3/joy_near2.pdf>
@@ -917,69 +917,69 @@ Overfull \hbox (71.77287pt too wide) in paragraph at lines 77--88
  [][] 
  []
 
-<./fig_cha3/bar_i_1.pdf, id=1106, 763.85374pt x 588.1975pt>
+<./fig_cha3/bar_i_1.pdf, id=1104, 763.85374pt x 588.1975pt>
 File: ./fig_cha3/bar_i_1.pdf Graphic file (type pdf)
 
 <use ./fig_cha3/bar_i_1.pdf>
-<./fig_cha3/bar_i_2.pdf, id=1107, 763.85374pt x 588.1975pt>
+<./fig_cha3/bar_i_2.pdf, id=1105, 763.85374pt x 588.1975pt>
 File: ./fig_cha3/bar_i_2.pdf Graphic file (type pdf)
 
 <use ./fig_cha3/bar_i_2.pdf>
-<./fig_cha3/bar_i_3.pdf, id=1108, 763.85374pt x 588.1975pt>
+<./fig_cha3/bar_i_3.pdf, id=1106, 763.85374pt x 588.1975pt>
 File: ./fig_cha3/bar_i_3.pdf Graphic file (type pdf)
 
 <use ./fig_cha3/bar_i_3.pdf>
-<./fig_cha3/bar_f_1.pdf, id=1109, 763.85374pt x 588.1975pt>
+<./fig_cha3/bar_f_1.pdf, id=1107, 763.85374pt x 588.1975pt>
 File: ./fig_cha3/bar_f_1.pdf Graphic file (type pdf)
 
 <use ./fig_cha3/bar_f_1.pdf>
-<./fig_cha3/bar_f_2.pdf, id=1110, 763.85374pt x 588.1975pt>
+<./fig_cha3/bar_f_2.pdf, id=1108, 763.85374pt x 588.1975pt>
 File: ./fig_cha3/bar_f_2.pdf Graphic file (type pdf)
 
 <use ./fig_cha3/bar_f_2.pdf>
-<./fig_cha3/bar_f_3.pdf, id=1111, 763.85374pt x 588.1975pt>
+<./fig_cha3/bar_f_3.pdf, id=1109, 763.85374pt x 588.1975pt>
 File: ./fig_cha3/bar_f_3.pdf Graphic file (type pdf)
 
 <use ./fig_cha3/bar_f_3.pdf>
 
 pdfTeX warning: pdflatex (file C:/GitHub/BidanThesis/fig_cha3/shoe_1i.pdf): PDF
  inclusion: found PDF version <1.6>, but at most version <1.4> allowed
-<./fig_cha3/shoe_1i.pdf, id=1112, 322.25392pt x 322.25392pt>
+<./fig_cha3/shoe_1i.pdf, id=1110, 322.25392pt x 322.25392pt>
 File: ./fig_cha3/shoe_1i.pdf Graphic file (type pdf)
 
 <use ./fig_cha3/shoe_1i.pdf>
 
 pdfTeX warning: pdflatex (file C:/GitHub/BidanThesis/fig_cha3/shoe_2i.pdf): PDF
  inclusion: found PDF version <1.6>, but at most version <1.4> allowed
-<./fig_cha3/shoe_2i.pdf, id=1113, 265.03015pt x 265.03015pt>
+<./fig_cha3/shoe_2i.pdf, id=1111, 265.03015pt x 265.03015pt>
 File: ./fig_cha3/shoe_2i.pdf Graphic file (type pdf)
 
 <use ./fig_cha3/shoe_2i.pdf>
 
 pdfTeX warning: pdflatex (file C:/GitHub/BidanThesis/fig_cha3/shoe_3i.pdf): PDF
  inclusion: found PDF version <1.6>, but at most version <1.4> allowed
-<./fig_cha3/shoe_3i.pdf, id=1114, 274.0639pt x 274.0639pt>
+<./fig_cha3/shoe_3i.pdf, id=1112, 274.0639pt x 274.0639pt>
 File: ./fig_cha3/shoe_3i.pdf Graphic file (type pdf)
 
 <use ./fig_cha3/shoe_3i.pdf>
 
 pdfTeX warning: pdflatex (file C:/GitHub/BidanThesis/fig_cha3/shoe_1f.pdf): PDF
  inclusion: found PDF version <1.6>, but at most version <1.4> allowed
-<./fig_cha3/shoe_1f.pdf, id=1115, 322.35431pt x 322.35431pt>
+<./fig_cha3/shoe_1f.pdf, id=1113, 322.35431pt x 322.35431pt>
 File: ./fig_cha3/shoe_1f.pdf Graphic file (type pdf)
 
 <use ./fig_cha3/shoe_1f.pdf>
 
 pdfTeX warning: pdflatex (file C:/GitHub/BidanThesis/fig_cha3/shoe_2f.pdf): PDF
  inclusion: found PDF version <1.6>, but at most version <1.4> allowed
-<./fig_cha3/shoe_2f.pdf, id=1116, 265.03015pt x 265.03015pt>
+<./fig_cha3/shoe_2f.pdf, id=1114, 265.03015pt x 265.03015pt>
 File: ./fig_cha3/shoe_2f.pdf Graphic file (type pdf)
 
 <use ./fig_cha3/shoe_2f.pdf>
 
 pdfTeX warning: pdflatex (file C:/GitHub/BidanThesis/fig_cha3/shoe_3f.pdf): PDF
  inclusion: found PDF version <1.6>, but at most version <1.4> allowed
-<./fig_cha3/shoe_3f.pdf, id=1117, 274.0639pt x 274.0639pt>
+<./fig_cha3/shoe_3f.pdf, id=1115, 274.0639pt x 274.0639pt>
 File: ./fig_cha3/shoe_3f.pdf Graphic file (type pdf)
 
 <use ./fig_cha3/shoe_3f.pdf>
@@ -1009,84 +1009,84 @@ LaTeX Warning: Float too large for page by 96.94006pt on input line 116.
 
 pdfTeX warning: pdflatex (file C:/GitHub/BidanThesis/fig_cha3/joy_2_i.pdf): PDF
  inclusion: found PDF version <1.6>, but at most version <1.4> allowed
-<./fig_cha3/joy_2_i.pdf, id=1118, 168.65009pt x 168.65009pt>
+<./fig_cha3/joy_2_i.pdf, id=1116, 168.65009pt x 168.65009pt>
 File: ./fig_cha3/joy_2_i.pdf Graphic file (type pdf)
 
 <use ./fig_cha3/joy_2_i.pdf>
 
 pdfTeX warning: pdflatex (file C:/GitHub/BidanThesis/fig_cha3/joy_3_i.pdf): PDF
  inclusion: found PDF version <1.6>, but at most version <1.4> allowed
-<./fig_cha3/joy_3_i.pdf, id=1119, 204.78508pt x 204.78508pt>
+<./fig_cha3/joy_3_i.pdf, id=1117, 204.78508pt x 204.78508pt>
 File: ./fig_cha3/joy_3_i.pdf Graphic file (type pdf)
 
 <use ./fig_cha3/joy_3_i.pdf>
 
 pdfTeX warning: pdflatex (file C:/GitHub/BidanThesis/fig_cha3/joy_5_i.pdf): PDF
  inclusion: found PDF version <1.6>, but at most version <1.4> allowed
-<./fig_cha3/joy_5_i.pdf, id=1120, 204.78508pt x 204.78508pt>
+<./fig_cha3/joy_5_i.pdf, id=1118, 204.78508pt x 204.78508pt>
 File: ./fig_cha3/joy_5_i.pdf Graphic file (type pdf)
 
 <use ./fig_cha3/joy_5_i.pdf>
 
 pdfTeX warning: pdflatex (file C:/GitHub/BidanThesis/fig_cha3/joy_2_f.pdf): PDF
  inclusion: found PDF version <1.6>, but at most version <1.4> allowed
-<./fig_cha3/joy_2_f.pdf, id=1121, 168.65009pt x 168.65009pt>
+<./fig_cha3/joy_2_f.pdf, id=1119, 168.65009pt x 168.65009pt>
 File: ./fig_cha3/joy_2_f.pdf Graphic file (type pdf)
 
 <use ./fig_cha3/joy_2_f.pdf>
 
 pdfTeX warning: pdflatex (file C:/GitHub/BidanThesis/fig_cha3/joy_3_f.pdf): PDF
  inclusion: found PDF version <1.6>, but at most version <1.4> allowed
-<./fig_cha3/joy_3_f.pdf, id=1122, 204.78508pt x 213.81883pt>
+<./fig_cha3/joy_3_f.pdf, id=1120, 204.78508pt x 213.81883pt>
 File: ./fig_cha3/joy_3_f.pdf Graphic file (type pdf)
 
 <use ./fig_cha3/joy_3_f.pdf>
 
 pdfTeX warning: pdflatex (file C:/GitHub/BidanThesis/fig_cha3/joy_5_f.pdf): PDF
  inclusion: found PDF version <1.6>, but at most version <1.4> allowed
-<./fig_cha3/joy_5_f.pdf, id=1123, 204.78508pt x 204.78508pt>
+<./fig_cha3/joy_5_f.pdf, id=1121, 204.78508pt x 204.78508pt>
 File: ./fig_cha3/joy_5_f.pdf Graphic file (type pdf)
 
 <use ./fig_cha3/joy_5_f.pdf>
 
 pdfTeX warning: pdflatex (file C:/GitHub/BidanThesis/fig_cha3/plane_2i.pdf): PD
 F inclusion: found PDF version <1.6>, but at most version <1.4> allowed
-<./fig_cha3/plane_2i.pdf, id=1124, 320.7483pt x 320.7483pt>
+<./fig_cha3/plane_2i.pdf, id=1122, 320.7483pt x 320.7483pt>
 File: ./fig_cha3/plane_2i.pdf Graphic file (type pdf)
 
 <use ./fig_cha3/plane_2i.pdf>
 
 pdfTeX warning: pdflatex (file C:/GitHub/BidanThesis/fig_cha3/plane_3i.pdf): PD
 F inclusion: found PDF version <1.6>, but at most version <1.4> allowed
-<./fig_cha3/plane_3i.pdf, id=1125, 320.7483pt x 320.7483pt>
+<./fig_cha3/plane_3i.pdf, id=1123, 320.7483pt x 320.7483pt>
 File: ./fig_cha3/plane_3i.pdf Graphic file (type pdf)
 
 <use ./fig_cha3/plane_3i.pdf>
 
 pdfTeX warning: pdflatex (file C:/GitHub/BidanThesis/fig_cha3/plane_1i.pdf): PD
 F inclusion: found PDF version <1.6>, but at most version <1.4> allowed
-<./fig_cha3/plane_1i.pdf, id=1126, 405.07335pt x 405.07335pt>
+<./fig_cha3/plane_1i.pdf, id=1124, 405.07335pt x 405.07335pt>
 File: ./fig_cha3/plane_1i.pdf Graphic file (type pdf)
 
 <use ./fig_cha3/plane_1i.pdf>
 
 pdfTeX warning: pdflatex (file C:/GitHub/BidanThesis/fig_cha3/plane_2f.pdf): PD
 F inclusion: found PDF version <1.6>, but at most version <1.4> allowed
-<./fig_cha3/plane_2f.pdf, id=1127, 320.7483pt x 320.7483pt>
+<./fig_cha3/plane_2f.pdf, id=1125, 320.7483pt x 320.7483pt>
 File: ./fig_cha3/plane_2f.pdf Graphic file (type pdf)
 
 <use ./fig_cha3/plane_2f.pdf>
 
 pdfTeX warning: pdflatex (file C:/GitHub/BidanThesis/fig_cha3/plane_3f.pdf): PD
 F inclusion: found PDF version <1.6>, but at most version <1.4> allowed
-<./fig_cha3/plane_3f.pdf, id=1128, 320.7483pt x 320.7483pt>
+<./fig_cha3/plane_3f.pdf, id=1126, 320.7483pt x 320.7483pt>
 File: ./fig_cha3/plane_3f.pdf Graphic file (type pdf)
 
 <use ./fig_cha3/plane_3f.pdf>
 
 pdfTeX warning: pdflatex (file C:/GitHub/BidanThesis/fig_cha3/plane_1f.pdf): PD
 F inclusion: found PDF version <1.6>, but at most version <1.4> allowed
-<./fig_cha3/plane_1f.pdf, id=1129, 405.07335pt x 405.07335pt>
+<./fig_cha3/plane_1f.pdf, id=1127, 405.07335pt x 405.07335pt>
 File: ./fig_cha3/plane_1f.pdf Graphic file (type pdf)
 
 <use ./fig_cha3/plane_1f.pdf>
@@ -1112,9 +1112,9 @@ Overfull \hbox (14.85257pt too wide) in paragraph at lines 120--135
 
 LaTeX Warning: Float too large for page by 168.65503pt on input line 139.
 
-[37 <C:/GitHub/BidanThesis/fig_cha3/ash_near1.pdf> <C:/GitHub/BidanThesis/fig_c
+[34 <C:/GitHub/BidanThesis/fig_cha3/ash_near1.pdf> <C:/GitHub/BidanThesis/fig_c
 ha3/joy_near1.pdf> <C:/GitHub/BidanThesis/fig_cha3/ash_near2.pdf> <C:/GitHub/Bi
-danThesis/fig_cha3/joy_near2.pdf>] [38 <C:/GitHub/BidanThesis/fig_cha3/bar_i_1.
+danThesis/fig_cha3/joy_near2.pdf>] [35 <C:/GitHub/BidanThesis/fig_cha3/bar_i_1.
 pdf, page is rotated 90 degrees> <C:/GitHub/BidanThesis/fig_cha3/bar_i_2.pdf, p
 age is rotated 90 degrees> <C:/GitHub/BidanThesis/fig_cha3/bar_i_3.pdf, page is
  rotated 90 degrees> <C:/GitHub/BidanThesis/fig_cha3/bar_f_1.pdf, page is rotat
@@ -1123,7 +1123,7 @@ degrees> <C:/GitHub/BidanThesis/fig_cha3/bar_f_3.pdf, page is rotated 90 degree
 s> <C:/GitHub/BidanThesis/fig_cha3/shoe_1i.pdf> <C:/GitHub/BidanThesis/fig_cha3
 /shoe_2i.pdf> <C:/GitHub/BidanThesis/fig_cha3/shoe_3i.pdf> <C:/GitHub/BidanThes
 is/fig_cha3/shoe_1f.pdf> <C:/GitHub/BidanThesis/fig_cha3/shoe_2f.pdf> <C:/GitHu
-b/BidanThesis/fig_cha3/shoe_3f.pdf>] [39 <C:/GitHub/BidanThesis/fig_cha3/joy_2_
+b/BidanThesis/fig_cha3/shoe_3f.pdf>] [36 <C:/GitHub/BidanThesis/fig_cha3/joy_2_
 i.pdf> <C:/GitHub/BidanThesis/fig_cha3/joy_3_i.pdf> <C:/GitHub/BidanThesis/fig_
 cha3/joy_5_i.pdf> <C:/GitHub/BidanThesis/fig_cha3/joy_2_f.pdf> <C:/GitHub/Bidan
 Thesis/fig_cha3/joy_3_f.pdf> <C:/GitHub/BidanThesis/fig_cha3/joy_5_f.pdf> <C:/G
@@ -1131,28 +1131,28 @@ itHub/BidanThesis/fig_cha3/plane_2i.pdf> <C:/GitHub/BidanThesis/fig_cha3/plane_
 3i.pdf> <C:/GitHub/BidanThesis/fig_cha3/plane_1i.pdf> <C:/GitHub/BidanThesis/fi
 g_cha3/plane_2f.pdf> <C:/GitHub/BidanThesis/fig_cha3/plane_3f.pdf> <C:/GitHub/B
 idanThesis/fig_cha3/plane_1f.pdf>])
-(C:\GitHub\BidanThesis\includes/cha3_sec4_combineshape.tex [40] [41]
-<./fig_cha3/superquadrics.jpg, id=1255, 901.84818pt x 694.19916pt>
+(C:\GitHub\BidanThesis\includes/cha3_sec4_combineshape.tex [37] [38]
+<./fig_cha3/superquadrics.jpg, id=1252, 901.84818pt x 694.19916pt>
 File: ./fig_cha3/superquadrics.jpg Graphic file (type jpg)
 
-<use ./fig_cha3/superquadrics.jpg> <void.jpg, id=1260, 337.26pt x 184.89075pt>
+<use ./fig_cha3/superquadrics.jpg> <void.jpg, id=1257, 337.26pt x 184.89075pt>
 File: void.jpg Graphic file (type jpg)
 
 <use void.jpg>
 File: void.jpg Graphic file (type jpg)
  <use void.jpg>
-<./fig_cha3/cyl.jpg, id=1261, 674.52pt x 499.8675pt>
+<./fig_cha3/cyl.jpg, id=1258, 674.52pt x 499.8675pt>
 File: ./fig_cha3/cyl.jpg Graphic file (type jpg)
  <use ./fig_cha3/cyl.jpg>
-[42 <C:/GitHub/BidanThesis/fig_cha3/superquadrics.jpg>] [43 <C:/GitHub/BidanThe
+[39 <C:/GitHub/BidanThesis/fig_cha3/superquadrics.jpg>] [40 <C:/GitHub/BidanThe
 sis/void.jpg> <C:/GitHub/BidanThesis/fig_cha3/cyl.jpg>]
-<./fig_cha3/object.jpg, id=1286, 674.52pt x 499.8675pt>
+<./fig_cha3/object.jpg, id=1282, 674.52pt x 499.8675pt>
 File: ./fig_cha3/object.jpg Graphic file (type jpg)
 
 <use ./fig_cha3/object.jpg>
 File: ./fig_cha3/cyl.jpg Graphic file (type jpg)
  <use ./fig_cha3/cyl.jpg>
-<./fig_cha3/ball2.jpg, id=1287, 674.52pt x 499.8675pt>
+<./fig_cha3/ball2.jpg, id=1283, 674.52pt x 499.8675pt>
 File: ./fig_cha3/ball2.jpg Graphic file (type jpg)
 
 <use ./fig_cha3/ball2.jpg>
@@ -1160,15 +1160,15 @@ Overfull \hbox (14.85257pt too wide) in paragraph at lines 124--127
 [][][][][][] 
  []
 
-<./fig_cha3/cylball.jpg, id=1288, 674.52pt x 505.89pt>
+<./fig_cha3/cylball.jpg, id=1284, 674.52pt x 505.89pt>
 File: ./fig_cha3/cylball.jpg Graphic file (type jpg)
 
 <use ./fig_cha3/cylball.jpg>
-<./fig_cha3/cyl_sig.jpg, id=1289, 674.52pt x 505.89pt>
+<./fig_cha3/cyl_sig.jpg, id=1285, 674.52pt x 505.89pt>
 File: ./fig_cha3/cyl_sig.jpg Graphic file (type jpg)
 
 <use ./fig_cha3/cyl_sig.jpg>
-<./fig_cha3/ball_sig2.jpg, id=1290, 674.52pt x 493.845pt>
+<./fig_cha3/ball_sig2.jpg, id=1286, 674.52pt x 493.845pt>
 File: ./fig_cha3/ball_sig2.jpg Graphic file (type jpg)
 
 <use ./fig_cha3/ball_sig2.jpg>
@@ -1181,7 +1181,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 142--143
 
  []
 
-[44] [45 <C:/GitHub/BidanThesis/fig_cha3/object.jpg> <C:/GitHub/BidanThesis/fig
+[41] [42 <C:/GitHub/BidanThesis/fig_cha3/object.jpg> <C:/GitHub/BidanThesis/fig
 _cha3/ball2.jpg> <C:/GitHub/BidanThesis/fig_cha3/cylball.jpg> <C:/GitHub/BidanT
 hesis/fig_cha3/cyl_sig.jpg> <C:/GitHub/BidanThesis/fig_cha3/ball_sig2.jpg>])
 (C:\GitHub\BidanThesis\includes/cha3_sec5_experiment-nonfamiliar.tex
@@ -1194,120 +1194,120 @@ Overfull \hbox (46.63673pt too wide) in paragraph at lines 23--36
 []  [] 
  []
 
-[46] [47] <./fig_cha3/8_i.jpg, id=1343, 149.96025pt x 99.37125pt>
+[43] [44] <./fig_cha3/8_i.jpg, id=1339, 149.96025pt x 99.37125pt>
 File: ./fig_cha3/8_i.jpg Graphic file (type jpg)
 
-<use ./fig_cha3/8_i.jpg> <./fig_cha3/1_i.jpg, id=1344, 120.45pt x 97.5645pt>
+<use ./fig_cha3/8_i.jpg> <./fig_cha3/1_i.jpg, id=1340, 120.45pt x 97.5645pt>
 File: ./fig_cha3/1_i.jpg Graphic file (type jpg)
 
 <use ./fig_cha3/1_i.jpg>
-<./fig_cha3/5_i.jpg, id=1345, 152.9715pt x 129.48375pt>
+<./fig_cha3/5_i.jpg, id=1341, 152.9715pt x 129.48375pt>
 File: ./fig_cha3/5_i.jpg Graphic file (type jpg)
 
-<use ./fig_cha3/5_i.jpg> <./fig_cha3/8_f.jpg, id=1346, 154.176pt x 103.587pt>
+<use ./fig_cha3/5_i.jpg> <./fig_cha3/8_f.jpg, id=1342, 154.176pt x 103.587pt>
 File: ./fig_cha3/8_f.jpg Graphic file (type jpg)
 
-<use ./fig_cha3/8_f.jpg> <./fig_cha3/1_f.jpg, id=1347, 136.1085pt x 110.814pt>
+<use ./fig_cha3/8_f.jpg> <./fig_cha3/1_f.jpg, id=1343, 136.1085pt x 110.814pt>
 File: ./fig_cha3/1_f.jpg Graphic file (type jpg)
 
 <use ./fig_cha3/1_f.jpg>
-<./fig_cha3/5_f.jpg, id=1348, 165.61874pt x 127.07475pt>
+<./fig_cha3/5_f.jpg, id=1344, 165.61874pt x 127.07475pt>
 File: ./fig_cha3/5_f.jpg Graphic file (type jpg)
 
 <use ./fig_cha3/5_f.jpg>
-<./fig_cha3/object_cylball_i_f_arrow.jpg, id=1349, 475.17525pt x 351.714pt>
+<./fig_cha3/object_cylball_i_f_arrow.jpg, id=1345, 475.17525pt x 351.714pt>
 File: ./fig_cha3/object_cylball_i_f_arrow.jpg Graphic file (type jpg)
 
 <use ./fig_cha3/object_cylball_i_f_arrow.jpg>
-<./fig_cha3/contour_Z_cylball_i_f_arrow2.jpg, id=1350, 267.399pt x 248.127pt>
+<./fig_cha3/contour_Z_cylball_i_f_arrow2.jpg, id=1346, 267.399pt x 248.127pt>
 File: ./fig_cha3/contour_Z_cylball_i_f_arrow2.jpg Graphic file (type jpg)
 
 <use ./fig_cha3/contour_Z_cylball_i_f_arrow2.jpg>
-<./fig_cha3/spr.jpg, id=1351, 170.43675pt x 170.43675pt>
+<./fig_cha3/spr.jpg, id=1347, 170.43675pt x 170.43675pt>
 File: ./fig_cha3/spr.jpg Graphic file (type jpg)
 
 <use ./fig_cha3/spr.jpg>
-<./fig_cha3/box123.jpg, id=1352, 168.02776pt x 165.0165pt>
+<./fig_cha3/box123.jpg, id=1348, 168.02776pt x 165.0165pt>
 File: ./fig_cha3/box123.jpg Graphic file (type jpg)
 
 <use ./fig_cha3/box123.jpg>
-<./fig_cha3/spr_3_i.jpg, id=1353, 172.84575pt x 118.041pt>
+<./fig_cha3/spr_3_i.jpg, id=1349, 172.84575pt x 118.041pt>
 File: ./fig_cha3/spr_3_i.jpg Graphic file (type jpg)
 
 <use ./fig_cha3/spr_3_i.jpg>
-<./fig_cha3/spr_4_i.jpg, id=1354, 154.176pt x 140.9265pt>
+<./fig_cha3/spr_4_i.jpg, id=1350, 154.176pt x 140.9265pt>
 File: ./fig_cha3/spr_4_i.jpg Graphic file (type jpg)
 
 <use ./fig_cha3/spr_4_i.jpg>
-<./fig_cha3/spr_6_i.jpg, id=1355, 139.722pt x 234.27525pt>
+<./fig_cha3/spr_6_i.jpg, id=1351, 139.722pt x 234.27525pt>
 File: ./fig_cha3/spr_6_i.jpg Graphic file (type jpg)
 
 <use ./fig_cha3/spr_6_i.jpg>
-<./fig_cha3/spr_3_f.jpg, id=1356, 142.131pt x 136.71075pt>
+<./fig_cha3/spr_3_f.jpg, id=1352, 142.131pt x 136.71075pt>
 File: ./fig_cha3/spr_3_f.jpg Graphic file (type jpg)
 
 <use ./fig_cha3/spr_3_f.jpg>
-<./fig_cha3/spr_4_f.jpg, id=1357, 108.405pt x 164.41425pt>
+<./fig_cha3/spr_4_f.jpg, id=1353, 108.405pt x 164.41425pt>
 File: ./fig_cha3/spr_4_f.jpg Graphic file (type jpg)
 
 <use ./fig_cha3/spr_4_f.jpg>
-<./fig_cha3/spr_6_f.jpg, id=1358, 112.62074pt x 118.041pt>
+<./fig_cha3/spr_6_f.jpg, id=1354, 112.62074pt x 118.041pt>
 File: ./fig_cha3/spr_6_f.jpg Graphic file (type jpg)
 
 <use ./fig_cha3/spr_6_f.jpg>
-<./fig_cha3/bedside.jpg, id=1359, 602.25pt x 602.25pt>
+<./fig_cha3/bedside.jpg, id=1355, 602.25pt x 602.25pt>
 File: ./fig_cha3/bedside.jpg Graphic file (type jpg)
 
 <use ./fig_cha3/bedside.jpg>
-<./fig_cha3/bedside_box.jpg, id=1360, 201.1515pt x 210.7875pt>
+<./fig_cha3/bedside_box.jpg, id=1356, 201.1515pt x 210.7875pt>
 File: ./fig_cha3/bedside_box.jpg Graphic file (type jpg)
 
 <use ./fig_cha3/bedside_box.jpg>
-<./fig_cha3/bed_6_i.jpg, id=1361, 164.41425pt x 235.47975pt>
+<./fig_cha3/bed_6_i.jpg, id=1357, 164.41425pt x 235.47975pt>
 File: ./fig_cha3/bed_6_i.jpg Graphic file (type jpg)
 
 <use ./fig_cha3/bed_6_i.jpg>
-<./fig_cha3/bed_3_i.jpg, id=1362, 222.23026pt x 200.54926pt>
+<./fig_cha3/bed_3_i.jpg, id=1358, 222.23026pt x 200.54926pt>
 File: ./fig_cha3/bed_3_i.jpg Graphic file (type jpg)
 
 <use ./fig_cha3/bed_3_i.jpg>
-<./fig_cha3/bed_5_i.jpg, id=1363, 189.70876pt x 158.39175pt>
+<./fig_cha3/bed_5_i.jpg, id=1359, 189.70876pt x 158.39175pt>
 File: ./fig_cha3/bed_5_i.jpg Graphic file (type jpg)
 
 <use ./fig_cha3/bed_5_i.jpg>
-<./fig_cha3/bed_6_f.jpg, id=1364, 163.812pt x 151.767pt>
+<./fig_cha3/bed_6_f.jpg, id=1360, 163.812pt x 151.767pt>
 File: ./fig_cha3/bed_6_f.jpg Graphic file (type jpg)
 
 <use ./fig_cha3/bed_6_f.jpg>
-<./fig_cha3/bed_3_f.jpg, id=1365, 162.6075pt x 169.23225pt>
+<./fig_cha3/bed_3_f.jpg, id=1361, 162.6075pt x 169.23225pt>
 File: ./fig_cha3/bed_3_f.jpg Graphic file (type jpg)
 
 <use ./fig_cha3/bed_3_f.jpg>
-<./fig_cha3/bed_5_f.jpg, id=1366, 162.6075pt x 155.98276pt>
+<./fig_cha3/bed_5_f.jpg, id=1362, 162.6075pt x 155.98276pt>
 File: ./fig_cha3/bed_5_f.jpg Graphic file (type jpg)
 
 <use ./fig_cha3/bed_5_f.jpg>)
-(C:\GitHub\BidanThesis\includes/cha3_sec6_discussion.tex [48 <C:/GitHub/BidanTh
+(C:\GitHub\BidanThesis\includes/cha3_sec6_discussion.tex [45 <C:/GitHub/BidanTh
 esis/fig_cha3/8_i.jpg> <C:/GitHub/BidanThesis/fig_cha3/1_i.jpg> <C:/GitHub/Bida
 nThesis/fig_cha3/5_i.jpg> <C:/GitHub/BidanThesis/fig_cha3/8_f.jpg> <C:/GitHub/B
 idanThesis/fig_cha3/1_f.jpg> <C:/GitHub/BidanThesis/fig_cha3/5_f.jpg> <C:/GitHu
 b/BidanThesis/fig_cha3/object_cylball_i_f_arrow.jpg> <C:/GitHub/BidanThesis/fig
-_cha3/contour_Z_cylball_i_f_arrow2.jpg>] [49 <C:/GitHub/BidanThesis/fig_cha3/sp
-r.jpg> <C:/GitHub/BidanThesis/fig_cha3/box123.jpg>] [50 <C:/GitHub/BidanThesis/
+_cha3/contour_Z_cylball_i_f_arrow2.jpg>] [46 <C:/GitHub/BidanThesis/fig_cha3/sp
+r.jpg> <C:/GitHub/BidanThesis/fig_cha3/box123.jpg>] [47 <C:/GitHub/BidanThesis/
 fig_cha3/spr_3_i.jpg> <C:/GitHub/BidanThesis/fig_cha3/spr_4_i.jpg> <C:/GitHub/B
 idanThesis/fig_cha3/spr_6_i.jpg> <C:/GitHub/BidanThesis/fig_cha3/spr_3_f.jpg> <
 C:/GitHub/BidanThesis/fig_cha3/spr_4_f.jpg> <C:/GitHub/BidanThesis/fig_cha3/spr
-_6_f.jpg>] [51 <C:/GitHub/BidanThesis/fig_cha3/bedside.jpg> <C:/GitHub/BidanThe
+_6_f.jpg>] [48 <C:/GitHub/BidanThesis/fig_cha3/bedside.jpg> <C:/GitHub/BidanThe
 sis/fig_cha3/bedside_box.jpg> <C:/GitHub/BidanThesis/fig_cha3/bed_6_i.jpg> <C:/
 GitHub/BidanThesis/fig_cha3/bed_3_i.jpg> <C:/GitHub/BidanThesis/fig_cha3/bed_5_
 i.jpg> <C:/GitHub/BidanThesis/fig_cha3/bed_6_f.jpg> <C:/GitHub/BidanThesis/fig_
 cha3/bed_3_f.jpg> <C:/GitHub/BidanThesis/fig_cha3/bed_5_f.jpg>]))
-(C:\GitHub\BidanThesis\includes/cha4_manipulation.tex [52]
+(C:\GitHub\BidanThesis\includes/cha4_manipulation.tex [49]
 Chapter 4.
-[53
+[50
 
-] (C:\GitHub\BidanThesis\includes/cha4_sec2_method.tex [54]
-<./fig_cha4/overview3.pdf, id=1434, 597.23125pt x 845.1575pt>
+] (C:\GitHub\BidanThesis\includes/cha4_sec2_method.tex [51]
+<./fig_cha4/overview3.pdf, id=1430, 597.23125pt x 845.1575pt>
 File: ./fig_cha4/overview3.pdf Graphic file (type pdf)
 
 <use ./fig_cha4/overview3.pdf>
@@ -1318,15 +1318,15 @@ Overfull \hbox (14.85257pt too wide) in paragraph at lines 16--19
 
 LaTeX Warning: Float too large for page by 12.04851pt on input line 21.
 
-<./fig_cha4/marker2.jpg, id=1435, 166.82326pt x 141.52875pt>
+<./fig_cha4/marker2.jpg, id=1431, 166.82326pt x 141.52875pt>
 File: ./fig_cha4/marker2.jpg Graphic file (type jpg)
 
 <use ./fig_cha4/marker2.jpg>
-<./fig_cha4/Nano25-E.jpg, id=1436, 1204.5pt x 866.8385pt>
+<./fig_cha4/Nano25-E.jpg, id=1432, 1204.5pt x 866.8385pt>
 File: ./fig_cha4/Nano25-E.jpg Graphic file (type jpg)
 
 <use ./fig_cha4/Nano25-E.jpg>
-<./fig_cha4/texscan2.jpg, id=1437, 211.992pt x 148.1535pt>
+<./fig_cha4/texscan2.jpg, id=1433, 211.992pt x 148.1535pt>
 File: ./fig_cha4/texscan2.jpg Graphic file (type jpg)
 
 <use ./fig_cha4/texscan2.jpg>
@@ -1335,15 +1335,15 @@ Overfull \hbox (43.20769pt too wide) in paragraph at lines 29--32
  []
 
 
-Package natbib Warning: Citation `Fischer98' on page 55 undefined on input line
+Package natbib Warning: Citation `Fischer98' on page 52 undefined on input line
  46.
 
-[55] [56 <C:/GitHub/BidanThesis/fig_cha4/overview3.pdf>] [57 <C:/GitHub/BidanTh
+[52] [53 <C:/GitHub/BidanThesis/fig_cha4/overview3.pdf>] [54 <C:/GitHub/BidanTh
 esis/fig_cha4/marker2.jpg> <C:/GitHub/BidanThesis/fig_cha4/Nano25-E.jpg> <C:/Gi
-tHub/BidanThesis/fig_cha4/texscan2.jpg>] [58] [59] [60]
+tHub/BidanThesis/fig_cha4/texscan2.jpg>] [55] [56] [57]
 Missing character: There is no é in font ptmr7t!
 Missing character: There is no é in font ptmr7t!
- [61]
+ [58]
 Package epstopdf Info: Source file: <./fig_cha4/alignDTW.eps>
 (epstopdf)                    date: 2014-07-29 22:26:42
 (epstopdf)                    size: 168541 bytes
@@ -1355,7 +1355,7 @@ verted-to.pdf ./fig_cha4/alignDTW.eps>
 (epstopdf)             \includegraphics on input line 150.
 Package epstopdf Info: Output file is already uptodate.
 
-<./fig_cha4/alignDTW-eps-converted-to.pdf, id=1631, 1026.83624pt x 347.2975pt>
+<./fig_cha4/alignDTW-eps-converted-to.pdf, id=1625, 1026.83624pt x 347.2975pt>
 File: ./fig_cha4/alignDTW-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./fig_cha4/alignDTW-eps-converted-to.pdf>
@@ -1363,23 +1363,23 @@ Overfull \hbox (43.30531pt too wide) in paragraph at lines 150--152
  [][] 
  []
 
-[62 <C:/GitHub/BidanThesis/fig_cha4/alignDTW-eps-converted-to.pdf>]
+[59 <C:/GitHub/BidanThesis/fig_cha4/alignDTW-eps-converted-to.pdf>]
 
 pdfTeX warning: pdflatex (file C:/GitHub/BidanThesis/fig_cha4/hierarchicalclust
 ering.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> a
 llowed
-<./fig_cha4/hierarchicalclustering.pdf, id=1646, 662.475pt x 1003.95076pt>
+<./fig_cha4/hierarchicalclustering.pdf, id=1640, 662.475pt x 1003.95076pt>
 File: ./fig_cha4/hierarchicalclustering.pdf Graphic file (type pdf)
 
 <use ./fig_cha4/hierarchicalclustering.pdf>
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 185.
- [63] [64 <C:/GitHub/BidanThesis/fig_cha4/hierarchicalclustering.pdf>] [65]
-<./fig_cha4/control_1_2.pdf, id=1681, 6070.68pt x 2601.72pt>
+ [60] [61 <C:/GitHub/BidanThesis/fig_cha4/hierarchicalclustering.pdf>] [62]
+<./fig_cha4/control_1_2.pdf, id=1674, 6070.68pt x 2601.72pt>
 File: ./fig_cha4/control_1_2.pdf Graphic file (type pdf)
 
 <use ./fig_cha4/control_1_2.pdf>
-<./fig_cha4/control_3_2.pdf, id=1682, 845.1575pt x 597.23125pt>
+<./fig_cha4/control_3_2.pdf, id=1675, 845.1575pt x 597.23125pt>
 File: ./fig_cha4/control_3_2.pdf Graphic file (type pdf)
 
 <use ./fig_cha4/control_3_2.pdf>
@@ -1392,41 +1392,41 @@ Overfull \hbox (14.85257pt too wide) in paragraph at lines 263--267
  [][] 
  []
 
-[66] [67 <C:/GitHub/BidanThesis/fig_cha4/control_1_2.pdf, page is rotated 90 de
+[63] [64 <C:/GitHub/BidanThesis/fig_cha4/control_1_2.pdf, page is rotated 90 de
 grees> <C:/GitHub/BidanThesis/fig_cha4/control_3_2.pdf, page is rotated 90 degr
-ees>] [68]) (C:\GitHub\BidanThesis\includes/cha4_sec3_experiment.tex [69]
+ees>] [65]) (C:\GitHub\BidanThesis\includes/cha4_sec3_experiment.tex [66]
 
 pdfTeX warning: pdflatex (file C:/GitHub/BidanThesis/fig_cha4/b1b3b4_time_T_2.p
 df): PDF inclusion: found PDF version <1.7>, but at most version <1.4> allowed
-<./fig_cha4/b1b3b4_time_T_2.pdf, id=1748, 845.0471pt x 597.50829pt>
+<./fig_cha4/b1b3b4_time_T_2.pdf, id=1738, 845.0471pt x 597.50829pt>
 File: ./fig_cha4/b1b3b4_time_T_2.pdf Graphic file (type pdf)
 
-<use ./fig_cha4/b1b3b4_time_T_2.pdf> [70]
-<./fig_cha4/b_c.jpg, id=1761, 2055.68pt x 1541.76pt>
+<use ./fig_cha4/b1b3b4_time_T_2.pdf> [67]
+<./fig_cha4/b_c.jpg, id=1750, 2055.68pt x 1541.76pt>
 File: ./fig_cha4/b_c.jpg Graphic file (type jpg)
  <use ./fig_cha4/b_c.jpg>
-<./fig_cha4/c1.jpg, id=1762, 57.3342pt x 53.9616pt>
+<./fig_cha4/c1.jpg, id=1751, 57.3342pt x 53.9616pt>
 File: ./fig_cha4/c1.jpg Graphic file (type jpg)
  <use ./fig_cha4/c1.jpg>
 Overfull \hbox (31.72913pt too wide) in paragraph at lines 72--72
 [][] 
  []
 
-<./fig_cha4/c2.jpg, id=1763, 60.225pt x 57.816pt>
+<./fig_cha4/c2.jpg, id=1752, 60.225pt x 57.816pt>
 File: ./fig_cha4/c2.jpg Graphic file (type jpg)
  <use ./fig_cha4/c2.jpg>
 Overfull \hbox (31.72913pt too wide) in paragraph at lines 73--73
 [][] 
  []
 
-<./fig_cha4/c3.jpg, id=1764, 62.634pt x 56.8524pt>
+<./fig_cha4/c3.jpg, id=1753, 62.634pt x 56.8524pt>
 File: ./fig_cha4/c3.jpg Graphic file (type jpg)
  <use ./fig_cha4/c3.jpg>
 Overfull \hbox (31.72913pt too wide) in paragraph at lines 74--74
 [][] 
  []
 
-<./fig_cha4/c4.jpg, id=1765, 62.634pt x 54.9252pt>
+<./fig_cha4/c4.jpg, id=1754, 62.634pt x 54.9252pt>
 File: ./fig_cha4/c4.jpg Graphic file (type jpg)
  <use ./fig_cha4/c4.jpg>
 Overfull \hbox (31.72913pt too wide) in paragraph at lines 75--75
@@ -1453,56 +1453,56 @@ Underfull \hbox (badness 10000) in paragraph at lines 76--77
 []|\OT1/ptm/m/n/10.95 Cap 4
  []
 
-<./fig_cha4/b1.jpg, id=1766, 34.2078pt x 63.1158pt>
+<./fig_cha4/b1.jpg, id=1755, 34.2078pt x 63.1158pt>
 File: ./fig_cha4/b1.jpg Graphic file (type jpg)
  <use ./fig_cha4/b1.jpg>
 Overfull \hbox (31.72913pt too wide) in paragraph at lines 78--78
 [][] 
  []
 
-<./fig_cha4/b2.jpg, id=1767, 45.771pt x 51.0708pt>
+<./fig_cha4/b2.jpg, id=1756, 45.771pt x 51.0708pt>
 File: ./fig_cha4/b2.jpg Graphic file (type jpg)
  <use ./fig_cha4/b2.jpg>
 Overfull \hbox (31.72913pt too wide) in paragraph at lines 81--81
 [][] 
  []
 
-<./fig_cha4/b3.jpg, id=1768, 36.135pt x 56.8524pt>
+<./fig_cha4/b3.jpg, id=1757, 36.135pt x 56.8524pt>
 File: ./fig_cha4/b3.jpg Graphic file (type jpg)
  <use ./fig_cha4/b3.jpg>
 Overfull \hbox (31.72913pt too wide) in paragraph at lines 85--85
 [][] 
  []
 
-<./fig_cha4/b4.jpg, id=1769, 46.2528pt x 56.8524pt>
+<./fig_cha4/b4.jpg, id=1758, 46.2528pt x 56.8524pt>
 File: ./fig_cha4/b4.jpg Graphic file (type jpg)
  <use ./fig_cha4/b4.jpg>
 Overfull \hbox (31.72913pt too wide) in paragraph at lines 89--89
 [][] 
  []
 
-<./fig_cha4/setup2_2.jpg, id=1770, 822.272pt x 616.704pt>
+<./fig_cha4/setup2_2.jpg, id=1759, 822.272pt x 616.704pt>
 File: ./fig_cha4/setup2_2.jpg Graphic file (type jpg)
 
 <use ./fig_cha4/setup2_2.jpg>
-<./fig_cha4/demo.jpg, id=1771, 2055.68pt x 1541.76pt>
+<./fig_cha4/demo.jpg, id=1760, 2055.68pt x 1541.76pt>
 File: ./fig_cha4/demo.jpg Graphic file (type jpg)
 
-<use ./fig_cha4/demo.jpg> [71 <C:/GitHub/BidanThesis/fig_cha4/b1b3b4_time_T_2.p
-df>] [72 <C:/GitHub/BidanThesis/fig_cha4/b_c.jpg> <C:/GitHub/BidanThesis/fig_ch
-a4/setup2_2.jpg> <C:/GitHub/BidanThesis/fig_cha4/demo.jpg>] [73 <C:/GitHub/Bida
+<use ./fig_cha4/demo.jpg> [68 <C:/GitHub/BidanThesis/fig_cha4/b1b3b4_time_T_2.p
+df>] [69 <C:/GitHub/BidanThesis/fig_cha4/b_c.jpg> <C:/GitHub/BidanThesis/fig_ch
+a4/setup2_2.jpg> <C:/GitHub/BidanThesis/fig_cha4/demo.jpg>] [70 <C:/GitHub/Bida
 nThesis/fig_cha4/c1.jpg> <C:/GitHub/BidanThesis/fig_cha4/c2.jpg> <C:/GitHub/Bid
 anThesis/fig_cha4/c3.jpg> <C:/GitHub/BidanThesis/fig_cha4/c4.jpg> <C:/GitHub/Bi
 danThesis/fig_cha4/b1.jpg> <C:/GitHub/BidanThesis/fig_cha4/b2.jpg> <C:/GitHub/B
-idanThesis/fig_cha4/b3.jpg> <C:/GitHub/BidanThesis/fig_cha4/b4.jpg>] [74]
-[75]
+idanThesis/fig_cha4/b3.jpg> <C:/GitHub/BidanThesis/fig_cha4/b4.jpg>] [71]
+[72]
 
 pdfTeX warning: pdflatex (file C:/GitHub/BidanThesis/fig_cha4/b3c2_1_sTF.pdf): 
 PDF inclusion: found PDF version <1.7>, but at most version <1.4> allowed
-<./fig_cha4/b3c2_1_sTF.pdf, id=1831, 540.88678pt x 569.34006pt>
+<./fig_cha4/b3c2_1_sTF.pdf, id=1816, 540.88678pt x 569.34006pt>
 File: ./fig_cha4/b3c2_1_sTF.pdf Graphic file (type pdf)
 
-<use ./fig_cha4/b3c2_1_sTF.pdf> [76] [77 <C:/GitHub/BidanThesis/fig_cha4/b3c2_1
+<use ./fig_cha4/b3c2_1_sTF.pdf> [73] [74 <C:/GitHub/BidanThesis/fig_cha4/b3c2_1
 _sTF.pdf>]
 Package epstopdf Info: Source file: <./fig_cha4/heatmap_all6_3.eps>
 (epstopdf)                    date: 2014-07-28 17:20:50
@@ -1516,7 +1516,7 @@ ps-converted-to.pdf ./fig_cha4/heatmap_all6_3.eps>
 (epstopdf)             \includegraphics on input line 197.
 Package epstopdf Info: Output file is already uptodate.
 
-<./fig_cha4/heatmap_all6_3-eps-converted-to.pdf, id=1857, 418.56375pt x 314.173
+<./fig_cha4/heatmap_all6_3-eps-converted-to.pdf, id=1841, 418.56375pt x 314.173
 75pt>
 File: ./fig_cha4/heatmap_all6_3-eps-converted-to.pdf Graphic file (type pdf)
  <use ./fig_cha4/heatmap_all6_3-eps-converted-to.pdf>
@@ -1536,7 +1536,7 @@ s-converted-to.pdf ./fig_cha4/c1c3c4_time_T.eps>
 (epstopdf)             \includegraphics on input line 205.
 Package epstopdf Info: Output file is already uptodate.
 
-<./fig_cha4/c1c3c4_time_T-eps-converted-to.pdf, id=1858, 348.30125pt x 261.9787
+<./fig_cha4/c1c3c4_time_T-eps-converted-to.pdf, id=1842, 348.30125pt x 261.9787
 4pt>
 File: ./fig_cha4/c1c3c4_time_T-eps-converted-to.pdf Graphic file (type pdf)
  <use ./fig_cha4/c1c3c4_time_T-eps-converted-to.pdf>
@@ -1589,8 +1589,8 @@ Overfull \hbox (31.72913pt too wide) in paragraph at lines 248--248
 [][] 
  []
 
-[78] [79 <C:/GitHub/BidanThesis/fig_cha4/heatmap_all6_3-eps-converted-to.pdf>]
-[80]
+[75] [76 <C:/GitHub/BidanThesis/fig_cha4/heatmap_all6_3-eps-converted-to.pdf>]
+[77]
 Package epstopdf Info: Source file: <./fig_cha4/bic_cluster1.eps>
 (epstopdf)                    date: 2014-04-29 11:48:27
 (epstopdf)                    size: 9874 bytes
@@ -1603,7 +1603,7 @@ df>
 (epstopdf)             \includegraphics on input line 264.
 Package epstopdf Info: Output file is already uptodate.
 
-<./fig_cha4/bic_cluster1-eps-converted-to.pdf, id=1887, 421.575pt x 312.16624pt
+<./fig_cha4/bic_cluster1-eps-converted-to.pdf, id=1870, 421.575pt x 312.16624pt
 >
 File: ./fig_cha4/bic_cluster1-eps-converted-to.pdf Graphic file (type pdf)
  <use ./fig_cha4/bic_cluster1-eps-converted-to.pdf>
@@ -1619,7 +1619,7 @@ df>
 (epstopdf)             \includegraphics on input line 265.
 Package epstopdf Info: Output file is already uptodate.
 
-<./fig_cha4/bic_cluster2-eps-converted-to.pdf, id=1888, 421.575pt x 312.16624pt
+<./fig_cha4/bic_cluster2-eps-converted-to.pdf, id=1871, 421.575pt x 312.16624pt
 >
 File: ./fig_cha4/bic_cluster2-eps-converted-to.pdf Graphic file (type pdf)
  <use ./fig_cha4/bic_cluster2-eps-converted-to.pdf>
@@ -1635,15 +1635,15 @@ df>
 (epstopdf)             \includegraphics on input line 266.
 Package epstopdf Info: Output file is already uptodate.
 
-<./fig_cha4/bic_cluster3-eps-converted-to.pdf, id=1889, 421.575pt x 317.185pt>
+<./fig_cha4/bic_cluster3-eps-converted-to.pdf, id=1872, 421.575pt x 317.185pt>
 File: ./fig_cha4/bic_cluster3-eps-converted-to.pdf Graphic file (type pdf)
 
-<use ./fig_cha4/bic_cluster3-eps-converted-to.pdf> [81 <C:/GitHub/BidanThesis/f
-ig_cha4/c1c3c4_time_T-eps-converted-to.pdf>] [82] [83 <C:/GitHub/BidanThesis/fi
+<use ./fig_cha4/bic_cluster3-eps-converted-to.pdf> [78 <C:/GitHub/BidanThesis/f
+ig_cha4/c1c3c4_time_T-eps-converted-to.pdf>] [79] [80 <C:/GitHub/BidanThesis/fi
 g_cha4/bic_cluster1-eps-converted-to.pdf> <C:/GitHub/BidanThesis/fig_cha4/bic_c
 luster2-eps-converted-to.pdf> <C:/GitHub/BidanThesis/fig_cha4/bic_cluster3-eps-
-converted-to.pdf>] [84]
-<./fig_cha4/demo_b1.jpg, id=1944, 1299.35437pt x 341.77687pt>
+converted-to.pdf>] [81]
+<./fig_cha4/demo_b1.jpg, id=1927, 1299.35437pt x 341.77687pt>
 File: ./fig_cha4/demo_b1.jpg Graphic file (type jpg)
 
 <use ./fig_cha4/demo_b1.jpg>
@@ -1659,7 +1659,7 @@ nverted-to.pdf ./fig_cha4/demo_b1_s.eps>
 (epstopdf)             \includegraphics on input line 372.
 Package epstopdf Info: Output file is already uptodate.
 
-<./fig_cha4/demo_b1_s-eps-converted-to.pdf, id=1945, 384.43625pt x 118.4425pt>
+<./fig_cha4/demo_b1_s-eps-converted-to.pdf, id=1928, 384.43625pt x 118.4425pt>
 File: ./fig_cha4/demo_b1_s-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./fig_cha4/demo_b1_s-eps-converted-to.pdf>
@@ -1675,7 +1675,7 @@ nverted-to.pdf ./fig_cha4/demo_b1_T.eps>
 (epstopdf)             \includegraphics on input line 373.
 Package epstopdf Info: Output file is already uptodate.
 
-<./fig_cha4/demo_b1_T-eps-converted-to.pdf, id=1946, 384.43625pt x 115.43124pt>
+<./fig_cha4/demo_b1_T-eps-converted-to.pdf, id=1929, 384.43625pt x 115.43124pt>
 File: ./fig_cha4/demo_b1_T-eps-converted-to.pdf Graphic file (type pdf)
 <use ./fig_cha4/demo_b1_T-eps-converted-to.pdf>
 Package epstopdf Info: Source file: <./fig_cha4/demo_b1_rf.eps>
@@ -1690,7 +1690,7 @@ onverted-to.pdf ./fig_cha4/demo_b1_rf.eps>
 (epstopdf)             \includegraphics on input line 374.
 Package epstopdf Info: Output file is already uptodate.
 
-<./fig_cha4/demo_b1_rf-eps-converted-to.pdf, id=1947, 378.41376pt x 118.4425pt>
+<./fig_cha4/demo_b1_rf-eps-converted-to.pdf, id=1930, 378.41376pt x 118.4425pt>
 File: ./fig_cha4/demo_b1_rf-eps-converted-to.pdf Graphic file (type pdf)
 <use ./fig_cha4/demo_b1_rf-eps-converted-to.pdf>
 Overfull \hbox (14.85257pt too wide) in paragraph at lines 371--376
@@ -1712,7 +1712,7 @@ Overfull \hbox (14.85257pt too wide) in paragraph at lines 371--376
  [] 
  []
 
-<./fig_cha4/demo_b4.jpg, id=1948, 1458.95062pt x 308.65312pt>
+<./fig_cha4/demo_b4.jpg, id=1931, 1458.95062pt x 308.65312pt>
 File: ./fig_cha4/demo_b4.jpg Graphic file (type jpg)
 
 <use ./fig_cha4/demo_b4.jpg>
@@ -1728,7 +1728,7 @@ nverted-to.pdf ./fig_cha4/demo_b4_s.eps>
 (epstopdf)             \includegraphics on input line 383.
 Package epstopdf Info: Output file is already uptodate.
 
-<./fig_cha4/demo_b4_s-eps-converted-to.pdf, id=1949, 370.38374pt x 118.4425pt>
+<./fig_cha4/demo_b4_s-eps-converted-to.pdf, id=1932, 370.38374pt x 118.4425pt>
 File: ./fig_cha4/demo_b4_s-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./fig_cha4/demo_b4_s-eps-converted-to.pdf>
@@ -1744,7 +1744,7 @@ nverted-to.pdf ./fig_cha4/demo_b4_T.eps>
 (epstopdf)             \includegraphics on input line 384.
 Package epstopdf Info: Output file is already uptodate.
 
-<./fig_cha4/demo_b4_T-eps-converted-to.pdf, id=1950, 376.40625pt x 115.43124pt>
+<./fig_cha4/demo_b4_T-eps-converted-to.pdf, id=1933, 376.40625pt x 115.43124pt>
 File: ./fig_cha4/demo_b4_T-eps-converted-to.pdf Graphic file (type pdf)
 <use ./fig_cha4/demo_b4_T-eps-converted-to.pdf>
 Package epstopdf Info: Source file: <./fig_cha4/demo_b4_rf.eps>
@@ -1759,7 +1759,7 @@ onverted-to.pdf ./fig_cha4/demo_b4_rf.eps>
 (epstopdf)             \includegraphics on input line 385.
 Package epstopdf Info: Output file is already uptodate.
 
-<./fig_cha4/demo_b4_rf-eps-converted-to.pdf, id=1951, 376.40625pt x 118.4425pt>
+<./fig_cha4/demo_b4_rf-eps-converted-to.pdf, id=1934, 376.40625pt x 118.4425pt>
 File: ./fig_cha4/demo_b4_rf-eps-converted-to.pdf Graphic file (type pdf)
 <use ./fig_cha4/demo_b4_rf-eps-converted-to.pdf>
 Overfull \hbox (14.85257pt too wide) in paragraph at lines 382--387
@@ -1781,7 +1781,7 @@ Overfull \hbox (14.85257pt too wide) in paragraph at lines 382--387
  [] 
  []
 
-<./fig_cha4/demo_b5.jpg, id=1952, 1644.1425pt x 325.215pt>
+<./fig_cha4/demo_b5.jpg, id=1935, 1644.1425pt x 325.215pt>
 File: ./fig_cha4/demo_b5.jpg Graphic file (type jpg)
 
 <use ./fig_cha4/demo_b5.jpg>
@@ -1797,7 +1797,7 @@ nverted-to.pdf ./fig_cha4/demo_b5_s.eps>
 (epstopdf)             \includegraphics on input line 394.
 Package epstopdf Info: Output file is already uptodate.
 
-<./fig_cha4/demo_b5_s-eps-converted-to.pdf, id=1953, 384.43625pt x 118.4425pt>
+<./fig_cha4/demo_b5_s-eps-converted-to.pdf, id=1936, 384.43625pt x 118.4425pt>
 File: ./fig_cha4/demo_b5_s-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./fig_cha4/demo_b5_s-eps-converted-to.pdf>
@@ -1813,7 +1813,7 @@ nverted-to.pdf ./fig_cha4/demo_b5_T.eps>
 (epstopdf)             \includegraphics on input line 395.
 Package epstopdf Info: Output file is already uptodate.
 
-<./fig_cha4/demo_b5_T-eps-converted-to.pdf, id=1954, 378.41376pt x 115.43124pt>
+<./fig_cha4/demo_b5_T-eps-converted-to.pdf, id=1937, 378.41376pt x 115.43124pt>
 File: ./fig_cha4/demo_b5_T-eps-converted-to.pdf Graphic file (type pdf)
 <use ./fig_cha4/demo_b5_T-eps-converted-to.pdf>
 Package epstopdf Info: Source file: <./fig_cha4/demo_b5_rf.eps>
@@ -1828,7 +1828,7 @@ onverted-to.pdf ./fig_cha4/demo_b5_rf.eps>
 (epstopdf)             \includegraphics on input line 396.
 Package epstopdf Info: Output file is already uptodate.
 
-<./fig_cha4/demo_b5_rf-eps-converted-to.pdf, id=1955, 378.41376pt x 118.4425pt>
+<./fig_cha4/demo_b5_rf-eps-converted-to.pdf, id=1938, 378.41376pt x 118.4425pt>
 File: ./fig_cha4/demo_b5_rf-eps-converted-to.pdf Graphic file (type pdf)
 <use ./fig_cha4/demo_b5_rf-eps-converted-to.pdf>
 Overfull \hbox (14.85257pt too wide) in paragraph at lines 393--398
@@ -1850,7 +1850,7 @@ Overfull \hbox (14.85257pt too wide) in paragraph at lines 393--398
  [] 
  []
 
-<./fig_cha4/demo_b6.jpg, id=1956, 1644.1425pt x 338.76563pt>
+<./fig_cha4/demo_b6.jpg, id=1939, 1644.1425pt x 338.76563pt>
 File: ./fig_cha4/demo_b6.jpg Graphic file (type jpg)
 
 <use ./fig_cha4/demo_b6.jpg>
@@ -1866,7 +1866,7 @@ nverted-to.pdf ./fig_cha4/demo_b6_s.eps>
 (epstopdf)             \includegraphics on input line 405.
 Package epstopdf Info: Output file is already uptodate.
 
-<./fig_cha4/demo_b6_s-eps-converted-to.pdf, id=1957, 378.41376pt x 118.4425pt>
+<./fig_cha4/demo_b6_s-eps-converted-to.pdf, id=1940, 378.41376pt x 118.4425pt>
 File: ./fig_cha4/demo_b6_s-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./fig_cha4/demo_b6_s-eps-converted-to.pdf>
@@ -1882,7 +1882,7 @@ nverted-to.pdf ./fig_cha4/demo_b6_T.eps>
 (epstopdf)             \includegraphics on input line 406.
 Package epstopdf Info: Output file is already uptodate.
 
-<./fig_cha4/demo_b6_T-eps-converted-to.pdf, id=1958, 382.42876pt x 115.43124pt>
+<./fig_cha4/demo_b6_T-eps-converted-to.pdf, id=1941, 382.42876pt x 115.43124pt>
 File: ./fig_cha4/demo_b6_T-eps-converted-to.pdf Graphic file (type pdf)
 <use ./fig_cha4/demo_b6_T-eps-converted-to.pdf>
 Package epstopdf Info: Source file: <./fig_cha4/demo_b6_rf.eps>
@@ -1897,7 +1897,7 @@ onverted-to.pdf ./fig_cha4/demo_b6_rf.eps>
 (epstopdf)             \includegraphics on input line 407.
 Package epstopdf Info: Output file is already uptodate.
 
-<./fig_cha4/demo_b6_rf-eps-converted-to.pdf, id=1959, 376.40625pt x 118.4425pt>
+<./fig_cha4/demo_b6_rf-eps-converted-to.pdf, id=1942, 376.40625pt x 118.4425pt>
 File: ./fig_cha4/demo_b6_rf-eps-converted-to.pdf Graphic file (type pdf)
 <use ./fig_cha4/demo_b6_rf-eps-converted-to.pdf>
 Overfull \hbox (14.85257pt too wide) in paragraph at lines 404--409
@@ -1931,44 +1931,44 @@ to.pdf>
 (epstopdf)             \includegraphics on input line 416.
 Package epstopdf Info: Output file is already uptodate.
 
-<./fig_cha4/rb1b4b5b6_time_T-eps-converted-to.pdf, id=1960, 563.10374pt x 348.3
+<./fig_cha4/rb1b4b5b6_time_T-eps-converted-to.pdf, id=1943, 563.10374pt x 348.3
 0125pt>
 File: ./fig_cha4/rb1b4b5b6_time_T-eps-converted-to.pdf Graphic file (type pdf)
  <use ./fig_cha4/rb1b4b5b6_time_T-eps-converted-to.pdf>)
-(C:\GitHub\BidanThesis\includes/cha4_sec4_discussion.tex [85] [86 <C:/GitHub/Bi
+(C:\GitHub\BidanThesis\includes/cha4_sec4_discussion.tex [82] [83 <C:/GitHub/Bi
 danThesis/fig_cha4/demo_b1.jpg> <C:/GitHub/BidanThesis/fig_cha4/demo_b1_s-eps-c
 onverted-to.pdf> <C:/GitHub/BidanThesis/fig_cha4/demo_b1_T-eps-converted-to.pdf
-> <C:/GitHub/BidanThesis/fig_cha4/demo_b1_rf-eps-converted-to.pdf>] [87 <C:/Git
+> <C:/GitHub/BidanThesis/fig_cha4/demo_b1_rf-eps-converted-to.pdf>] [84 <C:/Git
 Hub/BidanThesis/fig_cha4/demo_b4.jpg> <C:/GitHub/BidanThesis/fig_cha4/demo_b4_s
 -eps-converted-to.pdf> <C:/GitHub/BidanThesis/fig_cha4/demo_b4_T-eps-converted-
 to.pdf> <C:/GitHub/BidanThesis/fig_cha4/demo_b4_rf-eps-converted-to.pdf>]
-[88 <C:/GitHub/BidanThesis/fig_cha4/demo_b5.jpg> <C:/GitHub/BidanThesis/fig_cha
+[85 <C:/GitHub/BidanThesis/fig_cha4/demo_b5.jpg> <C:/GitHub/BidanThesis/fig_cha
 4/demo_b5_s-eps-converted-to.pdf> <C:/GitHub/BidanThesis/fig_cha4/demo_b5_T-eps
 -converted-to.pdf> <C:/GitHub/BidanThesis/fig_cha4/demo_b5_rf-eps-converted-to.
-pdf>] [89 <C:/GitHub/BidanThesis/fig_cha4/demo_b6.jpg> <C:/GitHub/BidanThesis/f
+pdf>] [86 <C:/GitHub/BidanThesis/fig_cha4/demo_b6.jpg> <C:/GitHub/BidanThesis/f
 ig_cha4/demo_b6_s-eps-converted-to.pdf> <C:/GitHub/BidanThesis/fig_cha4/demo_b6
 _T-eps-converted-to.pdf> <C:/GitHub/BidanThesis/fig_cha4/demo_b6_rf-eps-convert
-ed-to.pdf>] [90 <C:/GitHub/BidanThesis/fig_cha4/rb1b4b5b6_time_T-eps-converted-
-to.pdf>])) (C:\GitHub\BidanThesis\includes/cha5_mimesis.tex [91]
+ed-to.pdf>] [87 <C:/GitHub/BidanThesis/fig_cha4/rb1b4b5b6_time_T-eps-converted-
+to.pdf>])) (C:\GitHub\BidanThesis\includes/cha5_mimesis.tex [88]
 Chapter 5.
-[92
+[89
 
-] <./fig_cha5/begin.jpg, id=2052, 226.665pt x 161.78625pt>
+] <./fig_cha5/begin.jpg, id=2035, 226.665pt x 161.78625pt>
 File: ./fig_cha5/begin.jpg Graphic file (type jpg)
 
-<use ./fig_cha5/begin.jpg> [93 <C:/GitHub/BidanThesis/fig_cha5/begin.jpg>]
-[94] (C:\GitHub\BidanThesis\includes/cha5_sec2_method.tex [95
+<use ./fig_cha5/begin.jpg> [90 <C:/GitHub/BidanThesis/fig_cha5/begin.jpg>]
+[91] (C:\GitHub\BidanThesis\includes/cha5_sec2_method.tex [92
 
 ]
-<./fig_cha5/gsbox.jpg, id=2101, 2457.18pt x 3276.24pt>
+<./fig_cha5/gsbox.jpg, id=2084, 2457.18pt x 3276.24pt>
 File: ./fig_cha5/gsbox.jpg Graphic file (type jpg)
 
 <use ./fig_cha5/gsbox.jpg>
-<./fig_cha5/gpinkbox.jpg, id=2102, 2457.18pt x 3276.24pt>
+<./fig_cha5/gpinkbox.jpg, id=2085, 2457.18pt x 3276.24pt>
 File: ./fig_cha5/gpinkbox.jpg Graphic file (type jpg)
 
-<use ./fig_cha5/gpinkbox.jpg> [96 <C:/GitHub/BidanThesis/fig_cha5/gsbox.jpg> <C
-:/GitHub/BidanThesis/fig_cha5/gpinkbox.jpg>] [97]
+<use ./fig_cha5/gpinkbox.jpg> [93 <C:/GitHub/BidanThesis/fig_cha5/gsbox.jpg> <C
+:/GitHub/BidanThesis/fig_cha5/gpinkbox.jpg>] [94]
 Package epstopdf Info: Source file: <./fig_cha5/chmm.eps>
 (epstopdf)                    date: 2013-03-20 05:55:01
 (epstopdf)                    size: 526162 bytes
@@ -1980,10 +1980,10 @@ ed-to.pdf ./fig_cha5/chmm.eps>
 (epstopdf)             \includegraphics on input line 69.
 Package epstopdf Info: Output file is already uptodate.
 
-<./fig_cha5/chmm-eps-converted-to.pdf, id=2127, 318.18875pt x 187.70125pt>
+<./fig_cha5/chmm-eps-converted-to.pdf, id=2110, 318.18875pt x 187.70125pt>
 File: ./fig_cha5/chmm-eps-converted-to.pdf Graphic file (type pdf)
 
-<use ./fig_cha5/chmm-eps-converted-to.pdf> [98 <C:/GitHub/BidanThesis/fig_cha5/
+<use ./fig_cha5/chmm-eps-converted-to.pdf> [95 <C:/GitHub/BidanThesis/fig_cha5/
 chmm-eps-converted-to.pdf>]
 Overfull \hbox (29.11673pt too wide) in paragraph at lines 100--101
 []\OT1/ptm/m/n/10.95 The proto-symbol space is con-structed by the multi-dimens
@@ -1998,13 +1998,13 @@ tmcm/m/n/10.95 (\OMS/ztmcm/m/n/10.95 P[]\OML/ztmcm/m/it/10.95 ; :::; \OMS/ztmcm
 /m/n/10.95 P[]\OT1/ztmcm/m/n/10.95 )$\OT1/ptm/m/n/10.95 .
  []
 
-[99]
+[96]
 Overfull \hbox (11.59225pt too wide) in paragraph at lines 157--160
 \OT1/ptm/m/n/10.95 New mo-tion se-quence is gen-er-ated from the new proto-symb
 ols by us-ing an av-er-ag-ing method ([]In-
  []
 
-[100]) [101] (C:\GitHub\BidanThesis\includes/cha5_sec3_experiment.tex [102
+[97]) [98] (C:\GitHub\BidanThesis\includes/cha5_sec3_experiment.tex [99
 
 
 ]
@@ -2019,39 +2019,39 @@ ed-to.pdf ./fig_cha5/pss2.eps>
 (epstopdf)             \includegraphics on input line 28.
 Package epstopdf Info: Output file is already uptodate.
 
-<./fig_cha5/pss2-eps-converted-to.pdf, id=2205, 524.96124pt x 427.5975pt>
+<./fig_cha5/pss2-eps-converted-to.pdf, id=2188, 524.96124pt x 427.5975pt>
 File: ./fig_cha5/pss2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./fig_cha5/pss2-eps-converted-to.pdf>
-<./fig_cha5/demosbox1s.jpg, id=2207, 237.88875pt x 296.60812pt>
+<./fig_cha5/demosbox1s.jpg, id=2190, 237.88875pt x 296.60812pt>
 File: ./fig_cha5/demosbox1s.jpg Graphic file (type jpg)
 
 <use ./fig_cha5/demosbox1s.jpg>
-<./fig_cha5/demosbox3s.jpg, id=2208, 235.63031pt x 298.86656pt>
+<./fig_cha5/demosbox3s.jpg, id=2191, 235.63031pt x 298.86656pt>
 File: ./fig_cha5/demosbox3s.jpg Graphic file (type jpg)
 
 <use ./fig_cha5/demosbox3s.jpg>
-<./fig_cha5/demosbox4s.jpg, id=2209, 235.63031pt x 296.60812pt>
+<./fig_cha5/demosbox4s.jpg, id=2192, 235.63031pt x 296.60812pt>
 File: ./fig_cha5/demosbox4s.jpg Graphic file (type jpg)
 
 <use ./fig_cha5/demosbox4s.jpg>
-<./fig_cha5/demosbox6s.jpg, id=2210, 235.63031pt x 294.34969pt>
+<./fig_cha5/demosbox6s.jpg, id=2193, 235.63031pt x 294.34969pt>
 File: ./fig_cha5/demosbox6s.jpg Graphic file (type jpg)
 
 <use ./fig_cha5/demosbox6s.jpg>
-<./fig_cha5/demopinkbox1s.jpg, id=2211, 251.43938pt x 295.1025pt>
+<./fig_cha5/demopinkbox1s.jpg, id=2194, 251.43938pt x 295.1025pt>
 File: ./fig_cha5/demopinkbox1s.jpg Graphic file (type jpg)
 
 <use ./fig_cha5/demopinkbox1s.jpg>
-<./fig_cha5/demopinkbox3s.jpg, id=2212, 237.88875pt x 292.84406pt>
+<./fig_cha5/demopinkbox3s.jpg, id=2195, 237.88875pt x 292.84406pt>
 File: ./fig_cha5/demopinkbox3s.jpg Graphic file (type jpg)
 
 <use ./fig_cha5/demopinkbox3s.jpg>
-<./fig_cha5/demopinkbox4s.jpg, id=2213, 238.64156pt x 292.84406pt>
+<./fig_cha5/demopinkbox4s.jpg, id=2196, 238.64156pt x 292.84406pt>
 File: ./fig_cha5/demopinkbox4s.jpg Graphic file (type jpg)
 
 <use ./fig_cha5/demopinkbox4s.jpg>
-<./fig_cha5/demopinkbox6s.jpg, id=2214, 230.36063pt x 291.33844pt>
+<./fig_cha5/demopinkbox6s.jpg, id=2197, 230.36063pt x 291.33844pt>
 File: ./fig_cha5/demopinkbox6s.jpg Graphic file (type jpg)
 
 <use ./fig_cha5/demopinkbox6s.jpg>
@@ -2064,7 +2064,7 @@ Overfull \hbox (46.15031pt too wide) in paragraph at lines 41--51
  [][][][][][][][] 
  []
 
-[103 <C:/GitHub/BidanThesis/fig_cha5/pss2-eps-converted-to.pdf>] [104 <C:/GitHu
+[100 <C:/GitHub/BidanThesis/fig_cha5/pss2-eps-converted-to.pdf>] [101 <C:/GitHu
 b/BidanThesis/fig_cha5/demosbox1s.jpg> <C:/GitHub/BidanThesis/fig_cha5/demosbox
 3s.jpg> <C:/GitHub/BidanThesis/fig_cha5/demosbox4s.jpg> <C:/GitHub/BidanThesis/
 fig_cha5/demosbox6s.jpg> <C:/GitHub/BidanThesis/fig_cha5/demopinkbox1s.jpg (PNG
@@ -2083,23 +2083,23 @@ eps-converted-to.pdf ./fig_cha5/regression_size.eps>
 (epstopdf)             \includegraphics on input line 80.
 Package epstopdf Info: Output file is already uptodate.
 
-<./fig_cha5/regression_size-eps-converted-to.pdf, id=2239, 421.575pt x 317.185p
+<./fig_cha5/regression_size-eps-converted-to.pdf, id=2222, 421.575pt x 317.185p
 t>
 File: ./fig_cha5/regression_size-eps-converted-to.pdf Graphic file (type pdf)
- <use ./fig_cha5/regression_size-eps-converted-to.pdf> [105]
-<./fig_cha5/icub27box1_crop.jpg, id=2249, 136.25906pt x 135.50626pt>
+ <use ./fig_cha5/regression_size-eps-converted-to.pdf> [102]
+<./fig_cha5/icub27box1_crop.jpg, id=2232, 136.25906pt x 135.50626pt>
 File: ./fig_cha5/icub27box1_crop.jpg Graphic file (type jpg)
 
 <use ./fig_cha5/icub27box1_crop.jpg>
-<./fig_cha5/icub27box2_crop.jpg, id=2250, 135.50626pt x 136.25906pt>
+<./fig_cha5/icub27box2_crop.jpg, id=2233, 135.50626pt x 136.25906pt>
 File: ./fig_cha5/icub27box2_crop.jpg Graphic file (type jpg)
 
 <use ./fig_cha5/icub27box2_crop.jpg>
-<./fig_cha5/icub27box3_crop.jpg, id=2251, 135.50626pt x 135.50626pt>
+<./fig_cha5/icub27box3_crop.jpg, id=2234, 135.50626pt x 135.50626pt>
 File: ./fig_cha5/icub27box3_crop.jpg Graphic file (type jpg)
 
 <use ./fig_cha5/icub27box3_crop.jpg>
-<./fig_cha5/icub27box4_crop.jpg, id=2252, 135.50626pt x 135.50626pt>
+<./fig_cha5/icub27box4_crop.jpg, id=2235, 135.50626pt x 135.50626pt>
 File: ./fig_cha5/icub27box4_crop.jpg Graphic file (type jpg)
 
 <use ./fig_cha5/icub27box4_crop.jpg>
@@ -2107,19 +2107,19 @@ Overfull \hbox (42.16739pt too wide) in paragraph at lines 110--114
 [][][][][][][][] 
  []
 
-<./fig_cha5/icub30box1_crop.jpg, id=2253, 135.50626pt x 135.50626pt>
+<./fig_cha5/icub30box1_crop.jpg, id=2236, 135.50626pt x 135.50626pt>
 File: ./fig_cha5/icub30box1_crop.jpg Graphic file (type jpg)
 
 <use ./fig_cha5/icub30box1_crop.jpg>
-<./fig_cha5/icub30box2_crop.jpg, id=2254, 135.50626pt x 135.50626pt>
+<./fig_cha5/icub30box2_crop.jpg, id=2237, 135.50626pt x 135.50626pt>
 File: ./fig_cha5/icub30box2_crop.jpg Graphic file (type jpg)
 
 <use ./fig_cha5/icub30box2_crop.jpg>
-<./fig_cha5/icub30box3_crop.jpg, id=2255, 135.50626pt x 136.25906pt>
+<./fig_cha5/icub30box3_crop.jpg, id=2238, 135.50626pt x 136.25906pt>
 File: ./fig_cha5/icub30box3_crop.jpg Graphic file (type jpg)
 
 <use ./fig_cha5/icub30box3_crop.jpg>
-<./fig_cha5/icub30box4_crop.jpg, id=2256, 135.50626pt x 136.25906pt>
+<./fig_cha5/icub30box4_crop.jpg, id=2239, 135.50626pt x 136.25906pt>
 File: ./fig_cha5/icub30box4_crop.jpg Graphic file (type jpg)
 
 <use ./fig_cha5/icub30box4_crop.jpg>
@@ -2127,19 +2127,19 @@ Overfull \hbox (43.30531pt too wide) in paragraph at lines 118--122
 [][][][][][][][] 
  []
 
-<./fig_cha5/icub35box1_crop.jpg, id=2257, 136.25906pt x 135.50626pt>
+<./fig_cha5/icub35box1_crop.jpg, id=2240, 136.25906pt x 135.50626pt>
 File: ./fig_cha5/icub35box1_crop.jpg Graphic file (type jpg)
 
 <use ./fig_cha5/icub35box1_crop.jpg>
-<./fig_cha5/icub35box2_crop.jpg, id=2258, 135.50626pt x 135.50626pt>
+<./fig_cha5/icub35box2_crop.jpg, id=2241, 135.50626pt x 135.50626pt>
 File: ./fig_cha5/icub35box2_crop.jpg Graphic file (type jpg)
 
 <use ./fig_cha5/icub35box2_crop.jpg>
-<./fig_cha5/icub35box3_crop.jpg, id=2259, 135.50626pt x 135.50626pt>
+<./fig_cha5/icub35box3_crop.jpg, id=2242, 135.50626pt x 135.50626pt>
 File: ./fig_cha5/icub35box3_crop.jpg Graphic file (type jpg)
 
 <use ./fig_cha5/icub35box3_crop.jpg>
-<./fig_cha5/icub35box4_crop.jpg, id=2260, 136.25906pt x 135.50626pt>
+<./fig_cha5/icub35box4_crop.jpg, id=2243, 136.25906pt x 135.50626pt>
 File: ./fig_cha5/icub35box4_crop.jpg Graphic file (type jpg)
 
 <use ./fig_cha5/icub35box4_crop.jpg>
@@ -2147,19 +2147,19 @@ Overfull \hbox (43.30531pt too wide) in paragraph at lines 126--130
 [][][][][][][][] 
  []
 
-<./fig_cha5/icub40box1_crop.jpg, id=2261, 135.50626pt x 136.25906pt>
+<./fig_cha5/icub40box1_crop.jpg, id=2244, 135.50626pt x 136.25906pt>
 File: ./fig_cha5/icub40box1_crop.jpg Graphic file (type jpg)
 
 <use ./fig_cha5/icub40box1_crop.jpg>
-<./fig_cha5/icub40box2_crop.jpg, id=2262, 135.50626pt x 135.50626pt>
+<./fig_cha5/icub40box2_crop.jpg, id=2245, 135.50626pt x 135.50626pt>
 File: ./fig_cha5/icub40box2_crop.jpg Graphic file (type jpg)
 
 <use ./fig_cha5/icub40box2_crop.jpg>
-<./fig_cha5/icub40box3_crop.jpg, id=2263, 135.50626pt x 136.25906pt>
+<./fig_cha5/icub40box3_crop.jpg, id=2246, 135.50626pt x 136.25906pt>
 File: ./fig_cha5/icub40box3_crop.jpg Graphic file (type jpg)
 
 <use ./fig_cha5/icub40box3_crop.jpg>
-<./fig_cha5/icub40box4_crop.jpg, id=2264, 135.50626pt x 136.25906pt>
+<./fig_cha5/icub40box4_crop.jpg, id=2247, 135.50626pt x 136.25906pt>
 File: ./fig_cha5/icub40box4_crop.jpg Graphic file (type jpg)
 
 <use ./fig_cha5/icub40box4_crop.jpg>
@@ -2179,7 +2179,7 @@ ps-converted-to.pdf ./fig_cha5/joint_sbox_adj.eps>
 (epstopdf)             \includegraphics on input line 153.
 Package epstopdf Info: Output file is already uptodate.
 
-<./fig_cha5/joint_sbox_adj-eps-converted-to.pdf, id=2266, 421.575pt x 317.185pt
+<./fig_cha5/joint_sbox_adj-eps-converted-to.pdf, id=2249, 421.575pt x 317.185pt
 >
 File: ./fig_cha5/joint_sbox_adj-eps-converted-to.pdf Graphic file (type pdf)
  <use ./fig_cha5/joint_sbox_adj-eps-converted-to.pdf>
@@ -2195,7 +2195,7 @@ ed-to.pdf>
 (epstopdf)             \includegraphics on input line 154.
 Package epstopdf Info: Output file is already uptodate.
 
-<./fig_cha5/joint_ssbox_high356-eps-converted-to.pdf, id=2267, 421.575pt x 317.
+<./fig_cha5/joint_ssbox_high356-eps-converted-to.pdf, id=2250, 421.575pt x 317.
 185pt>
 File: ./fig_cha5/joint_ssbox_high356-eps-converted-to.pdf Graphic file (type pd
 f)
@@ -2222,23 +2222,23 @@ eps-converted-to.pdf ./fig_cha5/regression_high.eps>
 (epstopdf)             \includegraphics on input line 181.
 Package epstopdf Info: Output file is already uptodate.
 
-<./fig_cha5/regression_high-eps-converted-to.pdf, id=2271, 421.575pt x 317.185p
+<./fig_cha5/regression_high-eps-converted-to.pdf, id=2254, 421.575pt x 317.185p
 t>
 File: ./fig_cha5/regression_high-eps-converted-to.pdf Graphic file (type pdf)
  <use ./fig_cha5/regression_high-eps-converted-to.pdf>
-<./fig_cha5/sbox_high356_ssbox_adj_005_095_1.jpg, id=2272, 210.03468pt x 194.97
+<./fig_cha5/sbox_high356_ssbox_adj_005_095_1.jpg, id=2255, 210.03468pt x 194.97
 844pt>
 File: ./fig_cha5/sbox_high356_ssbox_adj_005_095_1.jpg Graphic file (type jpg)
  <use ./fig_cha5/sbox_high356_ssbox_adj_005_095_1.jpg>
-<./fig_cha5/sbox_high356_ssbox_adj_005_095_2.jpg, id=2273, 210.03468pt x 194.97
+<./fig_cha5/sbox_high356_ssbox_adj_005_095_2.jpg, id=2256, 210.03468pt x 194.97
 844pt>
 File: ./fig_cha5/sbox_high356_ssbox_adj_005_095_2.jpg Graphic file (type jpg)
  <use ./fig_cha5/sbox_high356_ssbox_adj_005_095_2.jpg>
-<./fig_cha5/sbox_high356_ssbox_adj_005_095_3.jpg, id=2274, 210.03468pt x 194.97
+<./fig_cha5/sbox_high356_ssbox_adj_005_095_3.jpg, id=2257, 210.03468pt x 194.97
 844pt>
 File: ./fig_cha5/sbox_high356_ssbox_adj_005_095_3.jpg Graphic file (type jpg)
  <use ./fig_cha5/sbox_high356_ssbox_adj_005_095_3.jpg>
-<./fig_cha5/sbox_high356_ssbox_adj_005_095_4.jpg, id=2275, 210.03468pt x 194.97
+<./fig_cha5/sbox_high356_ssbox_adj_005_095_4.jpg, id=2258, 210.03468pt x 194.97
 844pt>
 File: ./fig_cha5/sbox_high356_ssbox_adj_005_095_4.jpg Graphic file (type jpg)
  <use ./fig_cha5/sbox_high356_ssbox_adj_005_095_4.jpg>
@@ -2247,19 +2247,19 @@ Overfull \hbox (43.30531pt too wide) in paragraph at lines 207--211
  []
 
 
-<./fig_cha5/sbox_high356_ssbox_adj_167_833_1.jpg, id=2276, 212.29312pt x 196.48
+<./fig_cha5/sbox_high356_ssbox_adj_167_833_1.jpg, id=2259, 212.29312pt x 196.48
 407pt>
 File: ./fig_cha5/sbox_high356_ssbox_adj_167_833_1.jpg Graphic file (type jpg)
  <use ./fig_cha5/sbox_high356_ssbox_adj_167_833_1.jpg>
-<./fig_cha5/sbox_high356_ssbox_adj_167_833_2.jpg, id=2277, 212.29312pt x 196.48
+<./fig_cha5/sbox_high356_ssbox_adj_167_833_2.jpg, id=2260, 212.29312pt x 196.48
 407pt>
 File: ./fig_cha5/sbox_high356_ssbox_adj_167_833_2.jpg Graphic file (type jpg)
  <use ./fig_cha5/sbox_high356_ssbox_adj_167_833_2.jpg>
-<./fig_cha5/sbox_high356_ssbox_adj_167_833_3.jpg, id=2278, 210.7875pt x 196.484
+<./fig_cha5/sbox_high356_ssbox_adj_167_833_3.jpg, id=2261, 210.7875pt x 196.484
 07pt>
 File: ./fig_cha5/sbox_high356_ssbox_adj_167_833_3.jpg Graphic file (type jpg)
  <use ./fig_cha5/sbox_high356_ssbox_adj_167_833_3.jpg>
-<./fig_cha5/sbox_high356_ssbox_adj_167_833_4.jpg, id=2279, 211.54031pt x 197.23
+<./fig_cha5/sbox_high356_ssbox_adj_167_833_4.jpg, id=2262, 211.54031pt x 197.23
 688pt>
 File: ./fig_cha5/sbox_high356_ssbox_adj_167_833_4.jpg Graphic file (type jpg)
  <use ./fig_cha5/sbox_high356_ssbox_adj_167_833_4.jpg>
@@ -2268,19 +2268,19 @@ Overfull \hbox (43.30531pt too wide) in paragraph at lines 215--219
  []
 
 
-<./fig_cha5/sbox_high356_ssbox_adj_433_567_1.jpg, id=2280, 211.54031pt x 194.22
+<./fig_cha5/sbox_high356_ssbox_adj_433_567_1.jpg, id=2263, 211.54031pt x 194.22
 563pt>
 File: ./fig_cha5/sbox_high356_ssbox_adj_433_567_1.jpg Graphic file (type jpg)
  <use ./fig_cha5/sbox_high356_ssbox_adj_433_567_1.jpg>
-<./fig_cha5/sbox_high356_ssbox_adj_433_567_2.jpg, id=2281, 211.54031pt x 194.22
+<./fig_cha5/sbox_high356_ssbox_adj_433_567_2.jpg, id=2264, 211.54031pt x 194.22
 563pt>
 File: ./fig_cha5/sbox_high356_ssbox_adj_433_567_2.jpg Graphic file (type jpg)
  <use ./fig_cha5/sbox_high356_ssbox_adj_433_567_2.jpg>
-<./fig_cha5/sbox_high356_ssbox_adj_433_567_3.jpg, id=2282, 211.54031pt x 194.22
+<./fig_cha5/sbox_high356_ssbox_adj_433_567_3.jpg, id=2265, 211.54031pt x 194.22
 563pt>
 File: ./fig_cha5/sbox_high356_ssbox_adj_433_567_3.jpg Graphic file (type jpg)
  <use ./fig_cha5/sbox_high356_ssbox_adj_433_567_3.jpg>
-<./fig_cha5/sbox_high356_ssbox_adj_433_567_4.jpg, id=2283, 211.54031pt x 194.22
+<./fig_cha5/sbox_high356_ssbox_adj_433_567_4.jpg, id=2266, 211.54031pt x 194.22
 563pt>
 File: ./fig_cha5/sbox_high356_ssbox_adj_433_567_4.jpg Graphic file (type jpg)
  <use ./fig_cha5/sbox_high356_ssbox_adj_433_567_4.jpg>
@@ -2289,19 +2289,19 @@ Overfull \hbox (43.30531pt too wide) in paragraph at lines 223--227
  []
 
 
-<./fig_cha5/sbox_high356_ssbox_adj_667_333_1.jpg, id=2284, 211.54031pt x 195.73
+<./fig_cha5/sbox_high356_ssbox_adj_667_333_1.jpg, id=2267, 211.54031pt x 195.73
 125pt>
 File: ./fig_cha5/sbox_high356_ssbox_adj_667_333_1.jpg Graphic file (type jpg)
  <use ./fig_cha5/sbox_high356_ssbox_adj_667_333_1.jpg>
-<./fig_cha5/sbox_high356_ssbox_adj_667_333_2.jpg, id=2285, 211.54031pt x 195.73
+<./fig_cha5/sbox_high356_ssbox_adj_667_333_2.jpg, id=2268, 211.54031pt x 195.73
 125pt>
 File: ./fig_cha5/sbox_high356_ssbox_adj_667_333_2.jpg Graphic file (type jpg)
  <use ./fig_cha5/sbox_high356_ssbox_adj_667_333_2.jpg>
-<./fig_cha5/sbox_high356_ssbox_adj_667_333_3.jpg, id=2286, 211.54031pt x 194.97
+<./fig_cha5/sbox_high356_ssbox_adj_667_333_3.jpg, id=2269, 211.54031pt x 194.97
 844pt>
 File: ./fig_cha5/sbox_high356_ssbox_adj_667_333_3.jpg Graphic file (type jpg)
  <use ./fig_cha5/sbox_high356_ssbox_adj_667_333_3.jpg>
-<./fig_cha5/sbox_high356_ssbox_adj_667_333_4.jpg, id=2287, 218.31563pt x 194.97
+<./fig_cha5/sbox_high356_ssbox_adj_667_333_4.jpg, id=2270, 218.31563pt x 194.97
 844pt>
 File: ./fig_cha5/sbox_high356_ssbox_adj_667_333_4.jpg Graphic file (type jpg)
  <use ./fig_cha5/sbox_high356_ssbox_adj_667_333_4.jpg>
@@ -2309,8 +2309,8 @@ Overfull \hbox (46.71992pt too wide) in paragraph at lines 231--235
 [][][][][][][][] 
  []
 
-) [106 <C:/GitHub/BidanThesis/fig_cha5/regression_size-eps-converted-to.pdf>]
-[107 <C:/GitHub/BidanThesis/fig_cha5/icub27box1_crop.jpg> <C:/GitHub/BidanThesi
+) [103 <C:/GitHub/BidanThesis/fig_cha5/regression_size-eps-converted-to.pdf>]
+[104 <C:/GitHub/BidanThesis/fig_cha5/icub27box1_crop.jpg> <C:/GitHub/BidanThesi
 s/fig_cha5/icub27box2_crop.jpg> <C:/GitHub/BidanThesis/fig_cha5/icub27box3_crop
 .jpg> <C:/GitHub/BidanThesis/fig_cha5/icub27box4_crop.jpg> <C:/GitHub/BidanThes
 is/fig_cha5/icub30box1_crop.jpg> <C:/GitHub/BidanThesis/fig_cha5/icub30box2_cro
@@ -2320,10 +2320,10 @@ op.jpg> <C:/GitHub/BidanThesis/fig_cha5/icub35box2_crop.jpg> <C:/GitHub/BidanTh
 esis/fig_cha5/icub35box3_crop.jpg> <C:/GitHub/BidanThesis/fig_cha5/icub35box4_c
 rop.jpg> <C:/GitHub/BidanThesis/fig_cha5/icub40box1_crop.jpg> <C:/GitHub/BidanT
 hesis/fig_cha5/icub40box2_crop.jpg> <C:/GitHub/BidanThesis/fig_cha5/icub40box3_
-crop.jpg> <C:/GitHub/BidanThesis/fig_cha5/icub40box4_crop.jpg>] [108 <C:/GitHub
+crop.jpg> <C:/GitHub/BidanThesis/fig_cha5/icub40box4_crop.jpg>] [105 <C:/GitHub
 /BidanThesis/fig_cha5/joint_sbox_adj-eps-converted-to.pdf> <C:/GitHub/BidanThes
-is/fig_cha5/joint_ssbox_high356-eps-converted-to.pdf>] [109 <C:/GitHub/BidanThe
-sis/fig_cha5/regression_high-eps-converted-to.pdf>] [110 <C:/GitHub/BidanThesis
+is/fig_cha5/joint_ssbox_high356-eps-converted-to.pdf>] [106 <C:/GitHub/BidanThe
+sis/fig_cha5/regression_high-eps-converted-to.pdf>] [107 <C:/GitHub/BidanThesis
 /fig_cha5/sbox_high356_ssbox_adj_005_095_1.jpg> <C:/GitHub/BidanThesis/fig_cha5
 /sbox_high356_ssbox_adj_005_095_2.jpg> <C:/GitHub/BidanThesis/fig_cha5/sbox_hig
 h356_ssbox_adj_005_095_3.jpg> <C:/GitHub/BidanThesis/fig_cha5/sbox_high356_ssbo
@@ -2338,29 +2338,29 @@ box_high356_ssbox_adj_433_567_3.jpg> <C:/GitHub/BidanThesis/fig_cha5/sbox_high3
 adj_667_333_1.jpg> <C:/GitHub/BidanThesis/fig_cha5/sbox_high356_ssbox_adj_667_3
 33_2.jpg> <C:/GitHub/BidanThesis/fig_cha5/sbox_high356_ssbox_adj_667_333_3.jpg>
  <C:/GitHub/BidanThesis/fig_cha5/sbox_high356_ssbox_adj_667_333_4.jpg>]
-(C:\GitHub\BidanThesis\includes/cha5_sec4_discussion.tex) [111
+(C:\GitHub\BidanThesis\includes/cha5_sec4_discussion.tex) [108
 
 
 ])
-(C:\GitHub\BidanThesis\myThesis_01.bbl [112
+(C:\GitHub\BidanThesis\myThesis_01.bbl [109
 
 
-] [113] [114] [115] [116] [117]
-[118] [119] [120] [121] [122]
+] [110] [111] [112] [113] [114]
+[115] [116] [117] [118] [119]
 Missing character: There is no é in font ptmr7t!
 Missing character: There is no é in font ptmr7t!
- [123] [124])
+ [120] [121])
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 63.
-[125]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 63.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 65.
+[122]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 65.
  (C:\GitHub\BidanThesis\myThesis_01.aux
 (C:\GitHub\BidanThesis\includes/cha5_sec2_method.aux)
 (C:\GitHub\BidanThesis\includes/cha5_sec3_experiment.aux)
 (C:\GitHub\BidanThesis\includes/cha5_sec4_discussion.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 63.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 65.
 Package rerunfilecheck Info: File `myThesis_01.out' has not changed.
 (rerunfilecheck)             Checksum: 168259FEA047A2FEC35EFEA7FAF811A1;4344.
 
@@ -2369,10 +2369,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 10622 strings out of 495285
- 178089 string characters out of 3179827
- 251714 words of memory out of 3000000
- 12706 multiletter control sequences out of 15000+200000
+ 10603 strings out of 495285
+ 177690 string characters out of 3179827
+ 251602 words of memory out of 3000000
+ 12704 multiletter control sequences out of 15000+200000
  57594 words of font info for 120 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  41i,17n,47p,2005b,714s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2396,9 +2396,9 @@ s/type1/urw/symbol/usyr.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/urw/
 times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/urw/times/utmbi
 8a.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/urw/times/utmr8a.pfb><C:/
 Program Files (x86)/MiKTeX 2.8/fonts/type1/urw/times/utmri8a.pfb>
-Output written on myThesis_01.pdf (126 pages, 13638955 bytes).
+Output written on myThesis_01.pdf (126 pages, 13636456 bytes).
 PDF statistics:
- 2606 PDF objects out of 2984 (max. 8388607)
- 650 named destinations out of 1000 (max. 500000)
+ 2584 PDF objects out of 2984 (max. 8388607)
+ 633 named destinations out of 1000 (max. 500000)
  1298 words of extra memory for PDF output out of 10000 (max. 10000000)
 

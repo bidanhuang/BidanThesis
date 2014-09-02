@@ -22,7 +22,7 @@
 \usepackage{natbib}
 
 \usepackage{titlesec}
-\setcounter{secnumdepth}{3}
+%\setcounter{secnumdepth}{3}
 %\titleformat{\paragraph}
 %{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
 %\titlespacing*{\paragraph}
@@ -31,27 +31,29 @@
 
 
 %---------- front matter -----------
-%\title{Modular Approach of Learning\\Robot Grasp and Manipulation}
-%\author{Bidan Huang}
-%\degree{Doctor of Philosophy}
-%\department{Department of Computer Sciences}
-%\degreemonthyear{October 2014}
-%\norestrictions
+\title{Modular Approach of Learning\\Robot Grasp and Manipulation}
+\author{Bidan Huang}
+\degree{Doctor of Philosophy}
+\department{Department of Computer Sciences}
+\degreemonthyear{October 2014}
+\norestrictions
+\pagenumbering{roman}
 \begin{document}
-%\maketitle
-%\begin{abstract}
-%In this thesis numerous seminal results are proved which will
-%decisively shape the future development of the subject.
-%\end{abstract}
+\maketitle
+\begin{abstract}
+In this thesis numerous seminal results are proved which will
+decisively shape the future development of the subject.
+\end{abstract}
 %===================================
 
 \tableofcontents
 
+
 \input{includes/cha1_introduction}
 \input{includes/cha2_relatedwork}
-\input{includes/cha3_graspplanning}
-\input{includes/cha4_manipulation}
-\input{includes/cha5_mimesis}
+%\input{includes/cha3_graspplanning}
+%\input{includes/cha4_manipulation}
+%\input{includes/cha5_mimesis}
 %\input{includes/C6_conclusion}
 
 
