@@ -36,11 +36,11 @@ Icon
 .Trashes
 
 # latex auto generate files
-.bak
-.aux
-.bbl
-.blg
-.log
-.out
-.toc
+*.bak
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
 myThesis_01.pdf
