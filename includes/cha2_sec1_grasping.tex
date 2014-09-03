@@ -1,5 +1,5 @@
 \section{A review of robot grasping and manipulation}
-\label{cha2:sec1:grasping}
+\label{cha2:sec1}
 %TODO: introduction  of grasping and manipulation. What is grasping? What is manipulation?
 
 Robot grasping and manipulation researches aim to enable robots with human level ability of handling objects. Grasping and manipulation are usually put in to the same research category and studied by the same robotic community, as they both try to tackle the ``contact tasks'', which  use robot hand (end-effectors) to get physical contacts and interact with the target objects.
@@ -10,7 +10,8 @@ Robot grasping focuses on how to stabilize the target objects with the support f
 %Manipulation: prehensile and nonprehensile
 
 \subsection{Robot grasp planning}
-\label{cha2:sec1:grasping:planing}
+\label{cha2:sec1:planning}
+%\label{cha2:sec1:grasping:planing}
 
 % ----- What is grasp planning. Force/form closure -----
 Given a robot hand and object, there are infinite ways to grasp the object. These grasps have different performances and functionalities. Grasp planning is usually formulated as an optimization problem of grasp performance by finding the contact point locations or robot hand configuration. This technique is call optimal grasp synthesis. The most important criteria in the optimization is the stability of the grasp. In the robot grasping literature, two of the most extensively used mechanisms for guaranteeing grasp stability are the force-closure and form-closure criterion~\citep{Nguyen87}. A grasp is said to achieve force-closure when the fingers can apply appropriate forces on an object to produce wrenches in any direction~\citep{SalisburyJr1985}. Form-closure is a stronger condition than force closure, which can only be achieved if a grasp is force closure with frictionless contact points~\citep{diziouglu1984mechanics}.
@@ -38,7 +39,8 @@ The above methods are for static grasp planning that relies on precise and accur
 
 
 \subsection{Robot Manipulation}
-\label{cha2:sec1:grasping:manipulation}
+\label{cha2:sec1:manipulation}
+%\label{cha2:sec1:grasping:manipulation}
 A classic approach of manipulation is impedance control~\citep{howard2010transferring,wimbock2012comparison}. Given the desired impedance of a task, we can compute proper motor commands for the robot to accomplish it. Fix impedance control is limited to simple tasks. In many manipulation tasks such as opening a bottle cap, variable impedance is required: at the beginning we need a large impedance to break the contact between the bottle and the cap, and later we need a small impedance to drive the cap smoothly. For such tasks fix impedance control will either lead to task failure or cause hardware damage.
 However, computing the impedance for a given task involving variable impedance is difficult.
 In many cases the impedance is roughly approximated by a linear model, but this is inadequate for nonlinear tasks.
@@ -51,7 +53,8 @@ Variable impedance can also be learnt by the reinforcement learning algorithm Po
 \textcolor{red}{TO BE EXTENDED}
 
 \subsection{Reaching motion planning}
-\label{cha2:sec1:grasping:reaching}
+\label{cha2:sec1:reaching}
+%\label{cha2:sec1:grasping:reaching}
 
 Reaching motion is another key component in the robot grasping and manipulation problem. Given a computed stable grasp, how to deliver the robot hand to the desired position and form the desired hand posture is the question to answer in this study. This is not a simple path planning problem for the robot arm, but a high dimensional planning problem taking the multiple finger movement into account. At one hand, most studies try to plan a motion to avoid pre-manure collisions between the hand and the object. To this end, the finger movement and the arm movement always need to couple in order to ensure the fingers clutch at a proper moment \citep{Shukla2011CDS}, and curve around the object to form the desired grasps \citep{kroemer2011grasping}. To increase the robustness of a grasp, the uncertainty in perception is also taken into account \citep{stulp2011learning}. At the other hand, however, some researches study how to produce ``pre-mature'' contacts with the object.
 \citet{chang2010planning} study the human ``pre-grasp'' movements such as sliding a coin to the table edge in order to pick it up, and rotating the handle of a pan to a proper position to grasp it. These methods largely increase the chance of successfully execute a grasp by changing the object status.

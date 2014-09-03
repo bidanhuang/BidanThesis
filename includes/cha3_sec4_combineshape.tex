@@ -6,16 +6,19 @@ Objects used in daily life have a variety of shapes. Very often they share simil
 
 To work with un-trained objects, we take the grasping by shape primitives approach~\citep{miller2003automatic}. This approach makes the assumption that all object shapes can be decomposed into a set of primitive shapes where grasps can be planned easily. Based on this assumption, we firstly build a set of GMMs to model the grasp distribution $\left(\Omega_i, i=1,2,...N\right)$ for a set of $N$ chosen shape primitives. When a unseen object is presented, of which the shape can be approximated as a combination of known shape primitives, it's grasp distribution is built by combining the primitives' models. The combined model is then used to quickly generate new grasps.
 
-\subsection{Combine grasp distribution of shape primitives}
-\label{cha3:sec4:combine}
+%\subsection{Combine grasp distribution of shape primitives}
+%\label{cha3:sec4:combine}
 
-\subsubsection{Primitive grasp distribution}
-\label{cha3:sec4:combine:primitivegraspdistribution}
+
+\subsection{Primitive grasp distribution}
+\label{cha3:sec4:pgdistribution}
+%\subsubsection{Primitive grasp distribution}
+%\label{cha3:sec4:combine:primitivegraspdistribution}
 Here we define our shape primitives to be a set of superquadrics. We learn the grasp distributions for a set of superquadrics and use them as ``primitive grasp distribution''.
 
 
 \paragraph{Superquadrics} ~\\
-\label{cha3:sec4:combine:primitivegraspdistribution:sq}
+%\label{cha3:sec4:combine:primitivegraspdistribution:sq}
 Superquadrics are a family of geometric shapes that includes a large variety of shapes we use in daily life, such as cuboid, sphere and cylinder. We choose superquadrics as our shape primitives for three reasons. Firstly, superquadrics and their combinations can be used to represent most of the daily life objects. The widely use of superquadrics in computer graphic and game industry for modeling object shapes and that show its versatility. Secondly, all superquadrics are symmetry to their $x, y, z$ axis. This can reduce the number of testing grasps to 1/8. Thirdly, it's implicit expression is convenient for combining their grasp density, which will be explained in detail in the Section~\ref{cha3:sec4:combine:combining}.
 
 To represent a superquadric we have:
@@ -56,8 +59,10 @@ Figure~\ref{fig:sq}~ shows how does the shape varies by these two factors~\footn
 \end{figure}
 
 
-\paragraph{Learning grasp distribution for shape primitives} ~\\
-\label{cha3:sec4:combine:primitivegraspdistribution:learning}
+\paragraph{Learning grasp distribution for shape primitives}
+%\label{cha3:sec4:combine:primitivegraspdistribution:learning}
+~\\
+
 With the method described in Section~\ref{cha3:sec2}, we build GMMs for the feasible grasp distribution for a set of shape primitives, i.e. superquadrics. Again, we model the distribution with a GMM as a sum of $K$ Gaussian components:
 
 \begin{equation}
@@ -72,8 +77,8 @@ Figure~\ref{fig:primtivedistr} visualizes the grasp distributions encoded by GMM
 
 \begin{figure}
   \centering
-    \subfloat[\scriptsize{Box}] {\includegraphics[width=4.5cm]{void.jpg}}
-    \subfloat[\scriptsize{Sphere}]  {\includegraphics[width=4.5cm]{void.jpg}}
+    \subfloat[\scriptsize{Box}] {\includegraphics[width=4.5cm]{./fig_cha3/box1.eps}}
+    \subfloat[\scriptsize{Sphere}]  {\includegraphics[width=4.5cm]{./fig_cha3/ball2.jpg}}
     \subfloat[\scriptsize{Cylinder}]  {\includegraphics[width=4.5cm]{./fig_cha3/cyl.jpg}}
   \caption{A 3D visualization of the feasible grasp distribution for three shape primitives and the Barrett hand. The red contours are the isosurfaces of the grasp distribution. The ``reder'' the area is, the denser the distribution is.}
   \label{fig:primtivedistr}

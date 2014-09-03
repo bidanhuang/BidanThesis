@@ -32,7 +32,9 @@ Starting from the geometry of an object and the kinematic property of a robot ha
 Two different approaches are used here: optimization and simulation. We use simulation method for the Barrett hand and use optimization method for the iCub hand. In simulation, we use a trial-and-error approach: in the state space we try to generate as many grasps as possible and select those feasible ones. In principle we can generate more variety of grasps by this method, as some of them might be hard to reached by optimization. The 4 d.o.f Barrett hand is particularly suitable for this approach. For the 14 d.o.f iCub hand, however, the state space is much larger and hence the trial-and-error approach is expensive. Instead, for the iCub hand we use an optimization method.
 
 
-\subsubsection{Optimization}
+%\subsubsection{Optimization}
+\paragraph{Optimization}
+~\\
 We use the optimization algorithm proposed in the work of El-Khoury and etc.~\citep{el2013generation} to generate grasps for the iCub.
 The iCub hand is modeled in 8 dimensions in this algorithm and the thumb, index and middle finger are taken into account.
 
@@ -92,7 +94,9 @@ The algorithm above can generate a variety of high quality force-closure grasps 
 
 
 
-\subsubsection{Simulation}
+%\subsubsection{Simulation}
+\paragraph{Simulation}
+~\\
 %TODO: quality criterion: Ferrari and Canny
 As the Barrett hand is modeled in the widely used simulator GraspIt!~\citep{miller2004graspit}, we use simulation to generate its data. GraspIt! is designed for grasp analysis and it provides a library of robots and object models. Its quality measurement module computes the grasp quality according to all the contacts between the hand and the object, in the form described by Ferrari and Canny~\citep{ferrari1992planning}. A grasp planning module for primitive shapes, i.e cylinder, sphere, cuboid and cone, is available, allowing users to easily generate grasps~\citep{miller2003automatic}.
 To sample grasps for objects with complex shapes, we alter the module and generate grasps as follows.

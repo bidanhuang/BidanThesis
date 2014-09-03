@@ -34,3 +34,12 @@ Icon
 # Files that might appear on external disk
 .Spotlight-V100
 .Trashes
+
+# latex auto generate files
+.bak
+.aux
+.bbl
+.blg
+.log
+.out
+.toc

@@ -43,7 +43,7 @@ In each demonstration, data from first time the finger touch the cap to the cap 
 
 
 \subsubsection{Demonstration in different task contexts}
-\label{cha4:sec3:taskcontexts}
+\label{cha4:sec3:experimentsetup:taskcontexts}
 The experiment starts with human demonstration. In order to explore different task contexts, we demonstrated the task with different setups, which are the combination of four different plastic bottles ($b1-b4$) and four different plastic caps ($c1-b4$) (Fig.~\ref{fig:b_c}).
 According to the surfaces condition of the bottles and the caps, the difficulty of opening the bottles varies. $b1-b4$ are labeled by increasing difficulty. The bottle $b1$ is the easiest one, which originally contains body lotion. We lubricate bottle $b1$ with its body lotion to make it even easier. The bottle $b4$ is the most difficult one and it originally contains honey which is very sticky. We leave honey on the surfaces of $b4$ to make it more difficult. The difficulty is estimated qualitatively. It is judged according to the friction coefficient between the contact surfaces. Generally speaking, the friction coefficient between lubricated surfaces is smaller than between dry surfaces, while between smooth  surfaces is smaller than between sticky surfaces. Precise value of friction coefficient between plastics varies by type of the plastic. According to an internet resource~\footnote{http://www.tribology-abc.com/abc/cof.htm}, the dry dynamic friction coefficient between plastic-plastic surface is 0.2-0.4 and the lubricated dynamic friction coefficient is 0.04-0.1. The $c1-c4$ are labeled by the increasing diameters of the caps.
 
@@ -105,7 +105,7 @@ Bottle 4 & & & b4c3&\\
 \end{figure}
 
 \subsubsection{Sensors}
-\label{cha4:sec3:sensor}
+\label{cha4:sec3:experimentsetup:sensor}
 In each setup the teacher demonstrates the task of opening bottle cap three times. Before each demonstration, the bottle is tighten with the cap with the same scale of tightness. In total we recorded 21 sets of demonstrations. In this section, we explain how did we record these demonstrations by sensors.
 
 
@@ -134,18 +134,18 @@ In this section we explain how we manage the raw data and extra training data.
 The raw data from the three sensors stream in three separated channels. They have different formats and hence are handled differently.
 
 
-\subsubsection{Optitrack}
+\paragraph{Optitrack}
 
 With 3 markers attached with the object, OptiTrack is able to track both the object's translation and rotation. This is expressed in the position vector and the rotation matrix. To compute the angular displacement of the cap by the ration matrix of the cap, and compute the hand movement by the position vector of the hand. The accumulated angular displacement is used to learn the model and the hand movement is used to synchronize the data.
 
-\subsubsection{Force-Torque Sensor}
+\paragraph{Force-Torque Sensor}
 
 As the movement of the cap is restricted to the rotation along the z-axis, we concern only the torque applied in this direction.
 Other concerned dimension is the force applied in the z direction. The three taps on the cap before each demonstration will create three pulses in the z direction and hence is used for synchronization.
 
 
 
-\subsubsection{Tekscan}
+\paragraph{Tekscan}
 
 As mentioned in previous section, we use two set of Tekscan to cover the front and the size of the human hand. This enable the demonstrator to use any grasp they like for the task, not restricted to using the first three fingers as most of the other grasp experiment. In each type of grasp, the reading from the patches contacting with the cap are summed and multiplied by their surface area to compute the total grip force.
 
@@ -288,7 +288,8 @@ We encode the data in each of the module by GMM. As explained in Section~\ref{ch
 
 
 \subsection{Generating motor command for manipulation}
-\label{sec:command}
+\label{cha4:sec3:command}
+%\label{sec:command}
 Our approach is independent of robot system and can potentially be applied to any robot. We choose to implement this work with a Barrett hand mounted on a KUKA lightweight robot as they are available in our lab. We implement the multiple module system on this platform to enable the robot opening bottle caps.
 
 \begin{algorithm}
