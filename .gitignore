@@ -36,6 +36,16 @@ Icon
 .Trashes
 
 # latex auto generate files
+<<<<<<< HEAD
+*.bak
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+myThesis_01.pdf
+=======
 .bak
 .aux
 .bbl
@@ -43,3 +53,4 @@ Icon
 .log
 .out
 .toc
+>>>>>>> parent of ebc4b18... stop synching myThesis_01.pdf
