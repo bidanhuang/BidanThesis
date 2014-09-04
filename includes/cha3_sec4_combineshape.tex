@@ -4,7 +4,7 @@ A method to compute grasps for novel objects is in need for domestic service rob
 
 Objects used in daily life have a variety of shapes. Very often they share similar shape parts, such as sphere, cylinder and box. These shapes repeatedly appear in our daily life, being the object shape or the part of the object shape. Hence we call them``shape primitives''.
 
-To work with un-trained objects, we take the grasping by shape primitives approach~\citep{miller2003automatic}. This approach makes the assumption that all object shapes can be decomposed into a set of primitive shapes where grasps can be planned easily. Based on this assumption, we firstly build a set of GMMs to model the grasp distribution $\left(\Omega_i, i=1,2,...N\right)$ for a set of $N$ chosen shape primitives. When a unseen object is presented, of which the shape can be approximated as a combination of known shape primitives, it's grasp distribution is built by combining the primitives' models. The combined model is then used to quickly generate new grasps.
+To work with un-trained objects, we take the grasping by shape primitives approach~\citep{miller2003automatic}. This approach makes the assumption that all object shapes can be decomposed into a set of primitive shapes where grasps can be planned easily. Based on this assumption, we firstly build a set of GMMs to model the grasp distribution $\left(\Omega_i, i=1,2,...N\right)$ for a set of $N$ chosen shape primitives. When an unseen object is presented, of which the shape can be approximated as a combination of known shape primitives, it's grasp distribution is built by combining the primitives' models. The combined model is then used to quickly generate new grasps.
 
 %\subsection{Combine grasp distribution of shape primitives}
 %\label{cha3:sec4:combine}
@@ -14,12 +14,12 @@ To work with un-trained objects, we take the grasping by shape primitives approa
 \label{cha3:sec4:pgdistribution}
 %\subsubsection{Primitive grasp distribution}
 %\label{cha3:sec4:combine:primitivegraspdistribution}
-Here we define our shape primitives to be a set of superquadrics. We learn the grasp distributions for a set of superquadrics and use them as ``primitive grasp distribution''.
+Here we define our shape primitives to be a set of superquadrics. We learn the grasp distributions for a set of superquadrics and use them as the ``primitive grasp distribution''.
 
 
 \paragraph{Superquadrics} ~\\
 %\label{cha3:sec4:combine:primitivegraspdistribution:sq}
-Superquadrics are a family of geometric shapes that includes a large variety of shapes we use in daily life, such as cuboid, sphere and cylinder. We choose superquadrics as our shape primitives for three reasons. Firstly, superquadrics and their combinations can be used to represent most of the daily life objects. The widely use of superquadrics in computer graphic and game industry for modeling object shapes and that show its versatility. Secondly, all superquadrics are symmetry to their $x, y, z$ axis. This can reduce the number of testing grasps to 1/8. Thirdly, it's implicit expression is convenient for combining their grasp density, which will be explained in detail in the Section~\ref{cha3:sec4:combine:combining}.
+Superquadrics are a family of geometric shapes that includes a large variety of shapes we use in daily life, such as cuboid, sphere and cylinder. We choose superquadrics as our shape primitives for three reasons. Firstly, superquadrics and their combinations can be used to represent most of the daily life objects. The wide use of superquadrics in computer graphics and the game industry for modelling object shapes shows its versatility. Secondly, all superquadrics are symmetric to their $x, y, z$ axis. This can reduce the number of testing grasps to 1/8. Thirdly, it's implicit expression is convenient for combining the grasp density, which will be explained in detail in the Section~\ref{cha3:sec4:combine:combining}.
 
 To represent a superquadric we have:
 
@@ -59,11 +59,11 @@ Figure~\ref{fig:sq}~ shows how does the shape varies by these two factors~\footn
 \end{figure}
 
 
-\paragraph{Learning grasp distribution for shape primitives}
+\paragraph{Learning grasp distributions for shape primitives}
 %\label{cha3:sec4:combine:primitivegraspdistribution:learning}
 ~\\
 
-With the method described in Section~\ref{cha3:sec2}, we build GMMs for the feasible grasp distribution for a set of shape primitives, i.e. superquadrics. Again, we model the distribution with a GMM as a sum of $K$ Gaussian components:
+With the method described in Section~\ref{cha3:sec2}, we build GMMs for the feasible grasp distributions for a set of shape primitives, i.e. superquadrics. Again, we model the distribution with a GMM as a sum of $K$ Gaussian components:
 
 \begin{equation}
 {
@@ -80,24 +80,24 @@ Figure~\ref{fig:primtivedistr} visualizes the grasp distributions encoded by GMM
     \subfloat[\scriptsize{Box}] {\includegraphics[width=4.5cm]{./fig_cha3/box1.eps}}
     \subfloat[\scriptsize{Sphere}]  {\includegraphics[width=4.5cm]{./fig_cha3/ball2.jpg}}
     \subfloat[\scriptsize{Cylinder}]  {\includegraphics[width=4.5cm]{./fig_cha3/cyl.jpg}}
-  \caption{A 3D visualization of the feasible grasp distribution for three shape primitives and the Barrett hand. The red contours are the isosurfaces of the grasp distribution. The ``reder'' the area is, the denser the distribution is.}
+  \caption{A 3D visualization of the feasible grasp distribution for three shape primitives and the Barrett hand. The red contours are the isosurfaces of the grasp distribution. The ``redder'' the area is, the denser the distribution is.}
   \label{fig:primtivedistr}
 \end{figure}
 
 
 \subsubsection{Combining grasp distribution} ~\\
 \label{cha3:sec4:combine:combining}
-For the an object composed by a few shape primitives, its grasp distribution is the combination of the the grasp distributions of its primitive components. However, this ``combination'' is not a summation of the GMMs: we need to exclude the grasps causing collision.
+For an object composed of a few shape primitives, its grasp distribution is the combination of the the grasp distributions of its primitive components. However, this ``combination'' is not a summation of the GMMs: we need to exclude the grasps causing collision.
 
-Before combining the grasp distributions, which is encoded by GMMs, of different shape primitive components of an object, we need to reshape each GMM by the object geometry. This is because when primitives combine to a more complex shape object, the grasp space of one part might be blocked by other part of the object.
+Before combining the grasp distributions, which are encoded by GMMs, of different shape primitive components of an object, we need to reshape each GMM by the object geometry. This is because when primitives combine to a more complex shape object, the grasp space of one part might be blocked by other part of the object.
 
-For example, an object combined by a cylinder and a sphere is shown in Fig.~\ref{fig:object}(a) and it's primitives with their grasp distributions are shown in (b) and (c). As can be seen in (b) and (c), the top part of the grasp distribution of the cylinder will be inside the sphere and the bottom part of the grasp distribution of the sphere will be inside the cylinder. Grasps generated from these parts will cause collision between the hand and the object and hence they have to be excluded from the model. Further, even when the robot hand is placed in a feasible location for all components, when the fingers clutch to grasp one component of the object, the moving trajectory of the finger might be blocked by other components. This kind of grasps should also be excluded from the grasp density of the whole object.
+For example, an object combined by a cylinder and a sphere is shown in Fig.~\ref{fig:object}(a) and it's primitives with their grasp distributions are shown in (b) and (c). As can be seen in (b) and (c), the top part of the grasp distribution of the cylinder will be inside the sphere and the bottom part of the grasp distribution of the sphere will be inside the cylinder. Grasps generated from these parts will cause collisions between the hand and the object and hence they have to be excluded from the model. Further, even when the robot hand is placed in a feasible location for all components, when the fingers clutch to grasp one component of the object, the moving trajectory of the finger might be blocked by other components. These kind of grasps should also be excluded from the grasp density of the whole object.
 
-Therefore, we take into account two kinds of collisions: collisions between the palm and the object, collisions between the finger trajectories and the object. To avoid collisions, we use the ``object sigmoid'' function to remove the collision parts.
+Therefore, we take into account two kinds of collisions: collisions between the palm and the object and collisions between the finger trajectories and the object. To avoid collisions, we use the ``object sigmoid'' function to remove the collision parts.
 
 \paragraph{Object sigmoid} ~\\
 \label{cha3:sec4:combine:sigmoid}
-We define a shape descriptor ``object sigmoid'' for objects modeled by superquadric. The object sigmoid is a 3 dimensional sigmoid function defined as:
+We define a shape descriptor ``object sigmoid'' for objects modelled by a superquadric. The object sigmoid is a 3 dimensional sigmoid function defined as:
 \begin{equation}
 s\left(x, y ,z\right) = \frac{1}{1+e^{-100\left(r\left(x, y ,z\right)-1\right)}}
 \label{equ:objectsigmoid}
@@ -113,14 +113,14 @@ where r$\left(x, y ,z\right)$ is a function of the location defined in the form 
 \end{equation}
 In equation~\ref{equ:objectsigmoid} we choose a large coefficient, i.e. 100, for $r$ to make a sharp transition between 0 and 1 and hence a sharp cut on the object surface. Hence the object sigmoid gives a description of the shape of the object in the space: zero inside the object and one outside the object.
 
-Each primitive component has its own object sigmoid. Before combining the individual to form the whole distribution, each individual distribution is multiplied by all other component's object sigmoid. In this way, the likelihood inside the other parts of the object is reduced to zero, while the likelihood outside the object remain. The grasp distribution is hence ``trimmed'' by the other components of the object. The grasp distribution of the whole object is the summation of all the trimmed grasp distribution:
+Each primitive component has its own object sigmoid. Before combining the individual distributions to form the whole distribution, each individual distribution is multiplied by all other components' object sigmoids. In this way, the likelihood inside the other parts of the object is reduced to zero, while the likelihood outside the object remains. The grasp distribution is hence ``trimmed'' by the other components of the object. The grasp distribution of the whole object is the summation of all the trimmed grasp distributions:
 
 \begin{equation}
 \boldsymbol{\Omega}\left(x,y,z\right) = \sum_{i=1,2..}^{N}\left(\Omega_i\prod_{j=1,2..\left(j\neq{i}\right)}^{N}s_j\right)
 \end{equation}
 where $\Omega_i$, $s_j$, $N$ is the grasp distribution of the $i-th$ primitive component, the object sigmoid of the $j-th$ primitive component and the total number of primitive components. The total number of Gaussians in the GMM of the whole object is the sum of the number of each primitives.
 
-Figure.~\ref{fig:object}(d) shows the resulting grasp distribution of the whole object, which is the combination of the trimmed grasp GMM of the cylinder (Figure.~\ref{fig:object}(d)) and the sphere (Figure.~\ref{fig:object}(f)). Strictly speaking the combined grasp distributio is not a density function as the integral of the probability of the whole space is not normalized to one. Despite this it does not effect the computation of a new grasp as we consider each Gaussian component individually.
+Figure.~\ref{fig:object}(d) shows the resulting grasp distribution of the whole object, which is the combination of the trimmed grasp GMM of the cylinder (Figure.~\ref{fig:object}(d)) and the sphere (Figure.~\ref{fig:object}(f)). Strictly speaking, the combined grasp distribution is not a density function, as the integral of the probability of the whole space is not normalized to one. Despite this, it does not effect the computation of a new grasp as we consider each Gaussian component individually.
 
 \begin{figure}
 \centering
@@ -142,7 +142,7 @@ Figure.~\ref{fig:object}(d) shows the resulting grasp distribution of the whole 
 \end{figure}
 
 
-The equation above removes the grasps inside the object and hence avoids the collision between the robot palm and the object. However, grasps causing collision between finger trajectory and the object still remains.
+The equation above removes the grasps inside the object and hence avoids the collision between the robot palm and the object. However, grasps causing collision between finger trajectory and the object still remain.
 
 \paragraph{TODO: Trim grasp distribution by finger trajectory} ~\\
 
@@ -171,4 +171,4 @@ l_k = \prod_{j=1,2,...\left(j\neq{k}\right)}^N{s_j}
 \end{equation}
 If $l_k$ is smaller than 1, indicating that this point is inside or on the surface of the object, the likelihood at point $q^{\star}_k$ is zero.
 
-We find the nearest projection point from the $q_k^\star$ with non-zero density. The nearest $q_k^\star$ is chosen to be the final grasp hand position and orientation $q^\star$. The grasp distribution $\Omega^{\star}$ which $q^{\star}$ locates in is used to compute the corresponding joint configure though GMR. This allows us to compute the expected value of the finger joints from the conditional $p\left(\theta\mid{q^{\star}},\Omega^{\star}\right)$ (Section~\ref{cha3:sec2}). 
+We find the nearest projection point from the $q_k^\star$ with non-zero density. The nearest $q_k^\star$ is chosen to be the final grasp hand position and orientation $q^\star$. The grasp distribution $\Omega^{\star}$ which $q^{\star}$ locates in is used to compute the corresponding joint configuration though GMR. This allows us to compute the expected value of the finger joints from the conditional $p\left(\theta\mid{q^{\star}},\Omega^{\star}\right)$ (Section~\ref{cha3:sec2}). 
