@@ -1,3 +1,12 @@
+*.bak
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
@@ -26,8 +35,7 @@ $RECYCLE.BIN/
 .LSOverride
 
 # Icon must ends with two \r.
-Icon
-
+Icon
 # Thumbnails
 ._*
 
@@ -37,13 +45,7 @@ Icon
 
 # latex auto generate files
 <<<<<<< HEAD
-*.bak
-*.aux
-*.bbl
-*.blg
-*.log
-*.out
-*.toc
+
 myThesis_01.pdf
 =======
 .bak
@@ -53,4 +55,7 @@ myThesis_01.pdf
 .log
 .out
 .toc
->>>>>>> parent of ebc4b18... stop synching myThesis_01.pdf
+
+fig_cha3/box1-eps-converted-to.pdf
+myThesis_01.toc
+includes/cha5_sec3_experiment.aux
