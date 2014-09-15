@@ -2,16 +2,14 @@
 \label{cha2:sec2}
 %\label{cha2:sec2:learning}
 
-This section provides a brief introduction to robot imitation learning and then reviews its application in robot grasping and manipulation.
+This section provides a brief introduction to robot imitation learning and then reviews its applications in robot grasping and manipulation.
 
 \subsection{Robot imitation learning}
 \label{cha2:sec2:learning}
-Since the first study on robot imitation learning~\citep{friedrich1996robot}, this approach has become one of most popular research areas in robotics. It is considered to be a designer-friendly approach to teach robots new tasks. The aim of imitation learning, also referred to as ``Program by Demonstration'' (PbD) in some literature, is to enable a robot to learn new skills by observing human demonstrations and then to reuse these skills in similar tasks. Imitation learning is also referred to as ``Learn by Demonstration'' (LbD). In recent years, this approach has been extensively studied~\citep{calinon2007learning,calinon2008robot,dillmann2004teaching,kulic2012incremental} as a promising approach to build robot intelligence.
-
-\textcolor{red}{TO BE EXTENDED}
+Since the first study on robot imitation learning~\citep{friedrich1996robot}, this approach has become one of most popular research areas in robotics. It is considered to be a designer-friendly approach to teach robots new tasks. The aim of imitation learning, also referred to as ``Learn by Demonstration'' (LbD) or ``Program by Demonstration'' (PbD) in some literature, is to enable a robot to learn new skills by observing human demonstrations and then to reuse these skills in similar tasks. In recent years, this approach has been extensively studied~\citep{calinon2007learning,calinon2008robot,dillmann2004teaching,kulic2012incremental} as a promising approach to build robot intelligence.
 
 \subsection{Robot learning grasping and manipulation }
-\label{cha2:sec2:grasping-leaning}
+\label{cha2:sec2:grasping-learning}
 %\label{cha2:sec4:grasping-learning}
 
 %[El-Khoury and Sahbani, 2010].
@@ -19,26 +17,26 @@ Since the first study on robot imitation learning~\citep{friedrich1996robot}, th
 
 % Why need to use learning, benefit?
 % ----- reduce complexity -----
-As discussed in Section~\ref{cha2:sec1:grasping},
-\textcolor{red}{broken link here}
+As discussed in Section~\ref{cha2:sec1},
 conventional grasp and manipulation planning methods suffer from the curse of dimensionality.
 Learning techniques have been introduced to avoid the complexity of computing kinematical constraints guaranteeing stable grasps. Briefly speaking, robot grasping has two learning sources: imitation learning from human demonstration and learning from data collected from the simulation.
-In imitation learning, some researchers use datagloves for human demonstration. The human hand configuration is then mapped to an artificial hand workspace and the joint angles~\citep{Fischer1998,ekvall2007learning}, or hand preshapes~\citep{Kyota2005, pelossof2004svm, Li07} are learnt. Some other researchers use stereoscopy to track the hand when a demonstrator is performing a grasp~\citep{hueser2006learning} or to match the hand shape to a database of grasp images~\citep{Romero2008}. For long term automatic learning, markerless methods to track human hand and arm movements in the approach and grasp execution are studied~\citep{ekvall2007learning,do2009grasp}. These learning based approaches succeed in taking into account the hand kinematics and generate hand preshapes that are compatible with the object features. Human grasp postures are usually mapped to robot hand postures in fixed schemes, according to the shape of the object and the type of grasp human choose.
-\textcolor{red}{do you mean ..chosen by the human... ?}
+In imitation learning, some researchers use datagloves for human demonstration. The human hand configuration is then mapped to an artificial hand workspace and the joint angles~\citep{Fischer1998,ekvall2007learning}, or hand preshapes~\citep{Kyota2005, pelossof2004svm, Li07} are learnt. Some other researchers use stereoscopy to track the hand when a demonstrator is performing a grasp~\citep{hueser2006learning} or to match the hand shape to a database of grasp images~\citep{Romero2008}. For long term automatic learning, markerless methods to track human hand and arm movements in the approach and grasp execution are studied~\citep{ekvall2007learning,do2009grasp}. These learning based approaches succeed in taking into account the hand kinematics and generate hand preshapes that are compatible with the object features.
+Human grasp postures are usually mapped to robot hand postures in fixed schemes, according to the shape of the object and the type of grasp chosen by human.
 The learn from simulation method gets around this mapping step: it directly generates grasps with the robot hand's mechanical constraints. For a given object shape and a robot hand, thousands of grasps are generated in the simulator and later used as training data. \citet{pelossof2004svm} use a discriminative Support Vector Machine model to learn the correlation between the grasp configuration and grasp quality, while \citet{bidan2013grasp} use a generative Gaussian Mixture Model to learn the distribution of force closure grasps. Both models are used to generate new grasps. Grasp training data can also be generated in a real robot platform rather than a simulator~\citep{herzog2014learning}. However, this method is much more time consuming and hence it focuses on finding a way to maximize the use of the grasping experience, i.e. generalizing grasping strategies for novel objects.
 
-To further reduce the complexity of the grasping problem, modular approaches are used. This will be discussed in the Section~\ref{cha2:sec3:modular}.
+To further reduce the complexity of the grasping problem, modular approaches are used. This will be discussed in the Section~\ref{cha2:sec3}.
 
 % ----- uncertainty -----
-Besides reducing the complexity of the grasping problem, learning approaches are also used to tackle those common problems that appear in the human environment: uncertainty and noise in perception data, novel objects and unforeseeable situations. \citet{ekvall2007learning,stulp2011learning} study human grasp motion and try to learn how humans choose the approach vector that is robust to pose uncertainty. With the same principle, the human grasp postures are studied and mapped to robot hands in order to grasp objects where the pose is not estimated with high confidence~\citep{tegin2009demonstration}. With the recent advances in tactile sensing technology, many attempt to include the tactile sensory data in assessing the grasp stability. By estimating the grasp stability after the grasp execution, failure further actions on the object can be avoided. 
-\textcolor{red}{... failure further .... not sure what this means}
+\textcolor{red}{Besides reducing the complexity of the grasping problem, learning approaches are also used to tackle those common problems that appear in the human environment: uncertainty and noise in perception data, novel objects and unforeseeable situations. Most of these learning approaches study how human handle those situations and imitate the strategies.} \citet{ekvall2007learning,stulp2011learning} study human grasp motion and try to learn how humans choose the approach vector that is robust to noise in pose estimation. Driven by the same idea, the human grasp postures are also studied and mapped to robot hands~\citep{tegin2009demonstration}. Inaccurate execution of a grasp can also cause problems. Human handle this issue by using tactile feedback.
+With the recent advances in tactile sensing technology, many attempt to include the tactile sensory data in assessing the grasp stability.
+After grasp execution, feedback from tactile sensors provide a more accurate estimation of grasp stability then which provided by vision. This allows grasp correction and can avoid failed lifting of the object caused by instable grasp~\citep{li2014learning}.
 \citet{bekiroglu2011assessing} integrate the information of the object shape primitive, approach vector, tactile data and hand joint configuration to estimate a grasp quality.
-In the later work, contact point locations are also taken into account~\citep{dang2012learning,dang2014stable}. The support vector machine (SVM) is the most used model in this task.
+In the later work, contact point locations are also taken into account~\citep{dang2012learning,dang2014stable}. The support vector machine (SVM) is the most used model in discriminating stable and instable grasps. These tactile based methods are also used to evaluate grasps of novel objects.
 
 % ------ novel object ------
-The tactile feedback based methods are ``robot-centric'', i.e. they do not rely on the predefined object shape. Hence these methods can be easily applied to estimate grasp quality for novel objects. To generate grasps for novel objects, the mechanisms of both human perception and action  are studied. 
-\textcolor{red}{..action.. or ..action selection...?}
-\citet{detry2009learning} study the human Early-Cognitive-Vision (ECV) and use it as a feature to associate with grasps. The ECV feature includes colour and edge information and hence can be used to generate grasps for novel objects.
+%The tactile feedback based methods usually do not rely on predefined object shapes. Hence these methods can be easily applied to estimate grasp quality for novel objects.
+Human's ability in generated grasps for novel objects is also studied and imitated.
+\citet{detry2009learning} study the human Early-Cognitive-Vision (ECV), which includes colour and edge information that can be used to describe any objects. These features are associated with appropriate grasps and hence grasps of novel objects with matched features can be generated.
 \citet{el2007learning} try to imitate the human mechanism of representing objects by segmenting objects into a set of superquadric shape primitives. The mechanism of a human choosing the grasp component is then learnt by a Neural Network~\citep{el2010new}.
 
 

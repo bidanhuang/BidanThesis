@@ -71,9 +71,9 @@ To compare with the training data, we compute the grasp quality of the results w
 
 
 \begin{table*}
-\centering
 \renewcommand{\arraystretch}{1.5}
     \caption{Average computation time for generating new grasps for the iCub hand and the Barrett hand.}
+    \hspace{-1.5cm}
     \begin{tabular}{|>{\centering\arraybackslash}p{3cm}|>{\centering\arraybackslash}p{1.2cm}|>{\centering\arraybackslash}p{1.7cm}|>{\centering\arraybackslash}p{1.2cm}|>{\centering\arraybackslash}p{1.5cm}|>{\centering\arraybackslash}p{1.5cm}|>{\centering\arraybackslash}p{1.7cm}|>{\centering\arraybackslash}p{1.7cm}|>{\centering\arraybackslash}p{0.9cm}|}%{ | c | c | c | c | c | c | c | c |p{1cm} |}
     \hline
     Robot/Object & Number of training data & Average Grasp Quality(train)& Number of Gaussians& Force-Closure Grasp Found & Average Grasp Quality(result)& Mean of Computation Time($msec$) & Variance ($msec$)   \\ \hline
@@ -94,48 +94,47 @@ To compare with the training data, we compute the grasp quality of the results w
 \begin{figure*}
   \centering
 
-    \subfloat[\scriptsize{Initial pose 1}]  {\includegraphics[width=5cm]{./fig_cha3/bar_i_1.pdf}}
-    \subfloat[\scriptsize{Initial pose 2}] { \includegraphics[width=5cm]{./fig_cha3/bar_i_2.pdf}}
-    \subfloat[\scriptsize{Initial pose 3}] { \includegraphics[width=5cm]{./fig_cha3/bar_i_3.pdf}}
-    \vspace{0.3in}
-    \subfloat[\scriptsize{Final grasp 1}] {\includegraphics[width=5cm]{./fig_cha3/bar_f_1.pdf}}
-    \subfloat[\scriptsize{Final grasp 2}]  {\includegraphics[width=5cm]{./fig_cha3/bar_f_2.pdf}}
-    \subfloat[\scriptsize{Final grasp 3}]  {\includegraphics[width=5cm]{./fig_cha3/bar_f_3.pdf}}
-    \vspace{0.3in}
-    \subfloat[\scriptsize{Initial pose 4}]  {\includegraphics[width=5cm]{./fig_cha3/shoe_1i.pdf}}
-    \subfloat[\scriptsize{Initial pose 5}] {\includegraphics[width=5cm]{./fig_cha3/shoe_2i.pdf}}
-    \subfloat[\scriptsize{Initial pose 6}]  {\includegraphics[width=5cm]{./fig_cha3/shoe_3i.pdf}}
-    \vspace{0.3in}
-    \subfloat[\scriptsize{Final grasp 4}] {\includegraphics[width=5cm]{./fig_cha3/shoe_1f.pdf}}
-    \subfloat[\scriptsize{Final grasp 5}] {\includegraphics[width=5cm]{./fig_cha3/shoe_2f.pdf}}
-    \subfloat[\scriptsize{Final grasp 6}]  {\includegraphics[width=5cm]{./fig_cha3/shoe_3f.pdf}}
+    \subfloat[\scriptsize{Initial pose 1}]  {\includegraphics[width=4cm]{./fig_cha3/bar_i_1.pdf}}
+    \subfloat[\scriptsize{Initial pose 2}] { \includegraphics[width=4cm]{./fig_cha3/bar_i_2.pdf}}
+    \subfloat[\scriptsize{Initial pose 3}] { \includegraphics[width=4cm]{./fig_cha3/bar_i_3.pdf}}
+    \vspace{0.3cm}
+    \subfloat[\scriptsize{Final grasp 1}] {\includegraphics[width=4cm]{./fig_cha3/bar_f_1.pdf}}
+    \subfloat[\scriptsize{Final grasp 2}]  {\includegraphics[width=4cm]{./fig_cha3/bar_f_2.pdf}}
+    \subfloat[\scriptsize{Final grasp 3}]  {\includegraphics[width=4cm]{./fig_cha3/bar_f_3.pdf}}
+    \vspace{0.3cm}
+    \subfloat[\scriptsize{Initial pose 4}]  {\includegraphics[width=4cm]{./fig_cha3/shoe_1i.pdf}}
+    \subfloat[\scriptsize{Initial pose 5}] {\includegraphics[width=4cm]{./fig_cha3/shoe_2i.pdf}}
+    \subfloat[\scriptsize{Initial pose 6}]  {\includegraphics[width=4cm]{./fig_cha3/shoe_3i.pdf}}
+    \vspace{0.3cm}
+    \subfloat[\scriptsize{Final grasp 4}] {\includegraphics[width=4cm]{./fig_cha3/shoe_1f.pdf}}
+    \subfloat[\scriptsize{Final grasp 5}] {\includegraphics[width=4cm]{./fig_cha3/shoe_2f.pdf}}
+    \subfloat[\scriptsize{Final grasp 6}]  {\includegraphics[width=4cm]{./fig_cha3/shoe_3f.pdf}}
 
-  \caption{\scriptsize{Examples of Barrett hand grasping different objects (ashtray, shoe, joystick, aeroplane model).
-\textcolor{red}{I see no aeroplane model grasping in these images. I think this may be a layout problem as the figure below does include aeroplane images.} 
- The first and third rows (a,b,c,d,e,f and m,n,o,p,q,r) show the initial postures and the second and forth rows (g,h,i,j,k,l and s,t,u,v,w,x) show the corresponding final grasps.}
+  \caption{\scriptsize{Examples of Barrett hand grasping different objects (ashtray, shoe).
+ The first and third rows (a,b,c and g,h,i) show the initial postures and the second and forth rows (d,e,f and j,k,l) show the corresponding final grasps.}
 }
     \label{barrett}
 \end{figure*}
 
 \begin{figure*}
   \centering
-    \subfloat[\scriptsize{Initial pose 7}]  {\includegraphics[width=5cm]{./fig_cha3/joy_2_i.pdf}}
-    \subfloat[\scriptsize{Initial pose 8}] {\includegraphics[width=5cm]{./fig_cha3/joy_3_i.pdf}}
-    \subfloat[\scriptsize{Initial pose 9}] {\includegraphics[width=5cm]{./fig_cha3/joy_5_i.pdf}}
-    \vspace{0.3in}
-    \subfloat[\scriptsize{Final grasp 7}] {\includegraphics[width=5cm]{./fig_cha3/joy_2_f.pdf}}
-    \subfloat[\scriptsize{Final grasp 8}]  {\includegraphics[width=5cm]{./fig_cha3/joy_3_f.pdf}}
-    \subfloat[\scriptsize{Final grasp 9}]  {\includegraphics[width=5cm]{./fig_cha3/joy_5_f.pdf}}
-    \vspace{0.3in}
-    \subfloat[\scriptsize{Initial pose 10}]  {\includegraphics[width=5cm]{./fig_cha3/plane_2i.pdf}}
-    \subfloat[\scriptsize{Initial pose 11}] {\includegraphics[width=5cm]{./fig_cha3/plane_3i.pdf}}
-    \subfloat[\scriptsize{Initial pose 12}] {\includegraphics[width=5cm]{./fig_cha3/plane_1i.pdf}}
-    \vspace{0.3in}
-    \subfloat[\scriptsize{Final grasp 10}] {\includegraphics[width=5cm]{./fig_cha3/plane_2f.pdf}}
-    \subfloat[\scriptsize{Final grasp 11}]  {\includegraphics[width=5cm]{./fig_cha3/plane_3f.pdf}}
-    \subfloat[\scriptsize{Final grasp 12}]  {\includegraphics[width=5cm]{./fig_cha3/plane_1f.pdf}}
+    \subfloat[\scriptsize{Initial pose 7}]  {\includegraphics[width=4cm]{./fig_cha3/joy_2_i.pdf}}
+    \subfloat[\scriptsize{Initial pose 8}] {\includegraphics[width=4cm]{./fig_cha3/joy_3_i.pdf}}
+    \subfloat[\scriptsize{Initial pose 9}] {\includegraphics[width=4cm]{./fig_cha3/joy_5_i.pdf}}
+    \vspace{0.3cm}
+    \subfloat[\scriptsize{Final grasp 7}] {\includegraphics[width=4cm]{./fig_cha3/joy_2_f.pdf}}
+    \subfloat[\scriptsize{Final grasp 8}]  {\includegraphics[width=4cm]{./fig_cha3/joy_3_f.pdf}}
+    \subfloat[\scriptsize{Final grasp 9}]  {\includegraphics[width=4cm]{./fig_cha3/joy_5_f.pdf}}
+    \vspace{0.3cm}
+    \subfloat[\scriptsize{Initial pose 10}]  {\includegraphics[width=4cm]{./fig_cha3/plane_2i.pdf}}
+    \subfloat[\scriptsize{Initial pose 11}] {\includegraphics[width=4cm]{./fig_cha3/plane_3i.pdf}}
+    \subfloat[\scriptsize{Initial pose 12}] {\includegraphics[width=4cm]{./fig_cha3/plane_1i.pdf}}
+    \vspace{0.3cm}
+    \subfloat[\scriptsize{Final grasp 10}] {\includegraphics[width=4cm]{./fig_cha3/plane_2f.pdf}}
+    \subfloat[\scriptsize{Final grasp 11}]  {\includegraphics[width=4cm]{./fig_cha3/plane_3f.pdf}}
+    \subfloat[\scriptsize{Final grasp 12}]  {\includegraphics[width=4cm]{./fig_cha3/plane_1f.pdf}}
 
-  \caption{\scriptsize{Examples of Barrett hand grasping different objects (ashtray, shoe, joystick, airplane model). The first and third rows (a,b,c,d,e,f and m,n,o,p,q,r) show the initial postures and the second and forth rows (g,h,i,j,k,l and s,t,u,v,w,x) show the corresponding final grasps.}
+  \caption{\scriptsize{Examples of Barrett hand grasping different objects (joystick, aeroplane model). The first and third rows (a,b,c and g,h,i) show the initial postures and the second and forth rows (d,e,f and j,k,l) show the corresponding final grasps.}
 }
     \label{barrett2}
 \end{figure*}

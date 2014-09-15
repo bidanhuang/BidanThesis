@@ -31,26 +31,39 @@ These approaches do not take into account the kinematics of the hand, which is d
 
 % ----- Learning and modular methods to tame the dimension -----
 Multi-finger grasps usually involve a large number of degrees of freedom.
-Searching the grasp space for an optimal grasp requires massive computing time considering the huge number of possible hand configurations. To solve this problem, imitation learning and modular approaches are introduced to constrain the searching space. The relative literatures are reviewed in Section~\ref{cha2:sec2:learning} and Section~\ref{cha2:sec3:modular}
+Searching the grasp space for an optimal grasp requires massive computing time considering the huge number of possible hand configurations. To solve this problem, imitation learning and modular approaches are introduced to constrain the searching space. The relative literatures are reviewed in Section~\ref{cha2:sec2:grasping-learning} and Section~\ref{cha2:sec3:grasping-modular}
 
 % ----- grasping in cluttered environment -----
-The above methods are for static grasp planning that rely on precise and accurate object models. These methods are well suited in controlled industrial environments, for example picking up aligned boxes from the assembly line. However, they are not very applicable for service robots working in human dominated environments. For this reason, in recent years the research has shifted to tackle the problem of maintaining the grasp stability in dynamic and cluttered scenes. These studies include handling uncertainty and noise in the perceptual data and handling unseen (novel) objects and unforseen situations. To tackle the former problem, one approach is to take the uncertainty and noise into account in the planning and generate robust grasps~\citep{brost1988automatic,zheng2005coping,hsiao2011bayesian}. Besides synthesis, grasping motion is also studied~\citep{,kehoe2012toward}, where the uncertainty is handled by the compliant finger motions. For grasping novel objects, different general object shape representations are proposed. The most studied representations are 2D or 3D local features such as edge, contour and color~\citep{saxena2008robotic,detry2009learning,kroemer2010grasping}, combination of shape primitives~\citep{miller2003automatic,huebner2008minimum,el2010new} and exclusive mathematical representation of the global object surface geometry and topology~\citep{el2013generation,pokorny2013grasp}. Local features allow quick computation of grasps on a sub-part of an object, while the global representations allow a global search of good grasps with large computation expenses. Planning grasps for novel objects effectively and robustly remains a challenge.
+The above methods are for static grasp planning that rely on precise and accurate object models. These methods are well suited in controlled industrial environments, for example picking up aligned boxes from the assembly line. However, they are not very applicable for service robots working in human dominated environments. For this reason, in recent years the research has shifted to tackle the problem of maintaining the grasp stability in dynamic and cluttered scenes. These studies include handling uncertainty and noise in the perceptual data and handling unseen (novel) objects and unforseen situations. To tackle the former problem, one approach is to take the uncertainty and noise into account in the planning and generate robust grasps~\citep{brost1988automatic,zheng2005coping,hsiao2011bayesian}.
+\citet{ } try to handle the uncertainties in object shape estimation by finding a common grasp of the few most possible object shapes.
+Besides synthesis, grasping motion is also studied~\citep{,kehoe2012toward}, where the uncertainty is handled by the compliant finger motions. For grasping novel objects, different general object shape representations are proposed. The most studied representations are 2D or 3D local features such as edge, contour and color~\citep{saxena2008robotic,detry2009learning,kroemer2010grasping}, combination of shape primitives~\citep{miller2003automatic,huebner2008minimum,el2010new} and exclusive mathematical representation of the global object surface geometry and topology~\citep{el2013generation,pokorny2013grasp}. Local features allow quick computation of grasps on a sub-part of an object, while the global representations allow a global search of good grasps with large computation expenses. Planning grasps for novel objects effectively and robustly remains a challenge.
 
 
 
-\subsection{Robot Manipulation}
+\subsection{Robot manipulation}
 \label{cha2:sec1:manipulation}
 %\label{cha2:sec1:grasping:manipulation}
+
+% Current state of art in manipulation
+\textcolor{red}{
+Different from grasping which aim to stabilize a object, manipulation aim to change the object status, usually its position and orientation, from the current one to the desire one. This means the problem of manipulation is two-fold: controlling the hand movement to control the object movement. Studies in manipulation can briefly split into two topics: manipulation planning and task execution. The former focus on reasoning how to accomplish a complex task by a sequence of motions, while the later focus on answering the question of how to apply force and torque to deliver a target object to the next desire status. The former problem is mostly addressed by learning from human and extracting motion primitives from human demonstration, which can be used to build complex behavior for accomplishing a task. We will review those works in Section~\ref{cha2:sec2} and~\ref{cha2:sec3}. In this section we will concentrate on the later problem.}
+%Briefly speaking, there are two directions of approaches: the position and force hybrid control method and the impedance control method.
+% Impedance: find a good task impedance.
+% force/position hybrid: transition
+
+% open challenge -- to verify your contribution
+% why need imitation learning? why need modular?
+
+
+% Impedance control
 A classic approach of manipulation is impedance control~\citep{howard2010transferring,wimbock2012comparison}. Given the desired impedance of a task, we can compute proper motor commands for the robot to accomplish it. Fixed impedance control is limited to simple tasks. In many manipulation tasks such as opening a bottle cap, variable impedance is required: at the beginning we need a large impedance to break the contact between the bottle and the cap, and later we need a small impedance to drive the cap smoothly. For such tasks fixed impedance control will either lead to task failure or cause hardware damage.
 However, computing the impedance for a given task involving variable impedance is difficult.
 In many cases the impedance is roughly approximated by a linear model, but this is inadequate for non-linear tasks.
-
 
 Variable impedance can be learnt by humans physically correcting the robot impedance, i.e. wiggling the robot arm, in different stages of the task~\citep{kronander2012online}. For learning manipulation, however, wiggling the robot fingers will interrupt the task and may cause task failure.
 %This is feasible for learning robot arm impedance but not for object impedance.
 Variable impedance can also be learnt by the Policy Improvement with Path Integrals ($PI^2$) reinforcement learning algorithm, with a task specific cost function~\citep{buchli2011learning}. Designing this cost function requires insight into the task and is usually difficult.
 
-\textcolor{red}{TO BE EXTENDED}
 
 \subsection{Reaching motion planning}
 \label{cha2:sec1:reaching}
