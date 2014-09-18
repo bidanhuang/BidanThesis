@@ -1,19 +1,111 @@
 \chapter{Discussion and future work}
 \label{cha6}
+We present in this chapter discussions about our proposed modular approach in learning grasping and manipulation, as well as future work. In Section~\ref{cha6:sec1} we discuss the design principle of our modular approaches and the advantage of using the approach in tackling grasping and manipulation problem.  Section~\ref{cha6:sec2} discuss the limitations and failures of the current system. Section~\ref{cha6:sec3} suggest the research directions of future work following this thesis.
 
 %  advantage of "put the user in the loop of robot's learning"
 %  advantage of "modular approach"; different way of modularization
-%  advantage of "imitation" + "modular" in grasping and manipulation
-%  discuss the use of HMM and GMM? other statistical model?
+%  advantage of "imitation" + "modular" in grasping and manipulation: 3 different ways of mdoularization
+
+\section{Advance of modular approach}
+\label{cha6:sec1}
+In this dissertation we propose three different methods to modularize the robot grasping and manipulation tasks:
+
+\begin{enumerate}
+\item modularize the grasp planning problem by the object shape primitives;
+\item modularize the manipulation by the human adaptive control strategy;
+\item modularize the reaching motion by human commands to the robot.
+\end{enumerate}
+By ``modularize'' we mean the way to decompose a task, model the modules and combine the modules to form new behavior. These three methods serve different types of problems: the first two methods aim to adapt to the static and dynamic task context separately, the last method aims to build up an understanding base for robot and human.
+
+% Grasp planning: what do we do? what is the benefit?
+% What other problems can use this method?
+In Chapter~\ref{cha3}, we propose a modular approach to learn grasp planning strategy. We learn the grasp distribution for familiar objects and shape primitives. The learning by demonstration method here make use avoid the complicated grasp synthesis problem. Instead we directly generate grasps from the grasp distribution. A modular approach is used here to decompose an unseen scenario to known scenarios: decompose a novel object shape to a set of pre-trained shape primitives. With this method, the solution (grasp distribution) of new scenario (novel object shape) can be modeled without re-training.
+
+In the grasp planning task, the task context is the shape of the object. The planned grasping hand posture needs to adapt to the shape of the object. The shape of an object is accessible by vision and does not change over time (we only consider solid objects here). This is to say, the task context in grasp planning is static. Hence in this task, the modules can be built off-line purely based on the different object shapes. For each module the possible grasps, i.e. the possible strategies and solutions, are encoded as a statistical model.
+When different modules combine their solution distributions sum up accordingly, with the conflicting regions excluded from the final distribution. Similar tasks can be tackled in a similar modular strategy, such as object recognition.
+
+% Manipulation:
+In Chapter~\ref{cha4}, we propose a method to extract multiple manipulation control strategies from human demonstration. The learning from demonstration method save us from designing optimal control strategy for the task and from quantitatively analysing the system dynamics. The modular approach reduce a complicated adaptive control problem to a set of easier context specific control problems.
+
+In the manipulation task, the task context is the contact condition between object surfaces. The manipulation strategy needs to adapt to the condition, e.g. static friction or dynamic friction. On one hand, this condition can change across the task process and hence needs to be adapted online. On the other hand, the contact condition is not directly observable, it needs to be accessed by applying force to the object. Therefore, the modular approach for grasp planning is not suitable to manipulation task. We propose a method to exploit human adaptive control strategy, analyse its pattern and extract multiple modules.
+
+During the task execution, the modules are combined according to how well they represent the current task context. We use the opening-bottle-cap task as an example here to demonstrate the approach. Similar tasks that are suitable for this method include turning valve, pulling or pushing drawers. This method tames the difficult problem of adaptive control and
+provides an easy way to program task specific adaptive control strategy for robot. %benefit
+
+% Motion primitives:
+In human robot interaction, the understanding between those two parts is crucial. Language is a main tool for human to communicate and hence is ideal to be used to communicate with robots. Language itself is modular: each word is a functional unit and the combination of them can produce complex meaning. In Chapter~\ref{cha5}, we propose to connect the modularity in language and the modularity in the motion planning problem, i.e. the motion primitive. This is to say, using human language as bases to design motion primitives, and then use these motion primitives for motion recognition and generation (mixing learnt motion primitives). As these motion primitives are designed and labeled by human language, a natural programming method of them is learnt by human demonstrations. For learning here we use the Mimesis Model.
+
+Our mixing method makes the modulation of the motion primitives easy. During the task execution, human can correct robot motion by giving compensating commands. The robot uses these commands as a guide to mix motion primitives. The benefit of this approach is two-fold: it enables the robot to understand human commands and helps planning the motions.
+
+
+
+\section{Limitations of current system}
+\label{cha6:sec2}
 %  limitation and failures of current system
+
+% -- failure of finger collision
+% -- failure of generilsing to very not similar
+
+% -- failure of mixing completely different motions
+
+During our studies, we notice a few failures and the limitation of our proposing system. We describe them in this section.
+
+
+% -- failure of not cover the space well enough
+In the grasp planning study, the successful rate of our method to generate stable grasps depends on the complexity of the object shape and can go down to 80$\%$. The failure grasps mostly appear in those cases where the robot tries to grasp the edges of the object (familiar objects) or the non-convex part of the object (novel objects approximated by a set of shape primitives). When sampling stable grasps for a known object, the grasps touching the edge of the object has low density and hence are difficult to generate. If the sampling process does not generate enough data around those difficult regions, during the encoding of GMM, those difficult grasps can be represented by an illy shaped Gaussian. As a result, the generalization around those difficult regions is poor. In the case of combining a set of grasp distributions to form a new distribution for a compound object shape, the jointing parts, usually non-convex, can cause failure. This is because these parts contain more errors in the shape approximation by primitives. From the pure planning prospective, these two failures are hard to eliminate. Extra information such as tactile sensing can help to increase the successful rate.
+
+% -- failure of generilsing to very not similar
+In the manipulation study, the coverage of human demonstration is crucial. In our opening-bottle-cap task, we demonstrate the task with seven different setups, covering the tightest bottle to the loosest bottle, surface conditions of sticky, dry and lubricated. These comprehensive setups well cover the contexts in this task. If the task contexts are not well covered, the generated motor command can cause failure.
+
+% -- motion primitives
+Similarly in modeling manipulation motion primitives, demonstrations need to be carefully chosen. Besides these, the motion primitives themselves needs to be also chosen carefully.
+In our experiment, we mix two primitives to generate new motion. This makes an assumption that the space between these two primitives are linear, which requires the motion primitives to be sufficiently simple. How to design these primitives based on human language remains a open question.
+
+
+
+
+
+
+
+\section{Directions of future work}
+\label{cha6:sec3}
 % suggest direction of research for the future work
+% -- no online learning
 
-The modular approach is an effective way to simply the design of complex system. It is used both in natural intelligence and software engineering.
+There are many promising directions for further studies extending the
+work presented here. The first is to apply our modular approach to other
+contact tasks and learn a more general human control strategy in
+handling the instability caused by friction. Data collected from other contact tasks can be analysed together, so as to extract a set of ``cross-task'' control strategies. These control strategies should have better reusability, more general and more robust.
 
-The modularity we study is the ``task level'', which concentrate on the modularity appear in individual tasks. Its main idea is to simply the programming of robots and provide an end-user level interface to teach robot to do tasks. A future work is to study the ``super-task level'' modularity, i.e. to group the tasks can share same modules together and build modules for them. Eventually, a hierarchy structure of modules will be build. Learn a bank of modules.
+In our study of grasp planning, we only use the shape information of the object. As discussed above, tactile feedback can provide useful information during grasp execution. One interesting study would be to include the tactile information in the grasp distribution to encode the hand posture-tactile signal-object shape relationship. This relationship will allow us to quickly access how well a grasp is executed after the robot fingers contact with the object, and hence grasp correction can be executed if needed. However, including tactile information leads to a very high-dimension problem. Again, modular approach can be used here to reduce the complexity.
 
-Offline learning -> online learning. Identify new task and increase number of modules.
+In our study of manipulation, we have focussed on the control strategy of unscrewing
+the bottle cap. We hardly analyzed the effect of changing the cap size and or
+the positioning of the fingers on the cap, which is revealed in the
+tactile signature. For the task here, these were not important and
+did not cluster separately, but for other contexts these could be
+important. We expect this analysis to advance the study of the task specific grasping
+strategy~\citep{el2013generation,dang2014semantic} from the force prospective.
 
-modularization can be done by language.
+To extend our approach to learn tasks involving multiple steps, one
+could also integrate this framework with task segmentation techniques,
+to break down the task into atomic steps and recognize the steps
+needed, still using an modular approach. However, we could expect this
+to complicate the point of module integration and require
+better-informed action selection.
 
-a framework to do all the modularization: extract, model, choose, sequence, spacial combination, mix 
+In our experiment of encoding motion primitives with the mimesis model, we encode four motion primitives: grasp the big box, grasp the small box, grasp the high box and grasp the low box. We mix the first two primitives to get motions for grasping different size of boxes and mix the last two primitives to generate motions for grasping boxes in different positions. These mixing are in one dimension. We did not investigate the performance of mixing in higher dimension. Mixing multiple motion primitives will allow the robot to generate more complex behaviours and hence is an interesting further research direction.
+
+%The modular approach is an effective way to simply the design of complex system.
+%
+%The modularity we study is the ``task level'', which concentrate on the modularity appear in individual tasks. Its main idea is to simply the programming of robots and provide an end-user level interface to teach robot to do tasks. A future work is to study the ``super-task level'' modularity, i.e. to group the tasks can share same modules together and build modules for them. Eventually, a hierarchy structure of modules will be build. Learn a bank of modules.
+%
+%Offline learning -> online learning. Identify new task and increase number of modules.
+%
+%modularization can be done by language.
+%
+%a framework to do all the modularization: extract, model, choose, sequence, spacial combination, mix
+%
+%how to parse language: language: high level; motion planning: low level. how to make command
+
+%  discuss the use of HMM and GMM? other statistical model? 

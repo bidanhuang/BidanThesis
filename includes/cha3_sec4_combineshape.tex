@@ -91,9 +91,11 @@ For an object composed of a few shape primitives, its grasp distribution is the 
 
 Before combining the grasp distributions, which are encoded by GMMs, of different shape primitive components of an object, we need to reshape each GMM by the object geometry. This is because when primitives combine to a more complex shape object, the grasp space of one part might be blocked by other part of the object.
 
-For example, an object combined by a cylinder and a sphere is shown in Fig.~\ref{fig:object}(a) and it's primitives with their grasp distributions are shown in (b) and (c). As can be seen in (b) and (c), the top part of the grasp distribution of the cylinder will be inside the sphere and the bottom part of the grasp distribution of the sphere will be inside the cylinder. Grasps generated from these parts will cause collisions between the hand and the object and hence they have to be excluded from the model. Further, even when the robot hand is placed in a feasible location for all components, when the fingers clutch to grasp one component of the object, the moving trajectory of the finger might be blocked by other components. These kind of grasps should also be excluded from the grasp density of the whole object.
-
-Therefore, we take into account two kinds of collisions: collisions between the palm and the object and collisions between the finger trajectories and the object. To avoid collisions, we use the ``object sigmoid'' function to remove the collision parts.
+For example, an object combined by a cylinder and a sphere is shown in Fig.~\ref{fig:object}(a) and it's primitives with their grasp distributions are shown in (b) and (c). As can be seen in (b) and (c), the top part of the grasp distribution of the cylinder will be inside the sphere and the bottom part of the grasp distribution of the sphere will be inside the cylinder. Grasps generated from these parts will cause collisions between the hand and the object and hence they have to be excluded from the model. 
+% Finger collision
+%Further, even when the robot hand is placed in a feasible location for all components, when the fingers clutch to grasp one component of the object, the moving trajectory of the finger might be blocked by other components. These kind of grasps should also be excluded from the grasp density of the whole object.
+%Therefore, we take into account two kinds of collisions: collisions between the palm and the object and collisions between the finger trajectories and the object. 
+To avoid collisions, we use the ``object sigmoid'' function to remove the collision parts.
 
 \paragraph{Object sigmoid} ~\\
 \label{cha3:sec4:combine:sigmoid}
@@ -142,9 +144,11 @@ Figure.~\ref{fig:object}(d) shows the resulting grasp distribution of the whole 
 \end{figure}
 
 
-The equation above removes the grasps inside the object and hence avoids the collision between the robot palm and the object. However, grasps causing collision between finger trajectory and the object still remain.
+The equation above removes the grasps inside the object and hence avoids the collision between the robot palm and the object. 
 
-\paragraph{TODO: Trim grasp distribution by finger trajectory} ~\\
+% Finger collision
+%However, grasps causing collision between finger trajectory and the object still remain.
+%\paragraph{TODO: Trim grasp distribution by finger trajectory} ~\\
 
 
 \subsection{Plan Grasp by combined grasp distribution}

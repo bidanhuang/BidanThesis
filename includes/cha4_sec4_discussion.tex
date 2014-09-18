@@ -46,25 +46,7 @@ We compute the final motor command by summing the weighted output of
 each module. This makes an assumption that the state space is
 continuous. For tasks with discontinuous space, switching between different modules would be more applicable~\citep{narendra1995adaptation,nakanishi2013spatio}.
 
-There are many promising directions of further studies extending the
-work presented here. The first is to apply this approach to other
-contact tasks and learn a more general human control strategy in
-handling the instability caused by friction.
-%Clarify the fact here that you hardly analyze the effect of changing the cap size and the positioning of the fingers on the cap which is revealed in the tactile signature, and that this will be future work.
-In our study, we have focussed on the control strategy of unscrewing
-the cap. We hardly analyzed the effect of changing the cap size and or
-the positioning of the fingers on the cap, which is revealed in the
-tactile signature. For the task here, these were not important and
-did not cluster separately, but for other contexts these could be
-important. We expect this analysis to advance the study of the task specific grasping
-strategy~\citep{el2013generation,dang2014semantic} from the force prospective.
 
-To extend our approach to learn tasks involving multiple steps, one
-could also integrate this framework with task segmentation techniques,
-to break down the task into atomic steps and recognize the steps
-needed, still using an modular approach. However, we could expect this
-to complicate the pint of module integration and require
-better-informed action selection. 
 
 In summary, tasks involving multiple phases or different contexts are
 hard to implement by a single model. A modular architecture is a

@@ -142,35 +142,69 @@ demonstration (Table~\ref{bottlesandcaps}).
 
 
 % 25,42,56,80,110, c1-c5, mm
+%\begin{table}
+%\center
+%\caption{Different setups of bottles and caps for demonstration. Bottle 1 to 4 are in increasing order of the difficulty to open. Cap 1 to 4 is in increasing order of the cap sizes, whose diameters are shown.}
+%\begin{tabular}{p{2cm}|p{1.5cm} |p{1.5cm} |p{1.5cm} |p{1.5cm}}
+%
+%%\backslashbox{}{}
+%                                & \parbox[c]{1em}{ \includegraphics[width=1.5cm]{./fig_cha4/c1.jpg}}
+%                                & \parbox[c]{1em}{ \includegraphics[width=1.5cm]{./fig_cha4/c2.jpg}}
+%                                & \parbox[c]{1em}{ \includegraphics[width=1.5cm]{./fig_cha4/c3.jpg}}
+%                                & \parbox[c]{1em}{ \includegraphics[width=1.5cm]{./fig_cha4/c4.jpg}}  \\
+%    & Cap 1  25$mm$ & Cap 2  42$mm$ & Cap 3  56$mm$ & Cap 4  80$mm$ \\
+%\hline
+%\parbox[c]{1em}{ \includegraphics[width=1.5cm]{./fig_cha4/b1.jpg}} & & &b1c3 &\\
+%Bottle 1 & & & &\\
+%\hline
+%\parbox[c]{1em}{ \includegraphics[width=1.5cm]{./fig_cha4/b2.jpg}} & & & &\\
+%%Bottle 2 & b3c1& b3c2& b3c3& b3c4\\
+%Bottle 2 & & & b2c3&\\
+%\hline
+%\parbox[c]{1em}{ \includegraphics[width=1.5cm]{./fig_cha4/b3.jpg}} & & & &\\
+%%Bottle 3 & & & b3c3&\\
+%Bottle 3 & b3c1& b3c2& b3c3& b3c4\\
+%\hline
+%\parbox[c]{1em}{ \includegraphics[width=1.5cm]{./fig_cha4/b4.jpg}} & & & &\\
+%Bottle 4 & & & b4c3&\\
+%\hline
+%\end{tabular}
+%\label{bottlesandcaps}
+%\end{table}
+
 \begin{table}
 \center
-\caption{Different setups of bottles and caps for demonstration. Bottle 1 to 4 are in increasing order of the difficulty to open. Cap 1 to 4 is in increasing order of the cap sizes, whose diameters are shown.}
+\caption{Different setups of bottles and caps for demonstration. Bottles 1 to 4 are in increasing order of the difficulty to open. Caps 1 to 4 are in increasing order of the cap sizes, with diameters are shown.  Note that where multiple caps were used with the same bottle, this was achieved by affixing the cap to
+the bottle's matching cap (see Figure.~\ref{fig:setup}).}
+
 \begin{tabular}{p{2cm}|p{1.5cm} |p{1.5cm} |p{1.5cm} |p{1.5cm}}
 
 %\backslashbox{}{}
-                                & \parbox[c]{1em}{ \includegraphics[width=1.5cm]{./fig_cha4/c1.jpg}}
-                                & \parbox[c]{1em}{ \includegraphics[width=1.5cm]{./fig_cha4/c2.jpg}}
-                                & \parbox[c]{1em}{ \includegraphics[width=1.5cm]{./fig_cha4/c3.jpg}}
-                                & \parbox[c]{1em}{ \includegraphics[width=1.5cm]{./fig_cha4/c4.jpg}}  \\
-    & Cap 1  25$mm$ & Cap 2  42$mm$ & Cap 3  56$mm$ & Cap 4  80$mm$ \\
+                                & \parbox[c]{1em}{ \includegraphics[width=1cm]{./fig_cha4/c1.jpg}}
+                                & \parbox[c]{1em}{ \includegraphics[width=1cm]{./fig_cha4/c2.jpg}}
+                                & \parbox[c]{1em}{ \includegraphics[width=1cm]{./fig_cha4/c3.jpg}}
+                                & \parbox[c]{1em}{ \includegraphics[width=1cm]{./fig_cha4/c4.jpg}}  \\
+    & Cap 1 25$mm$ & Cap 2 42$mm$ & Cap 3 56$mm$ & Cap 4 80$mm$ \\
 \hline
-\parbox[c]{1em}{ \includegraphics[width=1.5cm]{./fig_cha4/b1.jpg}} & & &b1c3 &\\
+\parbox[c]{1em}{ \includegraphics[width=1cm]{./fig_cha4/b1.jpg}} & & &b1c3 &\\
 Bottle 1 & & & &\\
 \hline
-\parbox[c]{1em}{ \includegraphics[width=1.5cm]{./fig_cha4/b2.jpg}} & & & &\\
-%Bottle 2 & b3c1& b3c2& b3c3& b3c4\\
+\parbox[c]{1em}{ \includegraphics[width=1cm]{./fig_cha4/b2.jpg}} & & & &\\
+%Bottle 2 & b2c1& b2c2& b2c3& b2c4\\
 Bottle 2 & & & b2c3&\\
 \hline
-\parbox[c]{1em}{ \includegraphics[width=1.5cm]{./fig_cha4/b3.jpg}} & & & &\\
+\parbox[c]{1em}{ \includegraphics[width=1cm]{./fig_cha4/b3.jpg}} & & & &\\
 %Bottle 3 & & & b3c3&\\
 Bottle 3 & b3c1& b3c2& b3c3& b3c4\\
 \hline
-\parbox[c]{1em}{ \includegraphics[width=1.5cm]{./fig_cha4/b4.jpg}} & & & &\\
+\parbox[c]{1em}{ \includegraphics[width=1cm]{./fig_cha4/b4.jpg}} & & & &\\
 Bottle 4 & & & b4c3&\\
 \hline
 \end{tabular}
-\label{bottlesandcaps}
+\label{tab:bottlesandcaps}
 \end{table}
+
+
 
 \begin{figure}
   \centering
@@ -364,7 +398,38 @@ The result of clustering is shown in Table~\ref{tab:cluster}. This result sugges
 
 
 
+%\begin{table*}
+%\caption{Clustering results}
+%\begin{tabular}{p{1.6cm} p{1.6cm}|p{2cm} p{2cm} p{2cm}  p{2cm} }
+%& & \parbox[c]{1em}{\includegraphics[width=1.5cm]{./fig_cha4/c1.jpg}}\newline Cap 1
+%& \parbox[c]{1em}{\includegraphics[width=1.5cm]{./fig_cha4/c2.jpg}}\newline Cap 2
+%& \parbox[c]{1em}{\includegraphics[width=1.5cm]{./fig_cha4/c3.jpg}}\newline Cap 3
+%& \parbox[c]{1em}{\includegraphics[width=1.5cm]{./fig_cha4/c4.jpg}}\newline Cap 4      \\ \hline
+%{\parbox[c]{1em}{\includegraphics[width=1.5cm]{./fig_cha4/b1.jpg}}}
+%         & Phase I  &           &           & {\vspace{-0.7cm}}\pbox{2cm}{(b1c3) \\ Cluster 3} &           \\
+%Bottle 1 & Phase II &           &           &        Cluster 3 &           \\ \hline
+%
+%{\parbox[c]{1em}{\includegraphics[width=1.5cm]{./fig_cha4/b2.jpg}}}
+%%         & Phase I  &{\vspace{-0.7cm}}\pbox{2cm}{(b3c1) \\Cluster 2} &{\vspace{-0.7cm}}\pbox{2cm}{(b3c2) \\Cluster 2} &{\vspace{-0.7cm}}\pbox{2cm}{(b3c3) \\Cluster 2} &{\vspace{-0.7cm}}\pbox{2cm}{(b3c4) \\Cluster 2} \\
+%%Bottle 2 & Phase II &       Cluster 3 &       Cluster 3 &       Cluster 3 &       Cluster 3 \\ \hline
+%         & Phase I  &           &           &{\vspace{-0.7cm}}\pbox{2cm}{(b2c3) \\Cluster 2} &           \\
+%Bottle 2 & Phase II &           &           &       Cluster 3 &           \\ \hline
+%
+%{\parbox[c]{1em}{\includegraphics[width=1.5cm]{./fig_cha4/b3.jpg}} }
+%%         & Phase I  &           &           &{\vspace{-0.7cm}}\pbox{2cm}{(b3c3) \\Cluster 2} &           \\
+%%Bottle 3 & Phase II &           &           &       Cluster 3 &           \\ \hline
+%         & Phase I  &{\vspace{-0.7cm}}\pbox{2cm}{(b3c1) \\Cluster 2} &{\vspace{-0.7cm}}\pbox{2cm}{(b3c2) \\Cluster 2} &{\vspace{-0.7cm}}\pbox{2cm}{(b3c3) \\Cluster 2} &{\vspace{-0.7cm}}\pbox{2cm}{(b3c4) \\Cluster 2} \\
+%Bottle 2 & Phase II &       Cluster 3 &       Cluster 3 &       Cluster 3 &       Cluster 3 \\ \hline
+%
+%{\parbox[c]{1em}{\includegraphics[width=1.5cm]{./fig_cha4/b4.jpg}}\newline }
+%         & Phase I  &           &           &{\vspace{-0.7cm}}\pbox{2cm}{(b4c3) \\Cluster 1} &           \\
+%Bootle 4 & Phase II &           &           &       Cluster 2 &           \\ \hline
+%\end{tabular}
+%\label{tab:cluster}
+%\end{table*}
+
 \begin{table*}
+\centering
 \caption{Clustering results}
 \begin{tabular}{p{1.6cm} p{1.6cm}|p{2cm} p{2cm} p{2cm}  p{2cm} }
 & & \parbox[c]{1em}{\includegraphics[width=1.5cm]{./fig_cha4/c1.jpg}}\newline Cap 1
@@ -374,19 +439,16 @@ The result of clustering is shown in Table~\ref{tab:cluster}. This result sugges
 {\parbox[c]{1em}{\includegraphics[width=1.5cm]{./fig_cha4/b1.jpg}}}
          & Phase I  &           &           & {\vspace{-0.7cm}}\pbox{2cm}{(b1c3) \\ Cluster 3} &           \\
 Bottle 1 & Phase II &           &           &        Cluster 3 &           \\ \hline
-
 {\parbox[c]{1em}{\includegraphics[width=1.5cm]{./fig_cha4/b2.jpg}}}
-%         & Phase I  &{\vspace{-0.7cm}}\pbox{2cm}{(b3c1) \\Cluster 2} &{\vspace{-0.7cm}}\pbox{2cm}{(b3c2) \\Cluster 2} &{\vspace{-0.7cm}}\pbox{2cm}{(b3c3) \\Cluster 2} &{\vspace{-0.7cm}}\pbox{2cm}{(b3c4) \\Cluster 2} \\
+%         & Phase I  &{\vspace{-0.7cm}}\pbox{2cm}{(b2c1) \\Cluster 2} &{\vspace{-0.7cm}}\pbox{2cm}{(b2c2) \\Cluster 2} &{\vspace{-0.7cm}}\pbox{2cm}{(b2c3) \\Cluster 2} &{\vspace{-0.7cm}}\pbox{2cm}{(b2c4) \\Cluster 2} \\
 %Bottle 2 & Phase II &       Cluster 3 &       Cluster 3 &       Cluster 3 &       Cluster 3 \\ \hline
          & Phase I  &           &           &{\vspace{-0.7cm}}\pbox{2cm}{(b2c3) \\Cluster 2} &           \\
 Bottle 2 & Phase II &           &           &       Cluster 3 &           \\ \hline
-
 {\parbox[c]{1em}{\includegraphics[width=1.5cm]{./fig_cha4/b3.jpg}} }
 %         & Phase I  &           &           &{\vspace{-0.7cm}}\pbox{2cm}{(b3c3) \\Cluster 2} &           \\
 %Bottle 3 & Phase II &           &           &       Cluster 3 &           \\ \hline
          & Phase I  &{\vspace{-0.7cm}}\pbox{2cm}{(b3c1) \\Cluster 2} &{\vspace{-0.7cm}}\pbox{2cm}{(b3c2) \\Cluster 2} &{\vspace{-0.7cm}}\pbox{2cm}{(b3c3) \\Cluster 2} &{\vspace{-0.7cm}}\pbox{2cm}{(b3c4) \\Cluster 2} \\
-Bottle 2 & Phase II &       Cluster 3 &       Cluster 3 &       Cluster 3 &       Cluster 3 \\ \hline
-
+Bottle 3 & Phase II &       Cluster 3 &       Cluster 3 &       Cluster 3 &       Cluster 3 \\ \hline
 {\parbox[c]{1em}{\includegraphics[width=1.5cm]{./fig_cha4/b4.jpg}}\newline }
          & Phase I  &           &           &{\vspace{-0.7cm}}\pbox{2cm}{(b4c3) \\Cluster 1} &           \\
 Bootle 4 & Phase II &           &           &       Cluster 2 &           \\ \hline
