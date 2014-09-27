@@ -1,22 +1,28 @@
-\section{Discussion}
+\section{Conclusion}
 \label{cha3:sec6}
 
 We presented a method for computing grasps in real time. This is demonstrated on two very different robot platforms: the iCub hand and the Barrett hand. The result shows that the method can capture the versatility of grasps that are typical of grasps performed by an industrial gripper, and those that can be performed by a humanoid hand.
 With the computation time in the millisecond scale,
-this method would enable the robot to react quickly in robot-human interaction, such as picking up heavy objects from a person's hand, as well as adopting to fast perturbations in a dynamic environment.
+this method would enable the robot to react quickly in robot-human interaction, such as picking up heavy or hot objects from a person's hand, as well as adapting to fast perturbations in a dynamic environment.
 
-We achieve this goal by using a closed-form solution. A GMM model is learned from the grasping demonstration generated offline for a given object. During the online execution no iterative method is used, we only need to solve a few equations with basic arithmetic operations. Hence the computation time is significantly shorter than the conventional optimization methods. Though we need to pre-train the robot to grasp different objects, in many scenarios such as surgery assistance, robots and humans must work with a predefined set of objects. This allows us to build the grasping model for each object beforehand.
+%The way we project the initial query point to the closest Gaussian component is more conservative.
+In contrast to the common approach of learning from human demonstrations,
+these grasps are generated solely according to the mechanics of the robot hand.
+Some resulting grasps are markedly different from human grasps, especially for the Barrett hand which is very different from the human hand.
+Our method may therefore outperform human demonstrations in some
+contexts by better exploiting differences between human and robot ``physiology''.
 
+In the first part of the work we present in this chapter, we focus on quickly plan grasps for familiar objects.
+We achieve this goal by using a closed-form solution.
+A GMM model is learned from the grasping demonstrations generated offline. During the online execution no iterative method is used, we only need to solve a few equations with basic arithmetic operations. Hence the computation time is significantly shorter than the conventional optimization methods. Though we need to pre-train the robot to grasp different objects, in many scenarios such as surgery assistance, robots and humans must work with a predefined set of objects. This allows us to build the grasping model for each object beforehand.
 
 To find the closest Gaussian component we used the Mahalanobis distance rather than the Euclidean distance. The advantage of this is that it takes into account the correlations among each dimension of the hand configuration. In a space of different types of measurements, i.e. length and angle, Mahalanobis space is a better representation than the Euclidean space. Indeed, humans do not always use the Euclidean distance to select their grasps. We may move our hand further than needed to grasp an object, in order to avoid flipping our hand to another orientation.
 
 Our approach provides a good estimation of a stable and feasible grasp for the given object and robot hand. To model the actual contact points between the robot hand and the object is difficult in real time because of the high dimensionality of the solution space and the non-linearity of the kinematic constraints. In our method, instead of computing the actual contact point position, we compute the most likely solution using a GMM. Though a certain amount of accuracy is traded off to achieve the real time goal, the overall performance is satisfying. In our experiments, over 90 percent of the testing points find good grasps within a few milliseconds. This method is most efficient for objects with a smooth surface. For complex objects this method can achieve a high success rate of over 85\%. When grasping the parts requiring high precision, additional feedback from visual or tactile sensors is needed for further refinement of the grasp.
 
-When extending this approach to grasp non-familiar objects, we exploit a modular approach: grasp by shape primitives. The grasp distribution is learnt for each shape primitive and is combined to form the distribution for the whole object. Experiments show that this method enables the robot to grasp complex objects with high success rate (over 80\%) whilst maintaining the computation time within the millisecond scale.
+In the second part of our work, we extending this approach to plan grasps for non-familiar objects.
+To this end, we exploit a modular approach: grasp by shape primitives. The grasp distribution is learnt for each shape primitive and is combined to form the distribution for the whole object. This allows us to apply our close-form solution to plan grasps for the non-familiar objects. In the computation, the closest, shape primitive, in terms of the Mahalanobis distance, will be chosen to grasp.
+Experiments show that this method enables the robot to grasp complex objects with high success rate (over 80\%) whilst maintaining the computation time within the millisecond scale.
 
-%The way we project the initial query point to the closest Gaussian component is more conservative.
-In contrast to the common approach of learning from human demonstrations,
-these grasps are generated solely according to the mechanics of the robot hand.
-Some resulting grasps are markedly different from  human grasps, especially for the Barrett hand which is very different from the human hand.
-Our method may therefore outperform human demonstrations in some
-contexts by better exploiting differences between human and robot ``physiology''. 
+The modular approach we propose in this chapter enable us to fast compute grasps for any daily life objects. By combining the modules, i.e. grasp distribution of shape primitives, we obtain the whole grasp distribution of the object without re-training. This work shows the benefit of using modular approaches to quickly find out solutions for a new problem, by combining the corresponding local sub-solutions.
+

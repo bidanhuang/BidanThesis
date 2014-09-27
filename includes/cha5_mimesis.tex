@@ -1,9 +1,10 @@
-\chapter{Learning Motion Primitive for manipulation tasks}
+\chapter{Learning motion primitives for manipulation tasks}
 \label{cha5}
 
 \section{Introduction}
 \label{cha5:sec1}
-This chapter focuses on learning motion primitives for manipulation tasks. In previous chapters, we focus on learning the strategy of dexterous manipulation including multi-finger grasp planning and adaptive force control strategy. These are done at the ``end effector level'' and rely on the robot limb to deliver the end effector to a proper position. In this chapter, we look into the whole body movement and study how to program a robot to achieve a proper posture for a desired task.
+The focus of this chapter is learning reaching motion for manipulation. In previous chapters, we discuss learning multi-finger grasping and adaptive control strategy. These are done at the ``end effector level'' and rely on the robot limb to deliver the end effector to a proper position. In this chapter, we study how to program a robot to reach a target object with a trajectory satisfying the task constraints. This is achieved by, again, the program by demonstration technique where human demonstrate the primitive reaching motions. The robot then execute the motions and find out the boundary of the motions with its embodiment. 
+In addition to learning, we label the motions with human language so that the robot will be able to ``understand'' the motion and react to human commands referring to the labels. 
 
 \paragraph{Motion primitive} ~\\
 To accomplish a more complex task, a sequence of motions is needed. As discussed in the introduction chapter, the high dimensional search space makes this sequence of motion difficult to generate. To reduce the search space, the concept of motion primitives in neuroscience~\citep{bizzi2008combining} has been introduced to planning. The basic principle is to discretize a manipulation task into a set of motion primitives, with each serving an elementary manipulation function. After modelling each primitive, the whole task then can be achieved by coordinating them properly.
@@ -24,11 +25,11 @@ These difficulties can be alleviated by using the learning by demonstration appr
 
 
 \paragraph{Mirror neurons and Mimesis Model} ~\\
-The mimesis model is a mathematical realization of the function of the mirror neurons. Mirror neurons are a kind of neuron found in primates and birds, which fires both when the animals observe and execute a motion. In the human brain, mirror neurons has show trace
+The mimesis model is a mathematical realization of the function of the mirror neurons. Mirror neurons are a kind of neuron found in primates and birds, which fires both when the animals observe and execute a motion. In the human brain, mirror neurons has been identified
 in the area of the premotor cortex, the supplementary motor area, the primary somatosensory cortex and the inferior parietal cortex. These areas contribute to human control of motion and sensory reception. It is generally believed that mirror neurons are associated with an animal's ability to learn by imitation and to understand the action of others~\citep{rizzolatti2004mirror}. Motivated by this idea, many researchers try to understand the function of mirror neurons and hence implement it on robots to equip them with human level imitation and learning ability. We are also inspired by this idea and hence try to mimic the mechanism of mirror neurons to learn manipulation motion primitives.
 
 The mimesis model is developed to realize the functions of the mirror neurons: observe motion, recognize motion and generate motion.
-It has been shown to be effective in motion recognition, generation and robot coaching~\citep{inamura2008geometric,okuno2011motion}. It is built based on the Hidden Markov Model (HMM).
+This mimesis model has been shown to be effective in motion recognition, generation and robot coaching~\citep{inamura2008geometric,okuno2011motion}. It is built based on the Hidden Markov Model (HMM).
 In the mimesis model, all demonstrated motion patterns are first encoded by a HMM. These HMMs are then projected to a topological space called ``proto-symbol space''. In this space, each HMM is projected as a point called a ``proto-symbol'', and is labelled by the character of its representing motion, such as ``grasp low box" or ``grasp high box". The similarity between two motions (HMMs) is represented as the Euclidean distance between their proto-symbol.
 
 Recognition of an unknown motion is achieved by projecting the unknown motion to the proto-symbol space. This gives us a new proto-symbol. If the new proto-symbol is very close to a known proto-symbol, then it is very likely the unknown motion is the motion represented by the closest proto-symbol. On the other hand, new motion generation is achieved by exploring new proto-symbols, i.e. interpolating between the known proto-symbols. The new motions generated will be similar to, but different from, the motions encoded by the surrounding proto-symbols.

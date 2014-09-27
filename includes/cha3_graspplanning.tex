@@ -1,17 +1,28 @@
-\chapter{Modular approach in grasp planning}
+\chapter{Modular approaches in grasping}
 \label{cha3}
 
 \section{Introduction}
 \label{cha3:sec1}
-%%%%%%%%% TODO: extend this to unfamilar object %%%%%%%%%
 
+To serve in a human centered environment, a robot needs to react quickly to changing dynamics and fast perturbations. Therefore, real time planning strategy is crucial for service robots. In this chapter, we propose an approach for grasp learning that enables robots to plan new grasps rapidly according to the object’s position and orientation. Two scenarios are considered here: grasping familiar objects and grasping non-familiar objects. By familiar objects we mean that we have already have the object shape models and we can use them to generate training grasps offline. By non-familiar objects we mean those objects we have not generate training grasps for.
+%To fast compute grasps for familiar objects, we generate stable grasps for them and build a statistical model for the training data, new grasps are computed based on the model. To do this for non-familiar objects, we adopt an modular approach to compute grasps for the individual parts of the object.
+
+%This is achieved by taking a three-step approach. In the first step,
+%we compute a variety of stable grasps for a given object. In
+%the second step, we propose a strategy that learns a probability
+%distribution of grasps based on the computed grasps. In the
+%third step, we use the model to quickly generate grasps. We
+%have tested the statistical method on the 9 degrees of freedom
+%hand of the iCub humanoid robot and the 4 degrees of freedom
+%Barrett hand. The average computation time for generating one
+%grasp is less than 10 milliseconds. The experiments were run
+%in Matlab on a machine with 2.8GHz processor.
 
 Given an object and a multi-fingered robotic hand,
 generating a set of contacts on the object's surface which ensure grasp stability while being feasible for the hand kinematics is a common problem in grasp synthesis. Over the last few decades, robot grasping has been a popular topic and numerous approaches for grasp planning have been proposed~\cite{sahbani2011overview}. Most of these approaches adopt iterative methods, which are usually able to find a solution within a finite number of iterations and the average computation time is usually in the range of a few to tens of seconds. However, the number of iterations required grows quadratically with the size of the problem and this creates an uncertainty of the time for the robot to plan a grasp. The upper bound of the computation time is barely analyzed in the literature.
 
-%However, most of these approaches adopt iterative methods, which are usually computationally expensive due to the high-dimensionality of the configuration space and the non-linearity of the problem constraints. They are generally able to find a solution, sometimes within a finite number of iterations. Further, they generally try to solve the grasping problem in a static environment. Few of them consider a dynamic environment.
-
-Moving from the traditional engineering environment into a human dominated environment necessitates a fast grasp planning strategy to respond in real time. For example, when reaching out to grasp an object, a robust grasping strategy must be able to adapt rapidly to external perturbations that can modify the initial object position and orientation relative to the robot hand. In the case of catching a flying object~\cite{kim2012}, the robot has only a few milliseconds to plan a grasp before the object touches the floor.
+% ------- Real time -------
+Moving from the traditional engineering environment into a human dominated environment necessitates a fast grasp planning strategy to respond in real time. For example, when reaching out to grasp an object, a robust grasping strategy must be able to adapt rapidly to external perturbations that can modify the initial object position and orientation relative to the robot hand. In the case of catching a flying object, the robot has only a few milliseconds to plan a grasp before the object touches the floor \citep{kim2012}.
 
 Another application is receiving objects handed over by humans with a robot hand~(Fig.~\ref{handover}). In many circumstances the object must be grabbed quickly: one such example is when the object is heavy or hot; other examples involve time-pressing situations, e.g. in surgery a robot assistant must react sufficiently quickly to doctors handing back implements to ensure smooth running of the surgery.
 

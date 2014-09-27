@@ -1,9 +1,19 @@
 \chapter{Related work}
 \label{cha2}
 
-%\input{includes/cha2_sec1_grasping}
+This chapter gives an overview of the related research areas: robot grasping and manipulation, imitation learning and modular approaches. In Section \ref{cha2:sec1} we summarise the studies in robot grasping and manipulation, outlining the current challenges in this area. In Section \ref{cha2:sec2}, we introduce the technique of robot imitation learning (program by demonstration) and particularly look at its applications in robot grasping and manipulation. In Section \ref{cha2:sec3} we first discuss the motivation for modular approaches and its biological inspiration. We then give a brief review on modular approaches in control theory (multiple module adaptive control). The final part of this section focuses on the applications of modular approaches in robotics, especially in grasping and manipulation. Figure \ref{fig:litreview} depicts the structure of this chapter.
+
+\begin{figure}
+\centering
+  \includegraphics[width=15cm]{./fig_cha2/litreview.pdf}
+  \caption{Structure of this literature review. This chapter reviews studies in three areas: robot grasping and manipulation (Section \ref{cha2:sec1}), imitation learning (Section \ref{cha2:sec2}) and modular approaches (Section \ref{cha2:sec3}). Approaches involving imitation learning in grasping and manipulation are reviewed in Section \ref{cha2:sec2:grasping-learning}. Applications of modular approaches in grasping and manipulation are reviewed in Section \ref{cha2:sec3:grasping-modular}.}
+  \label{fig:litreview}
+\end{figure}
+
+
+\input{includes//cha2_sec1_grasping}
 \input{includes/cha2_sec2_learning}
-%\input{includes/cha2_sec3_modular}
+\input{includes/cha2_sec3_modular}
 %\input{includes/cha2_sec4_grasping-learning}
 %\input{includes/cha2_sec5_grasping-modular}
 %\input{includes/cha2_sec6_learning-modular}

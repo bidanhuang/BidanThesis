@@ -43,7 +43,7 @@ This section presents a few results of our method (Figure~\ref{contour},~\ref{ic
     \label{icub_cuboid}
 \end{figure}
 
-To test the computation time we generated 3000 random initial query points for each grasping task. The initial query points are placed at different distances away from the object surface, varying between 3$cm$ to 50$cm$, and the hand orientation is random. The initial finger configuration is not taken into account in finding the feasible region and hence it is set to the robot hand starting values. The computation time and experimental details are shown in Table~\ref{result}.
+To test the computation time we generated 3000 random initial query points for each grasping task. The initial query points are placed at different distances away from the object surface, varying between 3$cm$ to 50$cm$, and the hand orientation is random. The initial finger configuration is not taken into account in finding the feasible region and hence it is set to the robot hand starting values. The computation time and experimental details are shown in Table~\ref{result}. The computation is done by Matlab on a machine with a 2.8GHz processor and a 4GB RAM.
 
 Table~\ref{result} also shows the success rate of generated grasps with the iCub and the Barrett hand. A grasp is considered to be successful if it satisfies the force-closure criterion, is feasible for the hand kinematics and is not in collision with the object (see Section~\ref{cha3:sec2:demonstration}). When executing the obtained grasp, the fingers will continue to clutch until contact is made; if they contact the object surface before reaching the expected finger configuration, they will halt to avoid penetration.
 All the results shown in Figure.~\ref{contour},~\ref{icub_cuboid},~\ref{barrett} are good grasps.
@@ -59,12 +59,12 @@ To compare with the training data, we compute the grasp quality of the results w
 
 \begin{figure}
   \centering
-   \subfloat[\scriptsize{Best grasp found. Quality is 0.16. }]  {\includegraphics[width=3cm]{./fig_cha3/ash_near1.pdf}}
-   \subfloat[\scriptsize{Best grasp found. Quality is 0.19.}] {\includegraphics[width=3cm]{./fig_cha3/joy_near1.pdf}}
-   \subfloat[\scriptsize{Neighbor grasp of (a). Quality is 0.027.}] {\includegraphics[width=3cm]{./fig_cha3/ash_near2.pdf}}
-   \subfloat[\scriptsize{Neighbor grasp of (b). Quality is 0.03.}] {\includegraphics[width=3cm]{./fig_cha3/joy_near2.pdf}}
+   \subfloat[\scriptsize{Best grasp found}]  {\includegraphics[width=3cm]{./fig_cha3/ash_near1.pdf}}
+   \subfloat[\scriptsize{Neighbor grasp of (a)}] {\includegraphics[width=3cm]{./fig_cha3/ash_near2.pdf}}
+   \subfloat[\scriptsize{Best grasp found}] {\includegraphics[width=3cm]{./fig_cha3/joy_near1.pdf}}
+   \subfloat[\scriptsize{Neighbor grasp of (c)}] {\includegraphics[width=3cm]{./fig_cha3/joy_near2.pdf}}
 
- \caption{\scriptsize{(a) The best grasp found for the Barrett hand and the ashtray. (b) The best grasp found for the Barrett hand and the joystick. (c) The nearest grasp of (a) in the training set. Note the gap between the finger and the object. (d) The nearest grasp of (b) in the training set. }
+ \caption{\scriptsize{(a) The best grasp found for the Barrett hand and the ashtray. Grasp Quality is 0.16. (b) The nearest grasp of (a) in the training set. Note the gap between the finger and the object. Grasp Quality is 0.027. (c) The best grasp found for the Barrett hand and the joystick. Grasp Quality is 0.19. (d) The nearest grasp of (b) in the training set. Quality is 0.03 }
 }
     \label{near}
 \end{figure}
@@ -141,7 +141,7 @@ To compare with the training data, we compute the grasp quality of the results w
 
 
 
-This approach provides a good estimation of a stable and feasible grasp for the given object and robot hand. In contrast to the common approach of learning from human demonstrations, these grasps are generated solely according to the mechanics of the robot hand. Some resulting grasps are markedly different from  human grasps, especially for the Barrett hand which is very different from the human hand. Our method may therefore out-perform human demonstrations in some contexts by better exploiting differences between human and robot ``physiology''.
+%This approach provides a good estimation of a stable and feasible grasp for the given object and robot hand. In contrast to the common approach of learning from human demonstrations, these grasps are generated solely according to the mechanics of the robot hand. Some resulting grasps are markedly different from  human grasps, especially for the Barrett hand which is very different from the human hand. Our method may therefore out-perform human demonstrations in some contexts by better exploiting differences between human and robot ``physiology''.
 
 To model the actual contact points between the robot hand and the object is difficult in real time because of the high dimensionality of the solution space and the non-linearity of the kinematic constraints. In our method, instead of computing the actual contact point position, we compute the most likely solution using a GMM. Though a certain amount of accuracy is traded off to achieve the real time goal, the overall performance is satisfying. In the experiments listed above, over 90 percent of the testing points find good grasps within a few milliseconds. This method is most efficient for objects with a smooth surface. For complex objects this method can achieve a high success rate of over 85\%. When grasping the parts requiring high precision, additional feedback from visual or tactile sensors is needed for further refinement of the grasp.
 

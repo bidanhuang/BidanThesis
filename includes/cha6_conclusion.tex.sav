@@ -6,11 +6,11 @@ We present in this chapter discussions about our proposed modular approach in le
 %  advantage of "modular approach"; different way of modularization
 %  advantage of "imitation" + "modular" in grasping and manipulation: 3 different ways of mdoularization
 
-\section{Advance of modular approaches}
+\section{Advance of modular approach}
 \label{cha6:sec1}
 In this dissertation we discuss the application of modular approaches in robot grasping and manipulation. The basic principle is simple: the solution of a complicated task can be modeled better by a combination of a set of sub-solutions, each of which independently in charge of a subtask of the task. The sub-solutions are extracted from demonstrations and encoded with statistical models.
 This modular-learning hybrid approach is particularly useful for robot grasping and manipulation. Tasks involving in this category have frequently changing context and their system dynamics is hard to model analytically.
-In our method, while the imitation learning approach enable us to directly model the solutions without deeply analysing the system dynamics, the modular approach simplify the modeling process by dividing the big solution space to a set of smaller local regions. For frequently changing context, modular approaches have the advantage of being fast adaptive. Further, user-defined tasks is desired for service robots such as domestic robots. Our method provide an user-friendly framework to program robot, even for difficult adaptive control tasks. Different from many other studies on sequential motor primitives, our modular approaches are ``concurrent'': they are combined as a whole to provide solution for the task. Concurrent combination of modules provides more possibilities of solutions and hence is more feasible. 
+In our method, while the imitation learning approach enable us to directly model the solutions without deeply analysing the system dynamics, the modular approach simplify the modeling process by dividing the big solution space to a set of smaller local regions. For frequently changing context, modular approaches have the advantage of being fast adaptive. Further, user-defined tasks is desired for service robots such as domestic robots. Our method provide an user-friendly framework to program robot, even for difficult adaptive control tasks.
 % user-friendly
 
 
@@ -45,7 +45,7 @@ provides an easy way to program task specific adaptive control strategy for robo
 % Motion primitives:
 In human robot interaction, the understanding between those two parts is crucial. Language is a main tool for human to communicate and hence is ideal to be used to communicate with robots. Language itself is modular: each word is a functional unit and the combination of them can produce complex meaning. In Chapter~\ref{cha5}, we propose to connect the modularity in language and the modularity in the motion planning problem, i.e. the motion primitive. This is to say, using human language as bases to design motion primitives, and then use these motion primitives for motion recognition and generation (mixing learnt motion primitives). As these motion primitives are designed and labeled by human language, a natural programming method of them is learnt by human demonstrations. For learning here we use the Mimesis Model.
 
-Our mixing method makes the modulation of the motion primitives easy. During the task execution, human can correct robot motion by giving compensating commands. The robot uses these commands as a guide to mix motion primitives. The  benefit of this approach is two-fold: it enables the robot to understand human commands and helps planning the motions.
+Our mixing method makes the modulation of the motion primitives easy. During the task execution, human can correct robot motion by giving compensating commands. The robot uses these commands as a guide to mix motion primitives. The benefit of this approach is two-fold: it enables the robot to understand human commands and helps planning the motions.
 
 
 
@@ -112,7 +112,7 @@ needed, still using an modular approach. However, we could expect this
 to complicate the point of module integration and require
 better-informed action selection.
 
-In our experiment of encoding motion primitives with the mimesis model, we encode four motion primitives: grasp the big box, grasp the small box, grasp the high box and grasp the low box. We mix the first two primitives to get motions for grasping different size of boxes and mix the last two primitives to generate motions for grasping boxes in different positions. These mixing are in one dimension (object size, object height). We did not investigate the performance of mixing in higher dimension. Mixing multiple motion primitives will allow the robot to generate more complex behaviours and hence is an interesting further research direction.
+In our experiment of encoding motion primitives with the mimesis model, we encode four motion primitives: grasp the big box, grasp the small box, grasp the high box and grasp the low box. We mix the first two primitives to get motions for grasping different size of boxes and mix the last two primitives to generate motions for grasping boxes in different positions. These mixing are in one dimension. We did not investigate the performance of mixing in higher dimension. Mixing multiple motion primitives will allow the robot to generate more complex behaviours and hence is an interesting further research direction.
 
 %The modular approach is an effective way to simply the design of complex system.
 %

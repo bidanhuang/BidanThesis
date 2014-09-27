@@ -24,7 +24,7 @@
     \begin{tabular}
     { | c | c | c |>{\centering\arraybackslash}p{3cm} |>{\centering\arraybackslash}p{3cm}|}
     \hline
-    Shape primitives& Object & Size($cm$) & Number of training data & Number of Gaussians in GMM   \\ \hline
+    Shape primitives& Object & Size($cm$) & Amount of training data & Number of Gaussians in GMM   \\ \hline
     Sphere 1        & Novel object (Fig.~\ref{fig:object})  & radius 7              & 12096    & 60 \\ \hline
     Cylinder 1      & Novel object (Fig.~\ref{fig:object})  & height 15 and radius 4& 15608    & 60 \\ \hline
     Box 1 & Spray flask (Fig.~\ref{fig:spr})        & $6\times9.5\times8$       & 9256    & 40 \\ \hline
@@ -39,10 +39,10 @@
 
 We test our approach initially on a novel object that is a combination of a sphere and a cylinder (Figure.~\ref{fig:object}(a) and Table~\ref{tab:primitive}). We choose to use the Barrett hand for the implementation as it is available in our lab. As explained above, the grasp of the Barrett hand is formulated as the combination of the hand position ($h$), orientation($o$) and finger joint angles($\theta$).  The grasp GMMs of the sphere and cylinder are pre-trained with randomly generated stable grasps from the simulator GraspIt!.
 
-We compare this new approach with the previous approach that directly trained a grasp GMM for the whole object, by generating grasps for the object from 1000 starting points. Figure.~\ref{fig_result} shows a few resulting grasps. As shown in the Table~\ref{tab:result}, the success rate and the computation time of the new approach is of the same scale as the previous approach. The computation time is computed by Matlab on a machine with 4GB RAM.
-/textcolor{red}{CPU speed in GHz probably relevant here too}
+We compare this new approach with the previous approach that directly trained a grasp GMM for the whole object, by generating grasps for the object from 1000 starting points. Figure.~\ref{fig_result} shows a few resulting grasps. As shown in the Table~\ref{tab:result}, the success rate and the computation time of the new approach is of the same scale as the previous approach. The computation time is computed by Matlab on the same machine we use for the experiments described in Section~\ref{cha3:sec3} ( with a 2.8GHz processor and a 4GB RAM).
 
-Further, we train 5 different boxes as our primitives (Table~\ref{tab:primitive}) and use them to approximate two daily life objects: a spray flask and a bedside table. The spray flask is approximated as the combination of box 1, 2 and 3 (Figure.~\ref{fig:spr}) and the bedside table is approximated as the combination of box 4 and 5 (three copies of box 4 as the surfaces and 4 copies of box 5 as the legs). The result is shown in Table~\ref{tab:result}. A few initial hand postures and their resulting grasps are shown in Fig~\ref{fig:spr_result} and~\ref{fig:result:bedside}.
+
+Further, we train 5 different boxes as our primitives (Table~\ref{tab:primitive}) and use them to approximate two daily life objects: a spray flask and a bedside table. The spray flask is approximated as the combination of box 1, 2 and 3 (Figure.~\ref{fig:spr}) and the bedside table is approximated as the combination of box 4 and 5 (three copies of box 4 as the surfaces and 4 copies of box 5 as the legs). The result is shown in Table~\ref{tab:result}. A few initial hand postures and their resulting grasps are shown in Figure~\ref{fig:spr_result} and~\ref{fig:result:bedside}.
 
 %\vspace{-0.2in}
 \begin{figure}

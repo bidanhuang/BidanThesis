@@ -65,14 +65,14 @@ where $\bar{\tau}^j_i$ and $\hat{\tau}^j_i$ are the lower and upper boundaries o
 Minimizing this cost function is equivalent to minimizing the energy required in the joint space in order to accomplish the grasping task.
 %As different grasps can cost similar amounts of energy, this objective function has many local optima and hence can provide a large set of different grasps.
 
-The optimization is solved by the Interior Point OPTimizer (IPOPT) method proposed by W\"{a}chter and Biegler~\citep{wachter2006implementation}, written in the AMPL Model Language for Mathematical Programming. To generate a variety of grasps, we exploit the fact that the IPOPT solver converges to local solutions. We provide the solver with a large number of initial conditions, varying from 1000 to 2000. From these initial conditions, which are located in different areas of the space, the IPOPT converges to their corresponding local optima. By this means 500 to 1000 optimized grasps for an object can be obtained. They will be used as the training data in the next phase. The average computation time for the IPOPT to converge to one solution is 2.65$sec$, with a standard deviation of 1.82$sec$. As additional information, the quality $Q$ of each optimized grasp is calculated in the form described in~\citep{ponce1997computing}:
+The optimization is solved by the Interior Point OPTimizer (IPOPT) method proposed by W\"{a}chter and Biegler~\citep{wachter2006implementation}, written in the AMPL Model Language for Mathematical Programming. To generate a variety of grasps, we exploit the fact that the IPOPT solver converges to local solutions. We provide the solver with a large number of initial conditions, varying from 1000 to 2000. From these initial conditions, which are located in different areas of the space, the IPOPT converges to their corresponding local optima. By this means 500 to 1000 optimized grasps for an object can be obtained. They will be used as the training data in the next phase. The average computation time for the IPOPT to converge to one solution is 2.65$sec$, with a standard deviation of 1.82$sec$. As an additional information, the quality $Q$ of each optimized grasp is calculated in the form of the distance between the center of mass of the object and the grasp polyhedron~\citep{ponce1997computing}:
 
 \begin{equation}
 Q =\Arrowvert \frac{1}{3}\sum_{j} {\boldsymbol{c}^j}\Arrowvert
 \vspace{-0.1in}
 \end{equation}
-where \textbf{\emph{c}}$^j$ is the contact point (i.e. fingertip) position of the $j$th finger. Though it is not included in the optimization, the quality is used in the comparison between the training set and the result set shown in Section~\ref{cha3:sec3}.
-%\textcolor{red}{I don't understand how you can sum the contact points (positions as vectors?), to achieve a quality metric. Maybe the commented out text below provides the explanation required here?}
+where \textbf{\emph{c}}$^j$ is the contact point (i.e. fingertip) position of the $j$th finger in the object frame of reference. A small value of this distance means a small amount of gravitational force require to support the object.
+Though it is not included in the optimization, the quality is used in the comparison between the training set and the result set shown in Section~\ref{cha3:sec3}.
 %, by the distance from the grasp polyhedron to the center of mass of the object:
 
 %To measure the quality of the optimized grasps, the quality $Q$ is calculated as described in~\citep{ponce1997computing}, by the distance from the grasp polyhedron to the center of mass of the object:
@@ -172,7 +172,7 @@ Before training we 1) convert all data into the object reference frame and 2) no
     \label{bicxv}
 \end{figure}
 
-\subsection{Grasp Planning}
+\subsection{Grasp planning}
 \label{cha3:sec2:plangrasp}
 
 With the learned GMM model of the grasping demonstrations, we plan a feasible grasp given a current hand configuration \textbf{\emph{q}}=\{\textbf{\emph{h}},\textbf{\emph{o}}\}. As discussed above, we first need to determine whether the \textbf{\emph{q}} is a valid query point. To do this we define a membership function $f$(\textbf{\emph{q}}) as:
