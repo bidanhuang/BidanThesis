@@ -78,13 +78,13 @@ cap and the cap remains still. During the turning stages, humans
 continuously apply torque to the cap and it starts moving once the
 friction is overcome.
 
-\begin{figure}
+\begin{figure*}[ht!]
   \centering
-  \includegraphics[width=12cm]{./fig_cha4/b1b2b4_time_T.pdf}
-  \caption{ \scriptsize{Exerted torque for opening three different bottles.}
+  \includegraphics[width=12cm]{./fig_cha4/b1b3b4_time_T_2.pdf}
+  \caption{  {Exerted torque for opening three different bottles.}
 }
 \label{fig:bottlepatterns}
-\end{figure}
+\end{figure*}
 
 
 \subsubsection{Demonstration in different task contexts}
@@ -132,7 +132,7 @@ demonstration (Table~\ref{bottlesandcaps}).
 \begin{figure}
   \centering
   \includegraphics[width=10cm]{./fig_cha4/b_c.jpg}
-  \caption{ \scriptsize{Bottles and caps for human demonstration. From left to right: b1 c1, b2 c2, b3 c3, b4  c4}
+  \caption{  {Bottles and caps for human demonstration. From left to right: b1 c1, b2 c2, b3 c3, b4  c4}
 }
 \label{fig:b_c}
 \end{figure}
@@ -175,10 +175,10 @@ Bottle 4 & & & b4c3&\\
 
 \begin{figure}
   \centering
-  \subfloat[\scriptsize{}]  {\includegraphics[width=6cm]{./fig_cha4/setup2_3.jpg}}
+  \subfloat[ {}]  {\includegraphics[width=6cm]{./fig_cha4/setup2_3.jpg}}
   \hspace{1cm}
-  \subfloat[\scriptsize{}]  {\includegraphics[width=6cm]{./fig_cha4/demo.jpg}}
-  \caption{ \scriptsize{Experimental setup for the task of opening a bottle cap. (a) Setup b3c4: bottle 3 combined with cap 4 (cap to grab). A force-torque sensor is mounted between the ``cap of the bottle'' and the ``cap to grab'', so that the exert force and torque can be measured. A set of Optitrack markers are connected with the cap to record the displacement of it. The bottle is fixed on a table. (b) Human demonstrating opening a bottle cap. To avoid extra torque, only one hand is used during the demonstration. Human grip the cap from the top and apply torque to the system. }
+  \subfloat[ {}]  {\includegraphics[width=6cm]{./fig_cha4/demo.jpg}}
+  \caption{  {Experimental setup for the task of opening a bottle cap. (a) Setup b3c4: bottle 3 combined with cap 4 (cap to grab). A force-torque sensor is mounted between the ``cap of the bottle'' and the ``cap to grab'', so that the exert force and torque can be measured. A set of Optitrack markers are connected with the cap to record the displacement of it. The bottle is fixed on a table. (b) Human demonstrating opening a bottle cap. To avoid extra torque, only one hand is used during the demonstration. Human grip the cap from the top and apply torque to the system. }
 }
 \label{fig:setup}
 \end{figure}
@@ -296,15 +296,15 @@ three different channels.
 
 
 
-\begin{figure}
+\begin{figure*}[ht!]
   \centering
   \hspace{-1cm}
   \includegraphics[width=14cm]{./fig_cha4/b3c2_1_sTF.pdf}
   \vspace{-0.5cm}
-  \caption{ \scriptsize{Aligned data of all three channels. Highlighted parts mark the turning process: blue blocks denote the first cycle, i.e. the phase I, and green blocks denote the later cycles, i.e the phase II. Phase I is significantly different from the phase II.}
+  \caption{  {Aligned data of all three channels. Highlighted parts mark the turning process: blue blocks denote the first cycle, i.e. the phase I, and green blocks denote the later cycles, i.e the phase II. Phase I is significantly different from the phase II.}
 }
 \label{fig:3channels}
-\end{figure}
+\end{figure*}
 
 % Only turning cycle
 In this task we focus on the turning stage of each cycle. More specifically, we focus on the data starting from the moment that the fingers contact the cap and end at the moment that the turning is finished and the cap is released. The reaching and releasing cycles do not involve contact with the environment and hence are not of concern here.
@@ -333,22 +333,28 @@ In this section, we explain how we encode the training data into a few different
 \label{cha4:sec3:learning:clustering}
 To cluster the 84 time series $Q\{s,\tau,F\}$ obtained from human demonstration, we first compute the distance between each pair of them by the DTW technique. As this task is time independent, ``warping'' of the data in the dimension of time does not effect the control policy encoded in the time series. The distances between each pair of the time series is shown in the heatmap (Fig.~\ref{fig:heatmap}). As can be seen from the heatmap, the trials with the same setup and in the same cycle are very similar to each other. Hence we regard these trials a representing the same control strategy and use their variance as the criterion of the clustering. From this heatmap we can also see that within the same cycle, the trials with the same bottle but with different caps, e.g. $b3c1, b3c3$ and $b3c4$, are similar to each other. In the first cycle, the trials with the same cap but with different bottles, e.g. $b1c3, b2c3, b3c3$ and $b4c3$, are significantly different from each other. In the the later cycles, this differences decrease gradually. This result shows that in the opening bottle cap task, the surface condition between the bottle and the cap plays an important role in the control strategy, while the role of cap size is relatively minor. Figure~\ref{fig:cappatterns} shows three trials of opening bottle b2 with different sizes of caps. It can be seen that their patterns are similar.
 
-\begin{figure*}
-\label{heatmap}
-  \centering
-  \includegraphics[width=18cm,height=18cm]{./fig_cha4/heatmap_all6_3.eps}
-  \caption{ \scriptsize{A heatmap representation of the distance matrix of 84 time series (7 setups $\times$ 4 cycles $\times$ 3 trials). The labels are in the format of ``setup$\_$cycle''. For example, ``b1c2$\_$1'' represents the first cycle of the b1c2 setup. The yellow lines divide the x and y axis by the 4 cycles and hence form 16 big blocks. In each big block, the black lines divide the x and y axis by the 7 setups and hence form 49 small blocks. }
+\begin{figure*}[ht!]
+    \centering
+    \includegraphics[width=8cm]{./fig_cha4/c1c3c4_time_T.eps}
+    \caption{  {Exert torque for opening bottle b3 with three different cap sizes.}
 }
-\label{fig:heatmap}
+\label{fig:cappatterns}
 \end{figure*}
 
 \begin{figure}
-    \centering
-    \includegraphics[width=12cm]{./fig_cha4/c1c3c4_time_T.eps}
-    \caption{ \scriptsize{Exert torque for opening bottle b3 with three different cap sizes.}
+\centering
+
+\begin{minipage}[t]{1\textwidth}
+\hspace{-1.5cm}
+  \includegraphics[width=18cm,height=18cm]{./fig_cha4/heatmap_all6_3.eps}
+  \caption{  {A heatmap representation of the distance matrix of 84 time series (7 setups $\times$ 4 cycles $\times$ 3 trials). The labels are in the format of ``setup$\_$cycle''. For example, ``b1c2$\_$1'' represents the first cycle of the b1c2 setup. The yellow lines divide the x and y axis by the 4 cycles and hence form 16 big blocks. In each big block, the black lines divide the x and y axis by the 7 setups and hence form 49 small blocks. }
 }
-\label{fig:cappatterns}
+\label{fig:heatmap}
+\end{minipage}
+
 \end{figure}
+
+
 
 
 As mentioned before, the demonstration of each setup is repeated three times and the data from the same setup and same cycle are presumed to belong to the same cluster. To set a threshold for clustering, we check the distances between the time series come from the same setup and the same phase. The largest distance found is 0.04 (normalized) from the $b3c2$ phase 4. We add a $10\%$ margin on this (resulting in 0.044) and use it as the threshold of clustering. The time series distances less than the threshold are grouped into the same cluster. We use the hierarchical agglomerative clustering (Section~\ref{cha4:sec2:learn:cluster}) to merge the data into different clusters. After 5 times of merging, the clusters are not merge-able and 3 clusters remain.
@@ -401,16 +407,16 @@ Bootle 4 & Phase II &           &           &       Cluster 2 &           \\ \hl
 \label{cha4:sec3:learning:module}
 We encode the data in each of the modules using GMM. As explained in Section~\ref{cha4:sec2:learn}, a forward model and an inverse model are built for each module. The forward model is encoded by the joint distribution $p\{s(t),s(t-1),a(t-1)\mid\Omega_F\}$, while the inverse model is encoded by $p\{s(t),s(t+1),a(t),a(t-1)\mid\Omega_I\}$. For each model, the number of Gaussians is determined by the BIC. We use 25 Gaussians for cluster 1, 40 for cluster 2 and 15 for cluster 3. Their BIC tests are shown in Fig~\ref{fig:bic}.
 
-\begin{figure}
+\begin{figure*}[ht!]
   \centering
-  \includegraphics[width=6cm]{./fig_cha4/bic_cluster1.eps}
-  \includegraphics[width=6cm]{./fig_cha4/bic_cluster2.eps}
-  \includegraphics[width=6cm]{./fig_cha4/bic_cluster3.eps}
-  \caption{ \scriptsize{BIC test result for clusters. (a) Cluster 1, (b) Cluster 2, (c) Cluster 3.}
+  \subfloat[{}]{\includegraphics[width=5cm]{./fig_cha4/bic_cluster1.eps}}
+  \subfloat[{}]{\includegraphics[width=5cm]{./fig_cha4/bic_cluster2.eps}}
+  \subfloat[{}]{\includegraphics[width=5cm]{./fig_cha4/bic_cluster3.eps}}
+  \caption{  {BIC test result for clusters. (a) Cluster 1, (b) Cluster 2, (c) Cluster 3.}
 }
 
 \label{fig:bic}
-\end{figure}
+\end{figure*}
 
 %\begin{table}
 %\centering
@@ -434,8 +440,8 @@ We encode the data in each of the modules using GMM. As explained in Section~\re
 %\label{sec:command}
 Our approach is independent of the robot system and can potentially be applied to any robot. We chose to implement this work with a Barrett hand mounted on a KUKA lightweight robot as they are available in our lab. We implemented the multiple module system on this platform to enable the robot to open bottle caps.
 
-\begin{algorithm}
-  \caption{Control Algorithm}
+\begin{algorithm}[ht!]
+  \caption{Control Algorithm of object manipulation}
   \begin{algorithmic}[1]
     \For{r = 1:4}
     \State REACHING(): Robot moves to initial position\;
@@ -513,25 +519,25 @@ With the above four different setups, the modular model adapts accordingly and s
 \begin{figure*}
   \centering
   \vspace{0.8cm}
-  \subfloat[\scriptsize{Snapshots from the robot opening bottle~ $b1$}]
+  \subfloat[ {Snapshots from the robot opening bottle~ $b1$}]
   {\includegraphics[width=13cm]{./fig_cha4/demo_b1.jpg}}
 
   \vspace{0.3cm}
   %\hspace{0.2cm}
-  \subfloat[\scriptsize{Cap displacement during the robot's opening}]
+  \subfloat[ {Cap displacement during the robot's opening}]
   {\includegraphics[width=13cm]{./fig_cha4/demo_b1_s.eps}}
 
   \vspace{0.3cm}
   \hspace{-0.3cm}
-  \subfloat[\scriptsize{Torque exerted by the robot against cap displacement}]
+  \subfloat[ {Torque exerted by the robot against cap displacement}]
   {\includegraphics[width=13cm]{./fig_cha4/demo_b1_T.eps}}
 
   \vspace{0.3cm}
   %\vspace{0.5cm}
-  \subfloat[\scriptsize{Responsibility factor against cap
+  \subfloat[ {Responsibility factor against cap
     displacement, for each module}]
   {\includegraphics[width=13cm]{./fig_cha4/demo_b1_rf.eps}}
-  \caption{ \scriptsize{The robot opens bottle~$b1$.}
+  \caption{  {The robot opens bottle~$b1$.}
 }
 
 \label{fig:demo_b1}
@@ -540,25 +546,25 @@ With the above four different setups, the modular model adapts accordingly and s
 \begin{figure*}
   \centering
   \vspace{0.8cm}
-  \subfloat[\scriptsize{Snapshots from the robot opening bottle~$b4$}]
+  \subfloat[ {Snapshots from the robot opening bottle~$b4$}]
   {\includegraphics[width=13cm]{./fig_cha4/demo_b4.jpg}}
 
   \vspace{0.3cm}
   %\vspace{0.5cm}
-  \subfloat[\scriptsize{Cap displacement during the robot's opening}]
+  \subfloat[ {Cap displacement during the robot's opening}]
   {\includegraphics[width=13cm]{./fig_cha4/demo_b4_s.eps}}
 
   \vspace{0.3cm}
   \hspace{-0.2cm}
-  \subfloat[\scriptsize{Torque exerted by the robot against cap displacement}]
+  \subfloat[ {Torque exerted by the robot against cap displacement}]
   {\includegraphics[width=13cm]{./fig_cha4/demo_b4_T.eps}}
 
   \vspace{0.3cm}
   %\vspace{0.5cm}
-  \subfloat[\scriptsize{Responsibility factor against cap displacement, for each module}]
+  \subfloat[ {Responsibility factor against cap displacement, for each module}]
   {\includegraphics[width=13cm]{./fig_cha4/demo_b4_rf.eps}}
 
-  \caption{ \scriptsize{The robot opens bottle~$b4$}
+  \caption{  {The robot opens bottle~$b4$}
 }
 \label{fig:demo_b4}
 \end{figure*}
@@ -568,25 +574,25 @@ With the above four different setups, the modular model adapts accordingly and s
 \begin{figure*}
   \centering
   \vspace{0.8cm}
-  \subfloat[\scriptsize{Snapshots for robot opening bottle~b5 demonstration}]
+  \subfloat[ {Snapshots for robot opening bottle~b5 demonstration}]
   {\includegraphics[width=13cm]{./fig_cha4/demo_b5.jpg}}
 
   \vspace{0.3cm}
   %\vspace{0.5cm}
-  \subfloat[\scriptsize{Cap displacement during the robot's opening}]
+  \subfloat[ {Cap displacement during the robot's opening}]
   {\includegraphics[width=13cm]{./fig_cha4/demo_b5_s.eps}}
 
   \vspace{0.3cm}
   %\vspace{0.5cm}
-  \subfloat[\scriptsize{Torque exerted by the robot against cap displacement}]
+  \subfloat[ {Torque exerted by the robot against cap displacement}]
   {\includegraphics[width=13cm]{./fig_cha4/demo_b5_T.eps}}
 
   \vspace{0.3cm}
   %\vspace{0.5cm}
-  \subfloat[\scriptsize{Responsibility factor against cap     displacement, for each module}]
+  \subfloat[ {Responsibility factor against cap     displacement, for each module}]
   {\includegraphics[width=13cm]{./fig_cha4/demo_b5_rf.eps}}
 
-  \caption{ \scriptsize{The robot opens bottle~$b5$}
+  \caption{  {The robot opens bottle~$b5$}
 }
 \vspace{5cm}
 \label{fig:demo_b5}
@@ -595,25 +601,25 @@ With the above four different setups, the modular model adapts accordingly and s
 \begin{figure*}
   \centering
   \vspace{0.8cm}
-  \subfloat[\scriptsize{Snapshots for robot opening bottle~b6 demonstration}]
+  \subfloat[ {Snapshots for robot opening bottle~b6 demonstration}]
   {\includegraphics[width=13cm]{./fig_cha4/demo_b6.jpg}}
 
   \vspace{0.3cm}
   %\vspace{0.5cm}
-  \subfloat[\scriptsize{Cap displacement during the robot's opening}]
+  \subfloat[ {Cap displacement during the robot's opening}]
   {\includegraphics[width=13cm]{./fig_cha4/demo_b6_s.eps}}
 
   \vspace{0.3cm}
   \hspace{-0.5cm}
-  \subfloat[\scriptsize{Torque exerted by the robot against cap displacement}]
+  \subfloat[ {Torque exerted by the robot against cap displacement}]
   {\includegraphics[width=13cm]{./fig_cha4/demo_b6_T.eps}}
 
   \vspace{0.3cm}
   %\vspace{0.5cm}
-  \subfloat[\scriptsize{Responsibility factor against cap     displacement, for each module}]
+  \subfloat[ {Responsibility factor against cap     displacement, for each module}]
   {\includegraphics[width=13cm]{./fig_cha4/demo_b6_rf.eps}}
 
-  \caption{ \scriptsize{The robot opens bottle~$b6$}
+  \caption{  {The robot opens bottle~$b6$}
 }
 \label{fig:demo_b6}
 \end{figure*}
@@ -622,7 +628,7 @@ With the above four different setups, the modular model adapts accordingly and s
 \begin{figure}
   \centering
   \includegraphics[width=8cm]{./fig_cha4/rb1b4b5b6_time_T.eps}
-  \caption{ \scriptsize{Robot exerted torque for opening four bottles: b1 b4 b5 b6. Time is warped and shifted for displace purpose}
+  \caption{  {Robot exerted torque for opening four bottles: b1 b4 b5 b6. Time is warped and shifted for displace purpose}
 }
 \label{fig:demo_b1b4b5b6}
 \end{figure}

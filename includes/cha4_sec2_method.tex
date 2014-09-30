@@ -20,8 +20,8 @@ Figure~\ref{fig:overview} shows an overview of our framework.
 
 \begin{figure}
   \centering
-   \includegraphics[width=15cm]{./fig_cha4/overview3.pdf}
-  \caption{ \scriptsize{System overview. Our system takes a
+   \includegraphics[width=12cm]{./fig_cha4/overview3.pdf}
+  \caption{   {System overview. Our system takes a
        three-step approach. 1) A human demonstrates a task in a
        variety of contexts. In the opening-bottle-cap experiment, the
        demonstrations are done with different bottles and caps. The
@@ -41,10 +41,10 @@ Figure~\ref{fig:overview} shows an overview of our framework.
 
 \begin{figure*}
   \centering
-    \subfloat[\scriptsize{Optitrack markers attaching to a cap}] {\includegraphics[height=4cm]{./fig_cha4/marker2.jpg}}
-    \subfloat[\scriptsize{Force torque sensor}] {\includegraphics[height=4cm]{./fig_cha4/Nano25-E.jpg}}
-    \subfloat[\scriptsize{Texscan tactile sensors mounting to a glove}] {\includegraphics[height=4cm]{./fig_cha4/texscan2.jpg}}
-    \caption{\scriptsize{Sensors used in the human demonstration of opening a bottle cap task.}}
+    \subfloat[  {Optitrack markers attaching to a cap}] {\includegraphics[height=3cm]{./fig_cha4/marker2.jpg}}
+    \subfloat[  {Force torque sensor}] {\includegraphics[height=3cm]{./fig_cha4/Nano25-E.jpg}}
+    \subfloat[  {Texscan tactile sensors mounting to a glove}] {\includegraphics[height=3cm]{./fig_cha4/texscan2.jpg}}
+    \caption{  {Sensors used in the human demonstration of opening a bottle cap task.}}
   \label{fig:devices}
 \end{figure*}
 
@@ -235,8 +235,9 @@ Here we make an assumption that our manipulation task is time independent, i.e. 
 
 \begin{figure}
   \centering
+  \hspace{-2cm}
   \includegraphics[width=16cm]{./fig_cha4/alignDTW.eps}
-  \caption{ \scriptsize{Two time series aligned by DTW. Red and black lines are the raw time series. The blue lines connect the matching points between them. DTW wrap the two time series non-linearly so that the time independence similarity can be measured. The time series 1 is moved up by 0.5 for display reasons.}
+  \caption{   {Two time series aligned by DTW. Red and black lines are the raw time series. The blue lines connect the matching points between them. DTW wrap the two time series non-linearly so that the time independence similarity can be measured. The time series 1 is moved up by 0.5 for display reasons.}
 }
 \label{fig:alignDTW}
 \end{figure}
@@ -252,7 +253,7 @@ In our case, the number of clusters is an unknown variable. Therefore we use the
 \begin{figure}
   \centering
    \includegraphics[width=12cm]{./fig_cha4/hierarchicalclustering.pdf}
-  \caption{ \scriptsize{A sketch of the hierarchical agglomerative clustering method. The nearest two clusters are grouped into one at each iteration until a single cluster is formed.}
+  \caption{   {A sketch of the hierarchical agglomerative clustering method. The nearest two clusters are grouped into one at each iteration until a single cluster is formed.}
 }
 \label{fig:hcluster}
 \end{figure}
@@ -338,7 +339,7 @@ We model the correlation of the force and the displacement with
 GMM. The task dynamics is hence encoded as a joint distribution of the object status displacement $s$ and the action $a$ taken by the human, $p(s,a,{\mid}{\Omega})$. In our experiment, $s$ is the one-dimensional angular displacement of the cap, and $a$ is the one-dimensional exerted torque and grip force.
 Modeling a distribution by GMM allows us to capture the nonlinearity in the data, and also to compute the likelihood of a query data point in the model. This provides a good estimation of the reliability of the module in the current task context, which is crucial in choosing the correct modules for control  (discussed in Section~\ref{cha4:sec2:control:rf}).
 Further, as a generative model GMM is able to
-generate new data from the model, that is it allows us to generate motor commands. This is done by the {\em Gaussian Mixture Regression} (GMR). The general mathematical expression of GMM is explained in the previous chapter section~\ref{cha3:sec2:learn}. 
+generate new data from the model, that is it allows us to generate motor commands. This is done by the {\em Gaussian Mixture Regression} (GMR). The general mathematical expression of GMM is explained in the previous chapter section~\ref{cha3:sec2:learn}.
 
 %\begin{table}
 %\caption{Encoding process of GMM and computation process of GMR}
@@ -435,10 +436,10 @@ A forward model is held to anticipate the outcome of the motor command, while an
 
 \begin{figure}
   \centering
-      \subfloat[\scriptsize{}]{\includegraphics[width=12cm]{./fig_cha4/control_1_2.pdf}}
+      \subfloat[  {}]{\includegraphics[width=12cm]{./fig_cha4/control_1_2.pdf}}
       \vspace{0.5cm}
-      \subfloat[\scriptsize{}]{\includegraphics[width=12cm]{./fig_cha4/control_3_2.pdf}}
-      \caption{ \scriptsize{Control flow diagram of forward-inverse
+      \subfloat[  {}]{\includegraphics[width=12cm]{./fig_cha4/control_3_2.pdf}}
+      \caption{   {Control flow diagram of forward-inverse
           model in motor control. (a) System overview. Pairs of
           forward and inverse models work together to generate motor
           commands. The detailed mechanism inside the red box is shown

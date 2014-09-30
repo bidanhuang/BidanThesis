@@ -7,19 +7,19 @@ This section presents a few results of our method (Figure~\ref{contour},~\ref{ic
 
   \centering
   \subfloat[  {Initial pose 1}]  {\label{fig:reachableSamplesPos}\includegraphics[width=4cm]{./fig_cha3/1_ini.png}}
-  \vspace{0.5cm}
+  \hspace{0.5cm}
   \subfloat[  {Initial pose 2}] {\label{fig:reachableModelPos}  \includegraphics[width=4cm]{./fig_cha3/2_iniss.png}}
-  \vspace{0.5cm}
+  \hspace{0.5cm}
   \subfloat[  {Initial pose 3}]  {\label{fig:reachableSamplesPos}\includegraphics[width=4cm]{./fig_cha3/aa.png}}
 
-  \vspace{0.02in}
+  %\vspace{-1cm}
   \subfloat[  {Final grasp 1}] {\label{fig:reachableSamplesPos}\includegraphics[width=4cm]{./fig_cha3/1_finalss.png}}
-  \vspace{0.5cm}
+  \hspace{0.5cm}
   \subfloat[  {Final grasp 2}] {\label{fig:reachableModelPos}  \includegraphics[width=4cm]{./fig_cha3/2_finalss.png}}
-  \vspace{0.5cm}
+  \hspace{0.5cm}
   \subfloat[  {Final grasp 3}]  {\label{fig:reachableSamplesPos}\includegraphics[width=4cm]{./fig_cha3/3_final_2ss.png}}
 
-  \vspace{0.2in}
+  %\vspace{-1cm}
   \includegraphics[width=14cm]{./fig_cha3/contour2-3_4.eps}
   \caption{  {
   Two-dimensional illustration of the learned model. $h_y$ and $h_z$ correspond to the hand position along the y and z axis of the object reference frame. a, b and c are the initial query points, while d, e and f are their corresponding computed grasps.
@@ -33,17 +33,17 @@ This section presents a few results of our method (Figure~\ref{contour},~\ref{ic
 \begin{figure}
   \centering
     \subfloat[  {Initial pose 1}]  {\label{fig:reachableSamplesPos}\includegraphics[width=4cm]{./fig_cha3/cuboid_1_i.pdf}}
-    \vspace{0.5cm}
+    \hspace{0.5cm}
     \subfloat[  {Initial pose 2}] {\label{fig:reachableModelPos}  \includegraphics[width=4cm]{./fig_cha3/cuboid_2_i.pdf}}
-    \vspace{0.5cm}
+    \hspace{0.5cm}
     \subfloat[  {Initial pose 3}] {\label{fig:reachableModelPos}  \includegraphics[width=4cm]{./fig_cha3/cuboid_3_i.pdf}}
 
     %\vspace{0.05in}
 
     \subfloat[  {Final grasp 1}] {\label{fig:reachableModelPos}  \includegraphics[width=4cm]{./fig_cha3/cuboid_1_f.pdf}}
-    \vspace{0.8cm}
+    \hspace{0.8cm}
     \subfloat[  {Final grasp 2}]  {\label{fig:reachableSamplesPos}\includegraphics[width=4cm]{./fig_cha3/cuboid_2_f.pdf}}
-    \vspace{0.8cm}
+    \hspace{0.8cm}
     \subfloat[  {Final grasp 3}]  {\label{fig:reachableSamplesPos}\includegraphics[width=4cm]{./fig_cha3/cuboid_3_f.pdf}}
 
   \caption{  {Examples of the iCub hand grasping a cuboid. The first row (a,b,c) shows the initial postures and the second row (d,e,f) shows the corresponding final grasps.}
@@ -67,10 +67,13 @@ To compare with the training data, we compute the grasp quality of the results w
 
 \begin{figure}
   \centering
-   \subfloat[  {Best grasp found}]  {\includegraphics[width=3cm]{./fig_cha3/ash_near1.pdf}}
-   \subfloat[  {Neighbor grasp of (a)}] {\includegraphics[width=3cm]{./fig_cha3/ash_near2.pdf}}
-   \subfloat[  {Best grasp found}] {\includegraphics[width=3cm]{./fig_cha3/joy_near1.pdf}}
-   \subfloat[  {Neighbor grasp of (c)}] {\includegraphics[width=3cm]{./fig_cha3/joy_near2.pdf}}
+   \subfloat[  {Best grasp found}]  {\includegraphics[width=3.3cm]{./fig_cha3/ash_near1.pdf}}
+   %\hspace{0.3cm}
+   \subfloat[  {Neighbor grasp of a}] {\includegraphics[width=3.3cm]{./fig_cha3/ash_near2.pdf}}
+   %\hspace{0.3cm}
+   \subfloat[  {Best grasp found}] {\includegraphics[width=3.3cm]{./fig_cha3/joy_near1.pdf}}
+   %\hspace{0.3cm}
+   \subfloat[  {Neighbor grasp of c}] {\includegraphics[width=3.3cm]{./fig_cha3/joy_near2.pdf}}
 
  \caption{  {(a) The best grasp found for the Barrett hand and the ashtray. Grasp Quality is 0.16. (b) The nearest grasp of (a) in the training set. Note the gap between the finger and the object. Grasp Quality is 0.027. (c) The best grasp found for the Barrett hand and the joystick. Grasp Quality is 0.19. (d) The nearest grasp of (b) in the training set. Quality is 0.03 }
 }
@@ -145,15 +148,18 @@ To compare with the training data, we compute the grasp quality of the results w
     \subfloat[  {Initial pose 7}]  {\includegraphics[width=4cm]{./fig_cha3/joy_2_i.pdf}}
     \subfloat[  {Initial pose 8}] {\includegraphics[width=4cm]{./fig_cha3/joy_3_i.pdf}}
     \subfloat[  {Initial pose 9}] {\includegraphics[width=4cm]{./fig_cha3/joy_5_i.pdf}}
-    \vspace{0.3cm}
+    
+    %\vspace{0.3cm}
     \subfloat[  {Final grasp 7}] {\includegraphics[width=4cm]{./fig_cha3/joy_2_f.pdf}}
     \subfloat[  {Final grasp 8}]  {\includegraphics[width=4cm]{./fig_cha3/joy_3_f.pdf}}
     \subfloat[  {Final grasp 9}]  {\includegraphics[width=4cm]{./fig_cha3/joy_5_f.pdf}}
-    \vspace{0.3cm}
+    
+    %\vspace{0.3cm}
     \subfloat[  {Initial pose 10}]  {\includegraphics[width=4cm]{./fig_cha3/plane_2i.pdf}}
     \subfloat[  {Initial pose 11}] {\includegraphics[width=4cm]{./fig_cha3/plane_3i.pdf}}
     \subfloat[  {Initial pose 12}] {\includegraphics[width=4cm]{./fig_cha3/plane_1i.pdf}}
-    \vspace{0.3cm}
+    
+    %\vspace{0.3cm}
     \subfloat[  {Final grasp 10}] {\includegraphics[width=4cm]{./fig_cha3/plane_2f.pdf}}
     \subfloat[  {Final grasp 11}]  {\includegraphics[width=4cm]{./fig_cha3/plane_3f.pdf}}
     \subfloat[  {Final grasp 12}]  {\includegraphics[width=4cm]{./fig_cha3/plane_1f.pdf}}
