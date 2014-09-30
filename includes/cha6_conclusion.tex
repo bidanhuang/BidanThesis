@@ -1,16 +1,16 @@
 \chapter{Discussion and future work}
 \label{cha6}
-We present in this chapter discussions about our proposed modular approach in learning grasping and manipulation, as well as future work. In Section~\ref{cha6:sec1} we discuss the design principle of our modular approaches and the advantage of using the approach in tackling grasping and manipulation problem.  Section~\ref{cha6:sec2} discuss the limitations and failures of the current system. Section~\ref{cha6:sec3} suggest the research directions of future work following this thesis.
+We present in this chapter discussions about our proposed modular approach in learning grasping and manipulation, as well as future work. In Section~\ref{cha6:advantage} we discuss the design principle of our modular approaches and the advantage of using the approach in tackling grasping and manipulation problem. Section~\ref{cha6:comparison} compares our approaches to other approaches in the relative areas. Section~\ref{cha6:limitation} discuss the limitations and failures of the current system. Section~\ref{cha6:future} suggest the research directions of future work following this thesis.
 
 %  advantage of "put the user in the loop of robot's learning"
 %  advantage of "modular approach"; different way of modularization
 %  advantage of "imitation" + "modular" in grasping and manipulation: 3 different ways of mdoularization
 
 \section{Advance of modular approaches}
-\label{cha6:sec1}
+\label{cha6:advantage}
 In this dissertation we discuss the application of modular approaches in robot grasping and manipulation. The basic principle is simple: the solution of a complicated task can be modeled better by a combination of a set of sub-solutions, each of which independently in charge of a subtask of the task. The sub-solutions are extracted from demonstrations and encoded with statistical models.
 This modular-learning hybrid approach is particularly useful for robot grasping and manipulation. Tasks involving in this category have frequently changing context and their system dynamics is hard to model analytically.
-In our method, while the imitation learning approach enable us to directly model the solutions without deeply analysing the system dynamics, the modular approach simplify the modeling process by dividing the big solution space to a set of smaller local regions. For frequently changing context, modular approaches have the advantage of being fast adaptive. Further, user-defined tasks is desired for service robots such as domestic robots. Our method provide an user-friendly framework to program robot, even for difficult adaptive control tasks. Different from many other studies on sequential motor primitives, our modular approaches are ``concurrent'': they are combined as a whole to provide solution for the task. Concurrent combination of modules provides more possibilities of solutions and hence is more feasible. 
+In our method, while the imitation learning approach enable us to directly model the solutions without deeply analysing the system dynamics, the modular approach simplify the modeling process by dividing the big solution space to a set of smaller local regions. For frequently changing context, modular approaches have the advantage of being fast adaptive. Further, user-defined tasks is desired for service robots such as domestic robots. Our method provide an user-friendly framework to program robot, even for difficult adaptive control tasks. Different from many other studies on sequential motor primitives, our modular approaches are ``concurrent'': they are combined as a whole to provide solution for the task. Concurrent combination of modules provides more possibilities of solutions and hence is more feasible.
 % user-friendly
 
 
@@ -45,12 +45,18 @@ provides an easy way to program task specific adaptive control strategy for robo
 % Motion primitives:
 In human robot interaction, the understanding between those two parts is crucial. Language is a main tool for human to communicate and hence is ideal to be used to communicate with robots. Language itself is modular: each word is a functional unit and the combination of them can produce complex meaning. In Chapter~\ref{cha5}, we propose to connect the modularity in language and the modularity in the motion planning problem, i.e. the motion primitive. This is to say, using human language as bases to design motion primitives, and then use these motion primitives for motion recognition and generation (mixing learnt motion primitives). As these motion primitives are designed and labeled by human language, a natural programming method of them is learnt by human demonstrations. For learning here we use the Mimesis Model.
 
-Our mixing method makes the modulation of the motion primitives easy. During the task execution, human can correct robot motion by giving compensating commands. The robot uses these commands as a guide to mix motion primitives. The  benefit of this approach is two-fold: it enables the robot to understand human commands and helps planning the motions.
+Our mixing method makes the modulation of the motion primitives easy. During the task execution, human can correct robot motion by giving compensating commands. The robot uses these commands as a guide to mix motion primitives. The benefit of this approach is two-fold: it enables the robot to understand human commands and helps planning the motions.
 
+\section{Comparison to other works}
+\label{cha6:comparison}
+Here we discuss how our approach relates to other approaches trying to tackle the similar problems. In grasp planning, few literatures report their computation time of a grasp but for those do, the reported time various from a few to more than 20 $sec$ \citep{harada2008fast,daoud2011fast,S.ElKhoury2012}. With our method, computing a grasp for a known object is much shorter (lease than 10 $msec$). Benefit from the modular approach, when we extend this method to novel objects, the computation time is remained in the millisecond scale (less than 25 $msec$). This computation time will increase when the target object becomes more complex, i.e. combined with more shape primitives. As we use a close form solution to compute new grasps, the computation time of each primitive is similar. This is to say, the total computation time is proportional to the number of shape primitives of the target object. This outperform the other iterative optimization methods as our computation time is expectable and hence will allow the robot to relocate its computation power.
 
+In object manipulation, some other studies also try to solve the openning bottle cap task but they focus on other purposes. \citet{michelman1994forming} use an openning bottle cap task as an case study to show how to decompose a complex manipulation task into task primitives and sequencing them to accomplish the task. \citet{steffen2008towards} also study this task but they focus on generating natural human like hand motion rather than controlling the force and torque. Later they extend this work to learn human bimanual motion \citep{steffen2010bio}. Both of these works are implemented in a simulated environment. The method we propose in Chapter 4 is, as far as we know, the first multiple model control method for object manipulation implemented on a real robot.
+
+Quite a few studies have discussed modeling the reaching motion primitives \citep{kroemer2011grasping,stulp2011learning,stulp2012reinforcement}. These studies focus on automatically generating a reaching motion that is robust to the target object shape and position uncertainty. Human interaction is not considered in these studies. Different from these methods, our methods presented in Chapter 5 model motion primitives based on human commands. This allows human interact with robot by the most natural way: language. In our system, we rely on the human to give appropriate commands and to correct the robot motion. This approach is most suitable for human robot collaborative tasks.
 
 \section{Limitations of current system}
-\label{cha6:sec2}
+\label{cha6:limitation}
 %  limitation and failures of current system: modular approach? or individual work?
 %
 During our studies, we notice a few failures and the limitations of our proposing system. We describe them in this section.
@@ -83,7 +89,7 @@ In our experiment, we mix two primitives to generate new motion. This makes an a
 
 
 \section{Directions of future work}
-\label{cha6:sec3}
+\label{cha6:future}
 % suggest direction of research for the future work
 % -- no online learning
 

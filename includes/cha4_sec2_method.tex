@@ -77,7 +77,7 @@ two fingers simultaneously at most. Hence kinesthetic teaching is not feasible f
 \paragraph{Tele-operation teaching} ~\\
 To control multi-finger hands,
 some researchers use
-tele-operation~\citep{bernardino2013precision,kondo2008recognition,Fischer98}.
+tele-operation~\citep{bernardino2013precision,kondo2008recognition,Fischer1998}.
 This usually relies on data gloves or other motion-capture systems, which
 sense the human hand and arm motions. The human motion is mapped to
 the robot's to generate motions in the robot in real time, allowing
@@ -208,7 +208,7 @@ strategies.
 %During implementation, the system can quickly estimate the context by the sensory inputs and weight the modules according to their reliability and then generate a contextualized motor command.
 
 % ---------- Cluster to find number of modules -----------
-Different tasks may need a different number of modules. This number may not be easy to find. In previous studies~\cite{sugimoto2012emosaic,haruno2001mosaic}, the number of modules is defined as the number of different target objects or different phases in the task, which can be clearly distinct, such as with contact and without contact. However this is not always the case, many tasks do not have clear distinctions between different phases.
+Different tasks may need a different number of modules. This number may not be easy to find. In previous studies~\cite{haruno2001mosaic,sugimoto2012emosaic}, the number of modules is defined as the number of different target objects or different phases in the task, which can be clearly distinct, such as with contact and without contact. However this is not always the case, many tasks do not have clear distinctions between different phases.
 In a task involving more phases, humans may regard different phases as the same task context and handle them with the same control strategies. A recent study suggests that modularizing a control strategy by the number of objects can cause redundancy of modules~\cite{lallee2009}.
 
 Here we propose a data-driven approach to properly define the number of modules for a given task. In the human
@@ -338,91 +338,91 @@ We model the correlation of the force and the displacement with
 GMM. The task dynamics is hence encoded as a joint distribution of the object status displacement $s$ and the action $a$ taken by the human, $p(s,a,{\mid}{\Omega})$. In our experiment, $s$ is the one-dimensional angular displacement of the cap, and $a$ is the one-dimensional exerted torque and grip force.
 Modeling a distribution by GMM allows us to capture the nonlinearity in the data, and also to compute the likelihood of a query data point in the model. This provides a good estimation of the reliability of the module in the current task context, which is crucial in choosing the correct modules for control  (discussed in Section~\ref{cha4:sec2:control:rf}).
 Further, as a generative model GMM is able to
-generate new data from the model, that is it allows us to generate motor commands. This is done by the {\em Gaussian Mixture Regression} (GMR). Table~\ref{tab:GMM} explains the encoding process of GMM and the generative process of GMR.
+generate new data from the model, that is it allows us to generate motor commands. This is done by the {\em Gaussian Mixture Regression} (GMR). The general mathematical expression of GMM is explained in the previous chapter section~\ref{cha3:sec2:learn}. 
 
-\begin{table}
-\caption{Encoding process of GMM and computation process of GMR}
-    \colorbox{light-gray}{
-        \begin{minipage}[t]{1\textwidth}
-
-          With a Gaussian Mixture Model (GMM), the joint distribution
-          $\Omega$ of a set of variables $\{\eta\}$ is expressed as a
-          sum of $N$ Gaussian components:
-           \begin{equation}
-           \begin{split}
-            p\left(\eta\mid\Omega\right) = \sum_{n=1}^N \pi_n p\left(\eta\mid\mu_n,\Sigma_n\right) \\
-            = \sum_{n=1}^N \pi_n \frac{1}{\sqrt{\left(2\pi\right)^D \mid\Sigma_n\mid }} e^{-\frac{1}{2}\left(\eta-\mu_n\right)^{\top} \Sigma^{-1}_n \left(\eta-\mu_n\right)}
-           \end{split}
-           \end{equation}
-           where $\pi_n$ is the prior of the $n^{th}$ Gaussian component
-           and the ${\mu}_n$, ${\Sigma}_n$ the corresponding mean and
-           covariance, and $D$ the number of variables.
-
-
-            %% GMR:
-            Gaussian Mixture Regression (GMR) allows us to estimate the conditional expectation value of a variable $\eta^e$ given a query point $\eta^q$ where $\{\eta\} = \{\eta^q, \eta^e\}$. To compute this expectation value, first we define:
-            \begin{equation}
-            {
-             {\mu}_{n} = \begin{pmatrix} {\mu}_{n}^q    \\
-                                         {\mu}_{n}^e
-                         \end{pmatrix}
-            }
-%            \end{equation}
+%\begin{table}
+%\caption{Encoding process of GMM and computation process of GMR}
+%    \colorbox{light-gray}{
+%        \begin{minipage}[t]{1\textwidth}
+%
+%          With a Gaussian Mixture Model (GMM), the joint distribution
+%          $\Omega$ of a set of variables $\{\eta\}$ is expressed as a
+%          sum of $N$ Gaussian components:
+%           \begin{equation}
+%           \begin{split}
+%            p\left(\eta\mid\Omega\right) = \sum_{n=1}^N \pi_n p\left(\eta\mid\mu_n,\Sigma_n\right) \\
+%            = \sum_{n=1}^N \pi_n \frac{1}{\sqrt{\left(2\pi\right)^D \mid\Sigma_n\mid }} e^{-\frac{1}{2}\left(\eta-\mu_n\right)^{\top} \Sigma^{-1}_n \left(\eta-\mu_n\right)}
+%           \end{split}
+%           \end{equation}
+%           where $\pi_n$ is the prior of the $n^{th}$ Gaussian component
+%           and the ${\mu}_n$, ${\Sigma}_n$ the corresponding mean and
+%           covariance, and $D$ the number of variables.
+%
+%
+%            %% GMR:
+%            Gaussian Mixture Regression (GMR) allows us to estimate the conditional expectation value of a variable $\eta^e$ given a query point $\eta^q$ where $\{\eta\} = \{\eta^q, \eta^e\}$. To compute this expectation value, first we define:
 %            \begin{equation}
-            \hspace{1cm}
-            {
-            {\Sigma}_{n} =  \begin{pmatrix} {\Sigma}_{n}^{qq}  & {\Sigma}_{n}^{qe}  \\
-                                            {\Sigma}_{n}^{eq} & {\Sigma}_{n}^{ee}
-                            \end{pmatrix}
-            }
-            \end{equation}
-
-            Secondly we compute the expected distribution of $\eta^e$ from the $n-th$ component:
-
-            \begin{equation}
-            {
-            \hat{\mu}_{n} = {\mu}_{n}^e + \Sigma_{n}^{eq}({\Sigma}_{n}^{qq})^{-1}(\eta^q-{\mu}_{n}^e)
-            }
-            \end{equation}
-
-            \begin{equation}
-            {
-            \hat{\Sigma}_{n} = {\Sigma}_{n}^{ee} - {\Sigma}_{n}^{eq}({\Sigma}_{n}^{qq})^{-1}{\Sigma}_{n}^{qe}
-            }
-            \end{equation}
-
-
-            Finally, all the $N$ Gaussian components are taken into
-            account, and the expectation value of variable $\eta^e$ is
-            computed as the mean $\hat{\mu}^e$ with the covariance
-            $\hat{\Sigma}^{ee}$:
-
-            \begin{equation}
-            {
-            \hat{\mu}^{e} = \sum_{n=1}^N{\beta_n}\hat{\mu}_{n}
-            }
+%            {
+%             {\mu}_{n} = \begin{pmatrix} {\mu}_{n}^q    \\
+%                                         {\mu}_{n}^e
+%                         \end{pmatrix}
+%            }
+%%            \end{equation}
+%%            \begin{equation}
+%            \hspace{1cm}
+%            {
+%            {\Sigma}_{n} =  \begin{pmatrix} {\Sigma}_{n}^{qq}  & {\Sigma}_{n}^{qe}  \\
+%                                            {\Sigma}_{n}^{eq} & {\Sigma}_{n}^{ee}
+%                            \end{pmatrix}
+%            }
 %            \end{equation}
+%
+%            Secondly we compute the expected distribution of $\eta^e$ from the $n-th$ component:
+%
 %            \begin{equation}
-            \hspace{1cm}
-            {
-            \hat{\Sigma}^{ee} = \sum_{n=1}^N{\beta_n}^2\hat{\Sigma}_{n}
-            }
-            \end{equation}
-
-            where
-            \begin{equation}
-            {
-            \beta_n = \frac{\pi_{n}p(q|{\mu}_{n}^q,{\Sigma}_{n}^{qq})}
-            {\sum_{n=1}^N{\pi_n}p(q|{\mu}_{n}^q,{\Sigma}_{n}^{qq})}
-            }
-            \end{equation}
-
-            Note that in a multiple module model, different module may have different number of Gaussian components.
-        \end{minipage}
-    }
-
-\label{tab:GMM}
-\end{table}
+%            {
+%            \hat{\mu}_{n} = {\mu}_{n}^e + \Sigma_{n}^{eq}({\Sigma}_{n}^{qq})^{-1}(\eta^q-{\mu}_{n}^e)
+%            }
+%            \end{equation}
+%
+%            \begin{equation}
+%            {
+%            \hat{\Sigma}_{n} = {\Sigma}_{n}^{ee} - {\Sigma}_{n}^{eq}({\Sigma}_{n}^{qq})^{-1}{\Sigma}_{n}^{qe}
+%            }
+%            \end{equation}
+%
+%
+%            Finally, all the $N$ Gaussian components are taken into
+%            account, and the expectation value of variable $\eta^e$ is
+%            computed as the mean $\hat{\mu}^e$ with the covariance
+%            $\hat{\Sigma}^{ee}$:
+%
+%            \begin{equation}
+%            {
+%            \hat{\mu}^{e} = \sum_{n=1}^N{\beta_n}\hat{\mu}_{n}
+%            }
+%%            \end{equation}
+%%            \begin{equation}
+%            \hspace{1cm}
+%            {
+%            \hat{\Sigma}^{ee} = \sum_{n=1}^N{\beta_n}^2\hat{\Sigma}_{n}
+%            }
+%            \end{equation}
+%
+%            where
+%            \begin{equation}
+%            {
+%            \beta_n = \frac{\pi_{n}p(q|{\mu}_{n}^q,{\Sigma}_{n}^{qq})}
+%            {\sum_{n=1}^N{\pi_n}p(q|{\mu}_{n}^q,{\Sigma}_{n}^{qq})}
+%            }
+%            \end{equation}
+%
+%            Note that in a multiple module model, different module may have different number of Gaussian components.
+%        \end{minipage}
+%    }
+%
+%\label{tab:GMM}
+%\end{table}
 
 
 
@@ -600,7 +600,7 @@ the inverse models. The responsibility factor is a measurement of the
 reliability of using one module to represent the current system
 context.
 
-With the $k-{th}$ forward model we can anticipate the current state ${\hat{s}} ^k_t$ by using $GMR$ (Table~\ref{tab:GMM}):
+With the $k-{th}$ forward model we can anticipate the current state ${\hat{s}} ^k_t$ by using $GMR$ (explained in the previous chapter section~\ref{cha3:sec2:learn}):
 \begin{equation}
 \label{e3}
 {\hat{s}} ^k_{t} = E\left({s_t {\mid} s_{t-1}, a_{t-1}, \Omega^k_F}\right)
@@ -636,7 +636,7 @@ multiplied by its respective responsibility factor.
 
 
 The motor command $a^k_t$ for the $k^{th}$ inverse model is computed
-by GMR with the steps explained in Table~\ref{tab:GMM}. At each time
+by GMR with the steps explained in Section~\ref{cha3:sec2:learn}. At each time
 step, the responsibility factors $\lambda^k_t$ weight its
 corresponding inverse model: the higher the responsibility is, the
 more responsibility the inverse model takes in the control. The final

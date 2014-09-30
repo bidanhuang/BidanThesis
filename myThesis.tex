@@ -1,4 +1,5 @@
 \documentclass[11pt]{report}
+%\documentclass[11pt]{book}
 % packages
 \usepackage{baththesis}
 \usepackage{amssymb} %for Blackboard bold etc
@@ -21,6 +22,13 @@
 \usepackage{algpseudocode}
 \usepackage{natbib}
 \usepackage{titlesec}
+% -------- Style --------
+%\usepackage[left=4.5cm, right=4.5cm]{geometry}
+\usepackage{sectsty}
+\partfont{\huge \scshape}
+\chapterfont{\huge \scshape \raggedleft} % You can use \centering \raggedright or \raggedleft to move titles
+\chaptertitlefont{\scshape \raggedleft}
+
 
 \definecolor{light-gray}{gray}{0.8}
 
@@ -33,7 +41,7 @@
 
 
 %---------- front matter -----------
-\title{Modular Approach of Learning\\Robot Grasp and Manipulation}
+\title{The Use of Modular Approaches for Robot to Learn Grasping and Manipulation}
 \author{Bidan Huang}
 \degree{Doctor of Philosophy}
 \department{Department of Computer Sciences}
@@ -42,9 +50,20 @@
 \pagenumbering{roman}
 \begin{document}
 \maketitle
+
+
+%\newpage\null\thispagestyle{empty}\newpage
+%\pagenumbering{roman}
 \begin{abstract}
-In this thesis numerous seminal results are proved which will
-decisively shape the future development of the subject.
+Modular approaches are widely used methods in AI and engineering. This approach reduces the difficulty of solving a complex problem by subdividing the problem into serval smaller parts, i.e. modules, and tackle each independently.
+In robotics, modular approaches are particular suitable for programming service robots.
+Moving away from industrial controlled environments, service robots have to handle abrupt changes and uncertainties occurring in dynamic and cluttered human centered environments. Planning in such an environment needs to be fast and adaptive to changing context. In this dissertation we show how modular approaches can simplify the planning problem in robot grasping and manipulation. %This dissertation focuses on the application of such an approach in robot grasping and manipulation.
+
+The proposed approach is based on the method of imitation learning, sometimes referred to as the Programming by Demonstration (PbD). Based on this framework, we first let human or robot demonstrate possible solutions of the problem. After collecting the demonstrations, we extract multiple modules from the data. Each module represents a part of the system and their corresponding demonstrations are modeled with a statistical method. According to the environment condition, a set of appropriate modules are chosen to provide the final solution.
+
+We present three different modular approaches in tackling three subareas in robot grasping and manipulation: grasp planning, object manipulation adaptive control and planning reaching motions. In Chapter 3, we propose a fast method for computing grasps for known objects and extend this method by a modular approach to work with novel objects. We implemented this method with two different robot hands: the Barrett hand and the iCub hand, and show that the computation time is always in the millisecond scale. In Chapter 4, we present our modular approach in extracting adaptive control strategies using human demonstrations. of object manipulation tasks. We successfully implement this method to teach a robot an manipulation tasks: opening bottle caps. In Chapter 5, we present a method to model reaching motion primitives that allow humans to modulate robot motions by language. This method is implemented to perform a bimanual lifting task. We show that the method can generate new motions to lift boxes with different sizes and at different locations. These three studies show that modular approaches indeed are capable of simplifying complex problems and is an effective approach to program a service robot with grasping and manipulation tasks.
+
+In this dissertation we contribute three modular and learning hybrid methods: (1) a fast method for grasp planning; (2) a method to extract human manipulation skills from demonstrations for object manipulation; (3) a method to recognize motions and generate motions according to human commands.
 \end{abstract}
 %===================================
 
@@ -57,6 +76,7 @@ decisively shape the future development of the subject.
 \input{includes/cha4_manipulation}
 \input{includes/cha5_mimesis}
 \input{includes/cha6_conclusion}
+\input{includes/cha7_conclusion}
 %robs comment: \textcolor{red}{Don''t understand sentence}
 
 \bibliographystyle{apalike}

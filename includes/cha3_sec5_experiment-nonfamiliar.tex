@@ -4,9 +4,11 @@
 
 \begin{table*}
 \renewcommand{\arraystretch}{1.5}
-\hspace{-2cm}
+\centering
+\caption{Success rate and computation time of different methods and objects}
+%\hspace{-2cm}
     \begin{tabular}
-    { |>{\centering\arraybackslash}p{4cm}  | c | c | c | c |}
+    { |>{\centering\arraybackslash}p{4cm}  | >{\centering\arraybackslash}p{2cm} | >{\centering\arraybackslash}p{3cm} |  >{\centering\arraybackslash}p{2cm} |  >{\centering\arraybackslash}p{2cm} |}
     \hline
     Approach and object & Force-Closure Grasp Found &  Mean of Computation Time($msec$) & Variance ($msec$)   \\ \hline
     Pre-trained grasp GMM for the novel object       & 98.1\%  & 13.8    & 0.015 \\ \hline
@@ -14,15 +16,18 @@
     Combined grasp GMM for spray flask              & 91.0\%  & 16.0    & 0.004 \\ \hline
     Combined grasp GMM for bedside table            & 82.2\%  & 21.1    & 0.006 \\ \hline
     \end{tabular}
-\caption{Success rate and computation time of different methods and objects}
+
 \label{tab:result}
 \end{table*}
 
-\begin{table*}
+\begin{table*}[ht!]
 \renewcommand{\arraystretch}{1.5}
-\hspace{-2cm}
+\centering
+\caption{Shape primitives used in experiments}
+%\hspace{-2cm}
     \begin{tabular}
-    { | c | c | c |>{\centering\arraybackslash}p{3cm} |>{\centering\arraybackslash}p{3cm}|}
+    %{ | c | c | c |>{\centering\arraybackslash}p{3cm} |>{\centering\arraybackslash}p{3cm}|}
+    {|>{\centering\arraybackslash}p{2cm}|>{\centering\arraybackslash}p{2cm}|>{\centering\arraybackslash}p{3cm}|>{\centering\arraybackslash}p{1.5cm} |>{\centering\arraybackslash}p{1.5cm}|}
     \hline
     Shape primitives& Object & Size($cm$) & Amount of training data & Number of Gaussians in GMM   \\ \hline
     Sphere 1        & Novel object (Fig.~\ref{fig:object})  & radius 7              & 12096    & 60 \\ \hline
@@ -33,7 +38,7 @@
     Box 4 & Bedside table (Fig.~\ref{fig:bedside})  & $52.5\times3\times52.5$   & 8668    & 20 \\ \hline
     Box 5 & Bedside table (Fig.~\ref{fig:bedside})  & $2.8\times57.6\times2.7$  & 4392    & 20 \\ \hline
     \end{tabular}
-\caption{Shape primitives used in experiments}
+
 \label{tab:primitive}
 \end{table*}
 

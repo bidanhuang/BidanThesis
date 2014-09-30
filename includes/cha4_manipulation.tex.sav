@@ -1,0 +1,70 @@
+\chapter{Learning human manipulation skills}
+\label{cha4}
+% Motivation - Methodology - Experiment - Result - Discussion
+
+\section{Introduction}
+\label{cha4:sec1}
+% Connection
+% TODO: manipulation is a series of grasps?
+% TODO: grasping can be pre-program for all shapes, but manipulation tasks can't be pre-program for all tasks. Hence need user-defined task.
+In the last chapter, we present an approach to fast plan a hand posture to stably grasp a given object. This planning is ``static'' and does not change over time unless the object shape changes. Different from grasp planning, object manipulation is a ``dynamic'' process as it aim to change the object state. For example, holding a pen is grasping while writing with a pen is manipulation.
+Therefore besides the hand posture, the hand exerting force and torque are needed to be take into account in manipulation.
+In this chapter, we look into the problem of object manipulation and propose a modular approach to generate adaptive motor commands in task execution.
+%Taking only the grasp stability in to account, grasping can be pre-programmed by this method as the daily life objects can always be approximated by the combination of a set of shape primitives. Object manipulation, however, is different. It is impossible for a robot designer to foresee all the circumstances that a robot needs to serve in and pre-program all the tasks. Therefore, it is important to enable robot to learn new tasks from its user. Due to the involvement of hand-object-interaction, object manipulation is hard to both demonstrate and learn.
+%For object manipulation, however, it is important to take not only the hand posture but also the hand exerting force and torque into account in the planning. Due to the complicated and non-predictable dynamics involve in the hand-object-interaction, the plan need to adapt to the context in real time.
+%In this chapter, we propose a modular approach to exact adaptive control strategies for object manipulation from human demonstrations.
+
+% Motivation
+% OM is important: what it can do? how it helps human?
+In everyday life, object manipulation is one of the most
+commonly used manual skills. Object manipulation includes a large category of activities ranging from the simple pick-and-place task to the complicated dexterous manipulation task, like writing or using chopsticks. Service robots won't be able to really ``serve'' humans without these manipulation abilities. Enabling robots to carry out manipulation tasks can alleviate human workload and free humans from many chores. However, robots with human level manipulation skills still only exist in science fiction.
+
+% OM is difficult: why it is difficult?
+Generally, manipulation tasks are very difficult. Distinct from pure motion planning, manipulation planning aims to not only move the robot to a desire state, but also to change the environment to a desired state. Therefore in addition to robot motion planning, the impact of the robot on the environment, i.e. robot environment interaction, has to be planned. The object interactions are usually complex and hard to predict as they involve complicated contact situations, and the changing kinematics and dynamic properties of the environment. The complicated physics in object interactions make manipulation tasks difficult. The multi-body interactions and the effects of friction can cause abrupt changes in the environment. This makes the environment non-linear and non-stationary.
+
+% What is solution to OM? - adaptive control. What is AC? Benefit of AC, but difficult to design.
+Control methods depending on invariant
+environmental parameters are not efficient for most manipulation tasks. Adaptive control methods, which focus on handling varying parameters and initial uncertainly, are required for manipulation. An adaptive control strategy is usually hard to design, especially when it involves a complex environment. This demands deep knowledge of the task and the kinematic and dynamic properties of the environment.
+
+% learn AC from human demonstration: benefit...
+To this end, we conduct a learning from human demonstration approach to gain an adaptive control strategy. This approach has two-fold benefits: Firstly, we do not need to analytically derive the the kinematic and dynamic properties of the environment in order to design the controller. Secondly, it provides a framework to easily program a robot with a task skill. With an increasing use of robots in daily life, more and more tasks will need to be programmed. Non-linear control methods are usually limited to narrow categories of tasks and hence need to be carried out task by task. It is impractical to pre-program all such object manipulation tasks manually. Learning from human demonstration enables even non-programmers to program robots to do various kinds of tasks quickly.
+
+% what human do: prediction
+Humans can perform these skilled tasks and adapt to the changes in context without difficulty. At the heart of this skill is prediction~\cite{flanagan2006control}. Studies from neuroscience
+suggest that humans develop internal models for motor control, which
+allow us to predict the future state of the environment. By comparing
+the predictive state with the actual sensory state, the internal
+models monitor the progression of  tasks, and launch any
+corresponding motor correction and motor reaction required to
+adapt to anything unexpected.
+
+%To handle these situations, robots have to be equipped with a nonlinear and non-stationary control strategy, which is hard to design by analytical approaches.
+
+% Conventional AC is difficult, use modular. benefit of modular
+Inspired by this concept, we propose an approach to learn human
+adaptive control strategy. This adaptive control strategy is modeled by a modular
+approach.
+From multiple human demonstrations, we extract a set of strategies,
+each of which takes charge of one specific task context.
+Each strategy is encoded as a module, which includes a forward model for context
+estimation, and an inverse model for motor command generation.
+The forward and inverse models are learnt with a representation
+that can be easily transferred to a
+robot. When the robot executes a similar task, the forward models
+estimate the context of the task and
+`contextualize' the inverse models, allowing them to generate the proper commands.
+
+
+This approach does not require any prior knowledge of the kinematics nor dynamics of the system, nor is it restricted to a specific robot platform. The control strategy is learnt at the object level and hence can be transferred from human to robot directly.
+This work contributes a framework composed of both automated and bespoke components for creating the modular representation of
+human adaptive control-strategies
+and to transfer these learnt internal models to a robot. To verify our
+approach, we use an \emph{Opening Bottle Caps} task as an experiment. An adaptive control strategy is required here, because the
+friction between the bottle's and the cap's surfaces has multiple phases. We demonstrate the modularized version of the human control
+strategy in this task on a robot, which is used to open both familiar and novel bottles.
+
+In the next few sections, I will present our approach of learning a multiple module model of a human manipulation strategy~\ref{cha4:sec1}, detail the experimental setups~\ref{cha4:sec2} and discuss the results~\ref{cha4:sec3}.
+
+\input{includes/cha4_sec2_method}
+\input{includes/cha4_sec3_experiment}
+\input{includes/cha4_sec4_discussion}
